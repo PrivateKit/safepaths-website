@@ -1,7 +1,10 @@
 
-# Safe Paths ![Prerequisite](https://img.shields.io/badge/node-10.13.0-blue.svg) ![Prerequisite](https://img.shields.io/badge/npm-6.4.1-blue.svg)
+# Safe Paths [![Netlify Status](https://api.netlify.com/api/v1/badges/05d740ff-e5ec-48ce-86b9-3f24ec60be9d/deploy-status)](https://app.netlify.com/sites/safepaths/deploys) ![Prerequisite](https://img.shields.io/badge/node-10.13.0-blue.svg) ![Prerequisite](https://img.shields.io/badge/npm-6.4.1-blue.svg)
 
 > A new look for https://safepaths.mit.edu
+
+- **Website**: https://safepaths.netlify.com/
+- **Netlify Admin**: https://app.netlify.com/sites/safepaths/settings/general 
 
 ## ✨ Install
 
@@ -43,17 +46,9 @@ npx serve dist
 
 ### Deployment
 
-The output of `npm run build` is a static site. You can drop the resulting `dist` directory on any web server.
+This site is hosted on [Netlify](https://www.netlify.com/).
 
-An excellent choice is [Netlify](https://www.netlify.com/).
-
-You can deploy your work to Netlify with their [CLI tool](https://github.com/netlify/cli).
-
-```
-npm install netlify-cli -g
-netlify init
-netlify deploy
-```
+Deployments to https://safepaths.netlify.com/ are triggered automatically by commits to the `master` branch via their [GitHub App](https://github.com/apps/netlify).
 
 ## 📝 License
 
