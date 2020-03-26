@@ -33,7 +33,7 @@
   width: 100%;
 
   @include mq($md) {
-    margin-right: $sp-md;
+    margin-right: $grid-gutter;
   }
 }
 
