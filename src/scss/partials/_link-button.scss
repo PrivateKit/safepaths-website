@@ -1,6 +1,7 @@
 .link--button {
-  @include padding($sp-sm $sp-lg);
+  @include padding($sp-base $sp-sm);
   align-items: center;
+  background-color: $color-bg;
   background-image: none;
   border: 1px solid $color-spot;
   border-radius: $br;
@@ -10,18 +11,13 @@
     background-color: $color-base;
     border-color: transparent;
     color: $color-bg;
-
-    &::after {
-      background-color: $color-bg;
-    }
   }
 
-  &::after {
-    @include size($sp-sm);
-    background-color: $color-base;
-    border-radius: $br;
-    content: '';
-    display: block;
+  @include mq($md) {
+    @include padding($sp-sm $sp-lg);
+  }
+
+  svg {
     margin-left: $sp-lg;
   }
 }

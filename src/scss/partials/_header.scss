@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: $sp-lg;
+  position: relative;
 
   @include mq($md) {
     align-items: center;
@@ -16,6 +18,10 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+
+  @include mq($sm, $md) {
+    margin-bottom: $sp-base;
+  }
 }
 
 .header-logo--link {
@@ -34,9 +40,8 @@
 }
 
 .header-signup {
-  display: none;
-
-  @include mq($md) {
-    display: block;
+  @include mq($sm, $md) {
+    bottom: $sp-base;
+    position: fixed;
   }
 }
