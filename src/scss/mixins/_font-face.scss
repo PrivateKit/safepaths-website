@@ -1,0 +1,28 @@
+@mixin font-face(
+  $family-name,
+  $file-name,
+  $font-style: normal,
+  $font-weight: 400,
+  $formats: ('woff2', 'woff')
+) {
+  $file-path: '/static/fonts/#{$file-name}';
+  $urls: ();
+
+  @each $format in $formats {
+    $format-type: $format;
+    @if $format == 'otf' {
+      $format-type: 'opentype';
+    } @else if $format == 'ttf' {
+      $format-type: 'truetype';
+    }
+    $urls: append($urls, url('#{$file-path}.#{$format}') format('#{$format-type}'), comma);
+  }
+
+  @font-face {
+    font-family: $family-name;
+    font-stretch: normal;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    src: $urls;
+  }
+}
