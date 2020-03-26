@@ -1,0 +1,42 @@
+.header {
+  @include padding($sp-md);
+  align-items: flex-start;
+  border-bottom: 1px solid $color-border;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include mq($md) {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.header-logo {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-logo--link {
+  background-image: none;
+  margin-right: $sp-md;
+  width: 50%;
+
+  @include mq($md) {
+    width: auto;
+  }
+
+  svg {
+    max-width: 200px;
+    width: 100%;
+  }
+}
+
+.header-signup {
+  display: none;
+
+  @include mq($md) {
+    display: block;
+  }
+}

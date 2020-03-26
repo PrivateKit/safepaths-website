@@ -1,0 +1,27 @@
+.link--button {
+  @include padding($sp-sm $sp-lg);
+  align-items: center;
+  background-image: none;
+  border: 1px solid $color-spot;
+  border-radius: $br;
+  display: inline-flex;
+
+  @include on-focus {
+    background-color: $color-base;
+    border-color: transparent;
+    color: $color-bg;
+
+    &::after {
+      background-color: $color-bg;
+    }
+  }
+
+  &::after {
+    @include size($sp-sm);
+    background-color: $color-base;
+    border-radius: $br;
+    content: '';
+    display: block;
+    margin-left: $sp-lg;
+  }
+}

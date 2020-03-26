@@ -1,3 +1,9 @@
+// HTML
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
 // Headings
 h1,
 h2,
@@ -46,4 +52,9 @@ a {
   @include on-focus {
     color: $color-spot;
   }
+}
+
+// Visually hidden
+.visually-hidden {
+  @include visually-hidden;
 }
