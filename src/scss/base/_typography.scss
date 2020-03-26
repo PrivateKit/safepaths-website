@@ -20,27 +20,25 @@ h6 {
 }
 
 h1 {
-  font-size: $fs-h1;
-  letter-spacing: $ls-tight;
+  @include h1;
 }
 
 h2 {
-  font-size: $fs-h2;
-  letter-spacing: $ls-tight;
+  @include h2;
 }
 
 h3 {
-  font-size: $fs-h3;
+  @include h3;
 }
 
 h4 {
-  font-size: $fs-h4;
+  @include h4;
 }
 
 h5 {
-  font-size: $fs-h5;
+  @include h5;
 }
 
 h6 {
-  font-size: $fs-h6;
+  @include h6;
 }

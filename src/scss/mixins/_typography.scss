@@ -1,0 +1,62 @@
+@mixin h1 {
+  font-size: $fs-h2;
+  letter-spacing: $ls-tight;
+  line-height: 1.1;
+
+  @include mq($md) {
+    font-size: $fs-h1;
+  }
+}
+
+@mixin h2 {
+  font-size: $fs-lg;
+  letter-spacing: $ls-tight;
+  line-height: 1.1;
+
+  @include mq($md) {
+    font-size: $fs-h2;
+  }
+}
+
+@mixin h3 {
+  font-size: $fs-h4;
+  line-height: 1.1;
+
+  @include mq($md) {
+    font-size: $fs-h3;
+  }
+}
+
+@mixin h4 {
+  font-size: $fs-h5;
+
+  @include mq($md) {
+    font-size: $fs-h4;
+  }
+}
+
+@mixin h5 {
+  font-size: $fs-h6;
+
+  @include mq($md) {
+    font-size: $fs-h5;
+  }
+}
+
+@mixin h6 {
+  font-size: $fs-base;
+}
+
+@mixin giant {
+  font-size: $fs-lg;
+  letter-spacing: $ls-tight;
+  line-height: 1.1;
+
+  @include mq($md) {
+    font-size: $fs-h2;
+  }
+
+  @include mq($lg) {
+    font-size: $fs-giant;
+  }
+}

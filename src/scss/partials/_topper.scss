@@ -1,0 +1,42 @@
+.page-topper-content {
+  @include site-padding;
+}
+
+.topper-title {
+  @include padding($sp-xl x);
+
+  @include mq($md) {
+    @include padding($sp-xxl x);
+  }
+
+  @include mq($lg) {
+    max-width: $col-3;
+  }
+
+  h2 {
+    @include giant;
+  }
+}
+
+.topper-section {
+  counter-reset: point;
+  display: flex;
+  flex-direction: column;
+
+  @include mq($md) {
+    flex-direction: row;
+  }
+}
+
+.topper-section--col {
+  flex: 1 1 auto;
+  width: 100%;
+
+  @include mq($md) {
+    margin-right: $sp-md;
+  }
+}
+
+.topper-feature {
+  margin-bottom: $sp-lg;
+}
