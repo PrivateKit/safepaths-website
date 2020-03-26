@@ -1,0 +1,49 @@
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: $sp-base;
+}
+
+// Lists
+ul,
+ol {
+  list-style-position: outside;
+  margin-left: $sp-md;
+  padding-left: $sp-base;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  margin-bottom: $sp-base;
+}
+
+// Paragraphs
+p {
+  margin-bottom: $sp-md;
+}
+
+// Links
+a {
+  background-image: linear-gradient(to top, $color-spot, $color-spot);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  color: $color-base;
+  display: inline-block;
+  text-decoration: none;
+
+  @include on-focus {
+    color: $color-spot;
+  }
+}

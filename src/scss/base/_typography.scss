@@ -1,0 +1,46 @@
+html {
+  background-color: $color-bg;
+}
+
+body {
+  color: $color-base;
+  font-family: $sans;
+  font-kerning: normal;
+  font-size: $fs-base;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: $fs-h1;
+  letter-spacing: $ls-tight;
+}
+
+h2 {
+  font-size: $fs-h2;
+  letter-spacing: $ls-tight;
+}
+
+h3 {
+  font-size: $fs-h3;
+}
+
+h4 {
+  font-size: $fs-h4;
+}
+
+h5 {
+  font-size: $fs-h5;
+}
+
+h6 {
+  font-size: $fs-h6;
+}

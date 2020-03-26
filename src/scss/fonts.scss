@@ -1,0 +1,11 @@
+/*
+---------------------------------------------
+ INTER
+---------------------------------------------
+*/
+
+// Regular
+@include font-face($sans, 'Inter-Regular');
+
+// // Semibold
+@include font-face($sans, 'Inter-SemiBold', $font-weight: 600);

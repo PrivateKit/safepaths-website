@@ -1,5 +1,15 @@
 // Path to public dir
 $publicPath: '/';
 
-// Project styles go here
-@import 'tutorial';
+// Reset
+@import 'reset';
+
+// Abstracts
+@import 'variables';
+@import 'mixins';
+
+// Fonts
+@import 'fonts';
+
+// Base
+@import 'base';
