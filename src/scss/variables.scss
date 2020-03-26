@@ -9,6 +9,7 @@ $sans: Inter, sans-serif;
 
 // Font sizes
 $fs-base: 1rem;
+$fs-sm: 1.3rem;
 $fs-md: 1.6rem;
 $fs-lg: 2.6rem;
 $fs-giant: 5.2rem;
@@ -48,6 +49,8 @@ $col-2: 50%;
 $col-3: 75%;
 $col-4: 100%;
 
-$grid-gutter: $sp-lg;
-
 $layout-max-width: 1120px;
+
+$grid-gutter: $sp-lg;
+$grid-col-count: 8;
+$grid-col-width: $grid-col-count / 100%;

@@ -20,7 +20,6 @@
 
 @mixin h3 {
   font-size: $fs-h4;
-  line-height: 1.1;
 
   @include mq($md) {
     font-size: $fs-h3;
@@ -59,4 +58,8 @@
   @include mq($lg) {
     font-size: $fs-giant;
   }
+}
+
+@mixin paragraph {
+  @include h3;
 }

@@ -1,0 +1,24 @@
+.page-section {
+  @include site-padding;
+  margin-bottom: $sp-xl;
+}
+
+.page-section-content {
+  @include padding($sp-xl x);
+  border-top: 1px solid $color-border;
+  display: flex;
+  flex-direction: column;
+
+  @include mq($lg) {
+    align-items: baseline;
+    flex-direction: row;
+
+    .section-header {
+      width: columns(2);
+    }
+
+    .section-body {
+      width: columns(6);
+    }
+  }
+}

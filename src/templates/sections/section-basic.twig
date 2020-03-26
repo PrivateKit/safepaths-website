@@ -1,0 +1,15 @@
+---
+title: Basic section
+---
+
+{% extends "@templates/layouts/section.twig" %}
+
+{% block header %}
+<h3 class="section-title">Support the PrivacyFirst Effort</h3>
+{% endblock %}
+
+{% block content %}
+<div class="intro-content">
+    {% include '@templates/partials/intro-paragraph.twig' with {'paragraph': "We are seeking strategic partners, cities to pilot Private Kit, financial support, software developers, and others with a passion for building this tool. Can you help us? Connect with here."} %}
+</div>
+{% endblock %}

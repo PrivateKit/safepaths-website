@@ -1,0 +1,3 @@
+@function columns($col-span, $total-col-count: $grid-col-count) {
+  @return $col-span * (100% / $total-col-count);
+}

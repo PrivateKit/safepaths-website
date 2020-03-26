@@ -1,0 +1,13 @@
+.section-title {
+  color: $color-spot;
+
+  @include mq($lg) {
+    margin-right: $grid-gutter * 2;
+  }
+}
+
+.intro-content {
+  @include mq($md) {
+    width: columns(5, 6);
+  }
+}
