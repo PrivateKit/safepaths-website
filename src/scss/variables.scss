@@ -2,6 +2,7 @@
 $color-base: #26223c;
 $color-spot: #3498fc;
 $color-bg: #f0f0f0;
+$color-border: transparentize($color-base, 0.9);
 
 // Typefaces
 $sans: Inter, sans-serif;
@@ -23,6 +24,7 @@ $ls-tight: -0.045em;
 
 // Spacing
 $sp-base: 10px;
+$sp-sm: 15px;
 $sp-md: 20px;
 $sp-lg: 30px;
 
@@ -30,3 +32,9 @@ $sp-lg: 30px;
 $sm: 320px;
 $md: 768px;
 $lg: 1024px;
+
+// Border radius
+$br: 999rem;
+
+// Easings
+$outQuint: 0.3s cubic-bezier(0.22, 1, 0.36, 1);

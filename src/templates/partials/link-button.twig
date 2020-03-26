@@ -1,0 +1,11 @@
+<a
+  class="link--button"
+  href="{{link}}"
+  {% if newTab %}
+    target="_blank"
+    rel="noopener"
+  {% endif %}
+>
+  {{label}}
+  {% include '../../../public/static/svgs/arrow.svg' %}
+</a>
