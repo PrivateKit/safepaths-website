@@ -1,5 +1,7 @@
 .team-list {
-  margin-bottom: $sp-xl;
+  &:not(:last-child) {
+    margin-bottom: $sp-xl;
+  }
 }
 
 .team-list-title {

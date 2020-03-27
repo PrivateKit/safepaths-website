@@ -9,6 +9,7 @@ $border: 1px solid $color-base;
 
 .news-content-block {
   box-sizing: border-box;
+
   @include mq($md) {
     display: flex;
     width: columns(1, 2);
