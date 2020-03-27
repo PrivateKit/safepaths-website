@@ -36,6 +36,12 @@
   flex: 1 1 auto;
   width: 100%;
 
+  @include mq($sm, $lg) {
+    &:first-child {
+      display: none;
+    }
+  }
+
   @include mq($md) {
     margin-right: $grid-gutter;
   }

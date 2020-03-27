@@ -63,3 +63,9 @@
 @mixin paragraph {
   @include h3;
 }
+
+@mixin uppercase {
+  font-size: $fs-xs;
+  letter-spacing: $ls-loose;
+  text-transform: uppercase;
+}

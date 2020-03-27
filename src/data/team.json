@@ -1,0 +1,82 @@
+{
+  "departments": [
+    {
+      "department": "Technology",
+      "members": [
+        { "name": "Justin Arcand", "affiliation": "MIT" },
+        { "name": "Justin Arcand", "affiliation": "MIT" },
+        { "name": "Justin Arcand", "affiliation": "MIT" },
+        { "name": "Justin Arcand", "affiliation": "MIT" },
+        { "name": "Justin Arcand", "affiliation": "MIT" },
+        { "name": "Justin Arcand", "affiliation": "MIT" },
+        { "name": "Justin Arcand", "affiliation": "MIT" },
+        { "name": "Justin Arcand", "affiliation": "MIT" },
+        { "name": "Justin Arcand", "affiliation": "MIT" }
+      ]
+    },
+    {
+      "department": "Communication",
+      "members": [
+        {
+          "name": "Justin Arcand",
+          "affiliation": "MIT"
+        },
+        {
+          "name": "Justin Arcand",
+          "affiliation": "MIT"
+        },
+        {
+          "name": "Justin Arcand",
+          "affiliation": "MIT"
+        },
+        {
+          "name": "Justin Arcand",
+          "affiliation": "MIT"
+        },
+        {
+          "name": "Justin Arcand",
+          "affiliation": "MIT"
+        },
+        {
+          "name": "Justin Arcand",
+          "affiliation": "MIT"
+        },
+        {
+          "name": "Justin Arcand",
+          "affiliation": "MIT"
+        },
+        {
+          "name": "Justin Arcand",
+          "affiliation": "MIT"
+        },
+        {
+          "name": "Justin Arcand",
+          "affiliation": "MIT"
+        }
+      ]
+    },
+    {
+      "department": "Mentors",
+      "inline": true,
+      "members": [
+        { "name": "Amandeep Gill", "link": "https://www.weforum.org/people/amandeep-singh-gill" },
+        {
+          "name": "Bernardo Mariano Jr",
+          "link": "https://www.weforum.org/people/amandeep-singh-gill"
+        },
+        {
+          "name": "Brian McClendon",
+          "link": "https://www.weforum.org/people/amandeep-singh-gill"
+        },
+        {
+          "name": "Don Rucker",
+          "link": "https://www.weforum.org/people/amandeep-singh-gill"
+        },
+        {
+          "name": "Subbu Subramanian",
+          "link": "https://www.weforum.org/people/amandeep-singh-gill"
+        }
+      ]
+    }
+  ]
+}

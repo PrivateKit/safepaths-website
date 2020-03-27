@@ -10,7 +10,7 @@
   flex-direction: column;
 
   @include mq($lg) {
-    align-items: baseline;
+    align-items: flex-start;
     flex-direction: row;
 
     .section-header {
@@ -20,5 +20,11 @@
     .section-body {
       width: columns(6);
     }
+  }
+}
+
+.section-header {
+  @include mq($sm, $lg) {
+    margin-bottom: $sp-lg;
   }
 }

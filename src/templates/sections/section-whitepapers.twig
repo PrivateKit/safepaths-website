@@ -1,0 +1,21 @@
+---
+title: Whitepapers section
+---
+
+{% extends "@templates/layouts/section.twig" %}
+
+{% set whitepapers = site.data['whitepapers.json'].whitepapers %}
+
+{% block header %}
+<h3 class="section-title">Download whitepapers</h3>
+{% endblock %}
+
+{% block content %}
+<div class="whitepapers-content">
+  {% for whitepaper in whitepapers %}
+    <div class="whitepapers-content-block">
+     {% include '@templates/partials/whitepaper.twig' with { whitepaper } %}
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

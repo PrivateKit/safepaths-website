@@ -1,5 +1,5 @@
 .section-title {
-  color: $color-spot;
+  position: relative;
 
   @include mq($lg) {
     margin-right: $grid-gutter * 2;
@@ -7,7 +7,10 @@
 }
 
 .intro-content {
+  margin-bottom: $sp-lg;
+
   @include mq($md) {
+    margin-bottom: $sp-xl;
     width: columns(5, 6);
   }
 }

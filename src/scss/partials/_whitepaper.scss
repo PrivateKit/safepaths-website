@@ -1,0 +1,33 @@
+.whitepaper-link {
+  @include padding(x $sp-md $sp-md);
+  background-color: $color-white;
+  background-image: none;
+  display: block;
+
+  @include mq($sm, $md) {
+    margin-bottom: $sp-lg;
+  }
+
+  @include mq($md) {
+    @include padding(x $sp-lg $sp-lg);
+  }
+}
+
+.whitepaper-label {
+  @include padding($sp-base x $sp-xl);
+  @include uppercase;
+  color: $color-base;
+  display: flex;
+  justify-content: space-between;
+
+  svg {
+    color: $color-spot;
+  }
+}
+
+.whitepaper-title {
+  @include paragraph;
+  border-top: 1px solid $color-base;
+  margin-bottom: 0;
+  padding-top: $sp-base;
+}

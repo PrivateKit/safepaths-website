@@ -1,0 +1,20 @@
+<div class="team-list">
+  {% if department.department %}
+    <h4 class="team-list-title">{{department.department}}</h4>
+  {% endif %}
+  <ul class="{{ department.inline ? "member-list-inline" : "member-list" }}">
+    {% for member in department.members %}
+      <li class="member">
+        <div class="member-content">
+          <div class="member-name">
+            {% if loop.last and department.inline %}and {% endif %}
+            {{ member.name }}
+          </div>
+          {% if member.affiliation %}
+            <div class="member-affiliation">{{ member.affiliation }}</div>
+          {% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

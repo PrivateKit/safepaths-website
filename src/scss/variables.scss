@@ -2,7 +2,8 @@
 $color-base: #26223c;
 $color-spot: #3498fc;
 $color-bg: #f0f0f0;
-$color-border: transparentize($color-base, 0.9);
+$color-white: #ffffff;
+$color-border: $color-base;
 
 // Typefaces
 $sans: Inter, sans-serif;
@@ -10,19 +11,24 @@ $sans: Inter, sans-serif;
 // Font sizes
 $fs-base: 1rem;
 $fs-sm: 1.3rem;
+$fs-xs: 0.9rem;
 $fs-md: 1.6rem;
 $fs-lg: 2.6rem;
 $fs-giant: 5.2rem;
 
 $fs-h1: 3.4rem;
 $fs-h2: 3.2rem;
-$fs-h3: 1.3rem;
+$fs-h3: 1.4rem;
 $fs-h4: 1.2rem;
 $fs-h5: 1.1rem;
 $fs-h6: $fs-base;
 
+// Font weights
+$fw-bold: 500;
+
 // Letter spacing
 $ls-tight: -0.045em;
+$ls-loose: 0.05em;
 
 // Spacing
 $sp-base: 10px;
