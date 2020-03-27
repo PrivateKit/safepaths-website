@@ -2,7 +2,7 @@
 title: Partners section
 #}
 
-{% extends "@templates/layouts/section.twig" %}
+{% embed "@templates/layouts/section.twig" %}
 
 {% set partners = site.data['partners.json'] %}
 
@@ -18,3 +18,5 @@ title: Partners section
   {% include '@templates/partials/team-list.twig' with { department } %}
 {% endfor %}
 {% endblock %}
+
+{% endembed %}

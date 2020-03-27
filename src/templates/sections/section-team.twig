@@ -2,7 +2,7 @@
 title: Team section
 #}
 
-{% extends "@templates/layouts/section.twig" %}
+{% embed "@templates/layouts/section.twig" %}
 
 {% set team = site.data['team.json'] %}
 {% set introParagraph = "Our team is composed of a consortium of epidemiologists, engineers, data scientists, digital privacy evangelists, professors and researchers from reputable institutions, including: MIT, Harvard, The Mayo Clinic, TripleBlind, EyeNetra, Ernst & Young and Link Ventures." %}
@@ -20,3 +20,5 @@ title: Team section
 {% endfor %}
 
 {% endblock %}
+
+{% endembed %}

@@ -2,7 +2,7 @@
 title: Basic section
 #}
 
-{% extends "@templates/layouts/section.twig" %}
+{% embed "@templates/layouts/section.twig" %}
 
 {% set news = site.data['news.json'].news %}
 
@@ -21,3 +21,5 @@ title: Basic section
   {% endfor %}
 </div>
 {% endblock %}
+
+{% endembed %}
