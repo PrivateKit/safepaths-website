@@ -1,0 +1,9 @@
+<ul class="footer-nav-list">
+  {% for item in footerNav.nav %}
+  <li>
+    <a href="{{ item.link }}" target="_blank" rel="noopener">
+      {{ item.label }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
