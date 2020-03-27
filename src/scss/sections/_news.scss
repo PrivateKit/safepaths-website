@@ -1,3 +1,5 @@
+$border: 1px solid $color-base;
+
 .news-content {
   @include mq($md) {
     display: flex;
@@ -6,18 +8,35 @@
 }
 
 .news-content-block {
-  margin-bottom: $sp-lg;
-
+  box-sizing: border-box;
   @include mq($md) {
     display: flex;
     width: columns(1, 2);
+
+    &:nth-child(odd) {
+      border-right: $border;
+    }
+
+    &:nth-child(even) {
+      .content-block-inner {
+        padding-left: $grid-gutter;
+      }
+    }
+
+    &:last-child {
+      .content-block-inner {
+        border-bottom: 0;
+      }
+    }
   }
 }
 
 .content-block-inner {
-  padding-bottom: $sp-lg;
+  border-bottom: $border;
+  margin-bottom: $grid-gutter;
+  padding-bottom: $grid-gutter;
 
   @include mq($md) {
-    margin-right: $grid-gutter;
+    padding-right: $grid-gutter;
   }
 }

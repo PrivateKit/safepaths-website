@@ -5,8 +5,9 @@
   background-image: none;
   border: 1px solid $color-base;
   border-radius: $br;
-  display: inline-flex;
+  display: flex;
   font-weight: $fw-bold;
+  justify-content: space-between;
 
   @include on-focus {
     background-color: $color-spot;

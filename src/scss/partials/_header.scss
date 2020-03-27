@@ -44,7 +44,9 @@
 
 .header-signup {
   @include mq($sm, $md) {
-    bottom: $sp-base;
+    bottom: $sp-md;
     position: fixed;
+    width: calc(100% - (2 * #{$sp-md}));
+    z-index: 10;
   }
 }
