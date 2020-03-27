@@ -24,6 +24,7 @@
 .topper-title {
   @include padding($sp-xl x);
   position: relative;
+  z-index: 1;
 
   @include mq($lg) {
     @include padding($sp-xxl x);
@@ -36,8 +37,6 @@
 
   h2 {
     @include giant;
-    position: relative;
-    z-index: 1;
   }
 }
 
@@ -45,8 +44,6 @@
   counter-reset: point;
   display: flex;
   flex-direction: column;
-  position: relative;
-  z-index: 1;
 
   @include mq($md) {
     flex-direction: row;
