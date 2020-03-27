@@ -2,7 +2,7 @@
 title: Basic section
 #}
 
-{% extends "@templates/layouts/section.twig" %}
+{% embed "@templates/layouts/section.twig" %}
 
 {% set introParagraph = "We are seeking strategic partners, cities to pilot Private Kit, financial support, software developers, and others with a passion for building this tool. Can you help us? Connect with <a href='http://forms.gle/3fzhfJkq8kbF7uf89' target='_blank' rel='noopener'>here</a>." %}
 
@@ -15,3 +15,5 @@ title: Basic section
     {% include '@templates/partials/intro-paragraph.twig' with {'paragraph': introParagraph} %}
 </div>
 {% endblock %}
+
+{% endembed %}
