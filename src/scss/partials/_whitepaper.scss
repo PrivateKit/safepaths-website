@@ -2,7 +2,12 @@
   @include padding(x $sp-md $sp-md);
   background-color: $color-white;
   background-image: none;
+  border: 2px solid transparent;
   display: block;
+
+  @include on-focus {
+    border-color: $color-spot;
+  }
 
   @include mq($sm, $md) {
     margin-bottom: $sp-lg;

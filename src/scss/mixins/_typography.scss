@@ -65,7 +65,7 @@
 }
 
 @mixin uppercase {
-  font-size: $fs-xs;
+  font-size: $fs-base;
   letter-spacing: $ls-loose;
   text-transform: uppercase;
 }
