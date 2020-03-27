@@ -13,10 +13,6 @@
     align-items: flex-start;
     flex-direction: row;
 
-    .section-header {
-      width: columns(2);
-    }
-
     .section-body {
       width: columns(6);
     }
@@ -26,5 +22,11 @@
 .section-header {
   @include mq($sm, $lg) {
     margin-bottom: $sp-lg;
+  }
+
+  @include mq($lg) {
+    position: sticky;
+    top: $sp-xl;
+    width: columns(2);
   }
 }

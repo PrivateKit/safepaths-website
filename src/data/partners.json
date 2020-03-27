@@ -1,16 +1,16 @@
 {
   "departments": [
     {
+      "inline": true,
       "members": [
-        { "name": "Justin Arcand" },
-        { "name": "Justin Arcand" },
-        { "name": "Justin Arcand" },
-        { "name": "Justin Arcand" },
-        { "name": "Justin Arcand" },
-        { "name": "Justin Arcand" },
-        { "name": "Justin Arcand" },
-        { "name": "Justin Arcand" },
-        { "name": "Justin Arcand" }
+        { "name": "The Camera Culture" },
+        { "name": "MIT Connection Science" },
+        { "name": "Digital Health & AI Research Collaborative" },
+        { "name": "Research Innovation Incubation Design Labs" },
+        { "name": "Somaiya Trust" },
+        { "name": "Somaiya Ayurvihar" },
+        { "name": "Mila - Quebec AI Institute" },
+        { "name": "Upstatement", "link": "https://upstatement.com" }
       ]
     }
   ]

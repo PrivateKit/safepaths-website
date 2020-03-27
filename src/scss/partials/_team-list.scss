@@ -30,19 +30,11 @@
   .member-list-inline & {
     display: inline-flex;
     width: auto;
-
-    &:not(:last-child):not(:nth-last-child(2)) {
-      &::after {
-        content: '/';
-        margin-left: $sp-base / 2;
-      }
-    }
   }
 }
 
 .member-content {
   @include padding($sp-base x);
-  border-top: 1px solid $color-base;
   margin-right: $grid-gutter / 2;
 
   @include mq($md) {
@@ -57,6 +49,7 @@
 }
 
 .member-name {
+  display: inline;
   font-weight: $fw-bold;
 }
 

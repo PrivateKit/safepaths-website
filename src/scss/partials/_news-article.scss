@@ -1,0 +1,9 @@
+.news-article--meta {
+  color: $color-base;
+}
+
+.news-article--headline {
+  @include mq($md) {
+    margin-right: $sp-lg;
+  }
+}

@@ -46,7 +46,7 @@ a {
   background-repeat: no-repeat;
   background-size: 100% 1px;
   color: $color-base;
-  display: inline-block;
+  display: inline;
   text-decoration: none;
 
   @include on-focus {

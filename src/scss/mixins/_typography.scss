@@ -48,6 +48,7 @@
 
 @mixin giant {
   font-size: $fs-lg;
+  font-weight: 500;
   letter-spacing: $ls-tight;
   line-height: 1.1;
 
@@ -57,6 +58,7 @@
 
   @include mq($lg) {
     font-size: $fs-giant;
+    font-weight: 400;
   }
 }
 

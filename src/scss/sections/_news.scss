@@ -1,0 +1,23 @@
+.news-content {
+  @include mq($md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.news-content-block {
+  margin-bottom: $sp-lg;
+
+  @include mq($md) {
+    display: flex;
+    width: columns(1, 2);
+  }
+}
+
+.content-block-inner {
+  padding-bottom: $sp-lg;
+
+  @include mq($md) {
+    margin-right: $grid-gutter;
+  }
+}
