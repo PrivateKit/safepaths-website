@@ -1,13 +1,15 @@
 <header class="header">
-  <h1 class="visually-hidden">Safe Paths</h1>
-  <div class="header-logo">
-    <a class="header-logo--link" href="/">
-      {% include '../../../public/static/svgs/logo.svg' %}
-    </a>
-    <span class="header-logo--tag">Made by MIT.</span>
-  </div>
-  
-  <div class="header-signup">
-    {% include 'link-button.twig' with {'label': 'Signup for updates', 'link': 'https://forms.gle/v5dTVptSAGa93Bh36', 'newTab': true} %}
+  <div class="header-content">
+    <h1 class="visually-hidden">Safe Paths</h1>
+    <div class="header-logo">
+      <a class="header-logo--link" href="/">
+        {% include '../../../public/static/svgs/logo.svg' %}
+      </a>
+      <span class="header-logo--tag">Made by MIT.</span>
+    </div>
+    
+    <div class="header-signup">
+      {% include 'link-button.twig' with {'label': 'Signup for updates', 'link': 'https://forms.gle/v5dTVptSAGa93Bh36', 'newTab': true} %}
+    </div>
   </div>
 </header>

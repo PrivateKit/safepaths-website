@@ -1,0 +1,9 @@
+@mixin site-padding {
+  @include margin(x auto);
+  @include padding(x $sp-md);
+
+  @include mq($md) {
+    @include padding(x $sp-xl);
+    max-width: $layout-max-width;
+  }
+}

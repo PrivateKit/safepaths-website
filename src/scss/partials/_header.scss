@@ -1,12 +1,15 @@
 .header {
-  @include padding($sp-md);
-  align-items: flex-start;
+  @include padding($sp-md x);
   border-bottom: 1px solid $color-border;
+  position: relative;
+}
+
+.header-content {
+  @include site-padding;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: $sp-lg;
-  position: relative;
 
   @include mq($md) {
     align-items: center;

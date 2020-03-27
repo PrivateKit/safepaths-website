@@ -9,15 +9,16 @@ $sans: Inter, sans-serif;
 
 // Font sizes
 $fs-base: 1rem;
-$fs-lg: 3rem;
 $fs-md: 1.6rem;
+$fs-lg: 2.6rem;
+$fs-giant: 5.2rem;
 
-$fs-h1: 3rem;
-$fs-h2: 2.7rem;
-$fs-h3: 2.1rem;
-$fs-h4: 1.8rem;
-$fs-h5: 1.6rem;
-$fs-h6: 1.2rem;
+$fs-h1: 3.4rem;
+$fs-h2: 3.2rem;
+$fs-h3: 1.3rem;
+$fs-h4: 1.2rem;
+$fs-h5: 1.1rem;
+$fs-h6: $fs-base;
 
 // Letter spacing
 $ls-tight: -0.045em;
@@ -27,6 +28,8 @@ $sp-base: 10px;
 $sp-sm: 15px;
 $sp-md: 20px;
 $sp-lg: 30px;
+$sp-xl: 60px;
+$sp-xxl: 140px;
 
 // Breakpoints
 $sm: 320px;
@@ -38,3 +41,13 @@ $br: 999rem;
 
 // Easings
 $outQuint: 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+
+// Layout
+$col-1: 25%;
+$col-2: 50%;
+$col-3: 75%;
+$col-4: 100%;
+
+$grid-gutter: $sp-lg;
+
+$layout-max-width: 1120px;

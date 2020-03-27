@@ -1,0 +1,18 @@
+.numbered-feature {
+  border-top: 1px solid $color-base;
+  counter-increment: point;
+
+  &::before {
+    @include margin($sp-base x);
+    content: '0' counter(point);
+    display: block;
+  }
+}
+
+.numbered-feature--title {
+  margin-bottom: $sp-md;
+
+  @include mq($md) {
+    margin-bottom: $sp-lg;
+  }
+}

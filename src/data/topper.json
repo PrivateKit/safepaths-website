@@ -1,0 +1,17 @@
+{
+  "title": "Can we slow the spread without giving up individual privacy?",
+  "features": [
+    {
+      "title": "Patient interview",
+      "description": "Instead of relying on memory, diagnosed patients can opt to provide their 28-day Private Kit: Safe Paths location trail to their health official."
+    },
+    {
+      "title": "Safe Places",
+      "description": "Using the web app Safe Places, the health official redacts personally identifiable information from the location trail."
+    },
+    {
+      "title": "Safe Paths",
+      "description": "Patient's redacted and blurred location trail is released. Private Kit: Safe Paths notifies users who came in close contact with a diagnosed patient. Healthy user's data never leaves their phone."
+    }
+  ]
+}
