@@ -9,6 +9,10 @@
 .footer-content {
   @include padding($sp-xl x);
   @include site-padding;
+
+  @include mq($lg) {
+    padding-top: $sp-xxl;
+  }
 }
 
 .footer-content--block {

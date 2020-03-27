@@ -54,12 +54,6 @@ a {
   }
 }
 
-// Canvas
-#canvas {
-  position: relative;
-  transform: translate(var(--x), var(--y));
-}
-
 // Visually hidden
 .visually-hidden {
   @include visually-hidden;

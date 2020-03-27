@@ -4,21 +4,42 @@
 
 .page-topper-content {
   @include site-padding;
+  position: relative;
+}
+
+.topper-canvas {
+  left: 50%;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+
+  @include mq(0, $md) {
+    display: none;
+  }
+
+  @include mq($md, $lg) {
+    transform: translateX(-50%);
+  }
 }
 
 .topper-title {
   @include padding($sp-xl x);
-
-  @include mq($md) {
-    @include padding($sp-xxl x);
-  }
+  position: relative;
 
   @include mq($lg) {
+    @include padding($sp-xxl x);
     max-width: $col-3;
+  }
+
+  @include mq($md, $lg) {
+    @include padding($sp-xl x ($sp-xxl * 2) x);
   }
 
   h2 {
     @include giant;
+    position: relative;
+    z-index: 1;
   }
 }
 
@@ -26,6 +47,8 @@
   counter-reset: point;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 
   @include mq($md) {
     flex-direction: row;
