@@ -8,6 +8,8 @@
   border-top: 1px solid $color-border;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 
   @include mq($lg) {
     align-items: flex-start;

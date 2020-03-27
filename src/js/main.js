@@ -22,8 +22,8 @@ function setup() {
 
 function circ(x, y, rad, opacity) {
   ctx.beginPath();
-  ctx.strokeStyle = `rgba(255, 219, 53, ${opacity})`;
-  ctx.lineWidth = 13;
+  ctx.strokeStyle = `rgba(52, 152, 252, ${opacity})`;
+  ctx.lineWidth = 1;
   ctx.arc(x, y, rad, 0, Math.PI * 2);
   ctx.stroke();
   ctx.closePath();
@@ -35,11 +35,11 @@ function offset(source, offset) {
 
 function animate() {
   window.requestAnimationFrame(animate);
-  frame++;
+  frame += 0.25;
 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  const circleOffset = offset(w / 2, 15);
+  const circleOffset = offset(w / 6, 15);
 
   for (let i = 0; i < circleOffset; i++) {
     const radius = ((i * (w / circleOffset) + frame) % w) / 2;

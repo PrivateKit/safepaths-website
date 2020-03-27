@@ -1,5 +1,7 @@
 .footer {
   font-size: $fs-xs;
+  position: relative;
+  z-index: 1;
 
   @include mq($lg) {
     font-size: $fs-base;
@@ -18,6 +20,10 @@
 .footer-content--block {
   display: flex;
   flex-wrap: wrap;
+
+  @include mq($lg) {
+    margin-left: columns(2);
+  }
 }
 
 .footer-content--col {

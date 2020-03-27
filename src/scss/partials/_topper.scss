@@ -8,18 +8,16 @@
 }
 
 .topper-canvas {
-  left: 50%;
   pointer-events: none;
-  position: fixed;
-  top: 0;
   z-index: 0;
 
-  @include mq(0, $md) {
+  @include mq(0, $lg) {
     display: none;
   }
 
-  @include mq($md, $lg) {
-    transform: translateX(-50%);
+  @include mq($lg) {
+    @include fixed(x);
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -33,7 +31,7 @@
   }
 
   @include mq($md, $lg) {
-    @include padding($sp-xl x ($sp-xxl * 2) x);
+    @include padding($sp-xl x $sp-xxl x);
   }
 
   h2 {
