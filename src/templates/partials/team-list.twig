@@ -20,7 +20,7 @@
             <div class="member-affiliation">{{ member.affiliation }}</div>
           {% endif %}
 
-          {% if not loop.last and department.inline %} / {% endif %}
+          {% if not loop.last and department.inline %}&nbsp;/{% endif %}
         </div>
       </li>
     {% endfor %}
