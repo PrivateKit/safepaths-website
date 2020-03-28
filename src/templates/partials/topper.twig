@@ -3,15 +3,17 @@
 
 <div class="page-topper">
   <div class="page-topper-content">
+
+    <div class="topper-art">
+      <canvas id="canvas" class="topper-canvas"></canvas>
+    </div>
     
     <div class="topper-title">
       <h2>{{ topper.title }}</h2>
     </div>
     
     <div class="topper-section">
-      <div class="topper-section--col topper-section--title">
-        <canvas id="canvas" class="topper-canvas"></canvas>
-      </div>
+      <div class="topper-section--col topper-section--title"></div>
       
       {% for feature in features %}
       <div class="topper-section--col topper-feature">

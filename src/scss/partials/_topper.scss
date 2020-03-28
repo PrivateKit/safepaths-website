@@ -7,6 +7,10 @@
   position: relative;
 }
 
+.topper-art {
+  margin-left: columns(6);
+}
+
 .topper-canvas {
   pointer-events: none;
   z-index: 0;
@@ -49,6 +53,8 @@
   counter-reset: point;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 
   @include mq($md) {
     flex-direction: row;

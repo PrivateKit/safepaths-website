@@ -2,7 +2,7 @@ import 'modernizr';
 
 const canvas = document.getElementById('canvas');
 
-const w = 900;
+const w = 1000;
 const h = (canvas.height = w);
 const ctx = canvas.getContext('2d');
 const scale = window.devicePixelRatio;
@@ -22,8 +22,8 @@ function setup() {
 
 function circ(x, y, rad, opacity) {
   ctx.beginPath();
-  ctx.strokeStyle = `rgba(145, 200, 255, ${opacity})`;
-  ctx.lineWidth = 1;
+  ctx.strokeStyle = `rgba(185, 220, 255, ${opacity})`;
+  ctx.lineWidth = 45.5;
   ctx.arc(x, y, rad, 0, Math.PI * 2);
   ctx.stroke();
   ctx.closePath();
