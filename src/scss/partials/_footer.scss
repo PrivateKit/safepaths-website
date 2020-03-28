@@ -32,7 +32,7 @@
   }
 
   @include mq($lg) {
-    width: columns(2, 8);
+    width: columns(2);
   }
 }
 
