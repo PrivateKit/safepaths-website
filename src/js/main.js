@@ -23,7 +23,7 @@ function setup() {
 function circ(x, y, rad, opacity) {
   ctx.beginPath();
   ctx.strokeStyle = `rgba(185, 220, 255, ${opacity})`;
-  ctx.lineWidth = 45.5;
+  ctx.lineWidth = 2;
   ctx.arc(x, y, rad, 0, Math.PI * 2);
   ctx.stroke();
   ctx.closePath();
@@ -35,7 +35,7 @@ function offset(source, offset) {
 
 function animate() {
   window.requestAnimationFrame(animate);
-  frame += 0.25;
+  frame += 0.2;
 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
