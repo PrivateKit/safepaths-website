@@ -20,10 +20,6 @@
 .footer-content--block {
   display: flex;
   flex-wrap: wrap;
-
-  @include mq($lg) {
-    margin-left: columns(2);
-  }
 }
 
 .footer-content--col {
