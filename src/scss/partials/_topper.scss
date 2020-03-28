@@ -28,11 +28,16 @@
 
   @include mq($lg) {
     @include padding($sp-xxl x);
+    margin-top: $sp-xl;
     max-width: $col-3;
   }
 
   @include mq($md, $lg) {
     @include padding($sp-xl x $sp-xxl x);
+  }
+
+  @include mq($xl) {
+    margin-top: $sp-xxl;
   }
 
   h2 {
