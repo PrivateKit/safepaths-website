@@ -4,6 +4,9 @@
 
   @include mq($md) {
     @include padding(x $sp-xl);
-    max-width: $layout-max-width;
+  }
+
+  @include mq($xl) {
+    @include padding(x $sp-xxl);
   }
 }

@@ -1,12 +1,13 @@
 .header {
-  @include padding($sp-md x);
-  border-bottom: 1px solid $color-border;
+  @include site-padding;
   position: relative;
+  z-index: 10;
 }
 
 .header-content {
-  @include site-padding;
+  @include padding($sp-md x);
   align-items: flex-start;
+  border-bottom: 1px solid $color-border;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

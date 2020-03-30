@@ -1,5 +1,7 @@
 .footer {
   font-size: $fs-xs;
+  position: relative;
+  z-index: 1;
 
   @include mq($lg) {
     font-size: $fs-base;
@@ -9,6 +11,10 @@
 .footer-content {
   @include padding($sp-xl x);
   @include site-padding;
+
+  @include mq($lg) {
+    padding-top: $sp-xxl;
+  }
 }
 
 .footer-content--block {
@@ -26,7 +32,7 @@
   }
 
   @include mq($lg) {
-    width: columns(2, 8);
+    width: columns(2);
   }
 }
 

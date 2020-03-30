@@ -1,3 +1,11 @@
+@mixin body-text {
+  font-size: $fs-base;
+
+  @include mq($xl) {
+    font-size: $fs-h5;
+  }
+}
+
 @mixin h1 {
   font-size: $fs-h2;
   letter-spacing: $ls-tight;
@@ -23,6 +31,10 @@
 
   @include mq($md) {
     font-size: $fs-h3;
+  }
+
+  @include mq($xl) {
+    font-size: 1.6rem;
   }
 }
 
@@ -58,7 +70,10 @@
 
   @include mq($lg) {
     font-size: $fs-giant;
-    font-weight: 400;
+  }
+
+  @include mq($xl) {
+    font-size: $fs-gargantuan;
   }
 }
 

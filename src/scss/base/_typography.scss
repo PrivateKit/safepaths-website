@@ -3,10 +3,10 @@ html {
 }
 
 body {
+  @include body-text;
   color: $color-base;
   font-family: $sans;
   font-kerning: normal;
-  font-size: $fs-base;
   line-height: 1.5;
 }
 
