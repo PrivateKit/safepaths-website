@@ -1,8 +1,8 @@
----
+{#
 title: Whitepapers section
----
+#}
 
-{% extends "@templates/layouts/section.twig" %}
+{% embed "@templates/layouts/section.twig" %}
 
 {% set whitepapers = site.data['whitepapers.json'].whitepapers %}
 
@@ -19,3 +19,5 @@ title: Whitepapers section
   {% endfor %}
 </div>
 {% endblock %}
+
+{% endembed %}
