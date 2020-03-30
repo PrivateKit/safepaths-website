@@ -1,0 +1,43 @@
+.footer {
+  font-size: $fs-xs;
+
+  @include mq($lg) {
+    font-size: $fs-base;
+  }
+}
+
+.footer-content {
+  @include padding($sp-xl x);
+  @include site-padding;
+}
+
+.footer-content--block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-content--col {
+  margin-bottom: $sp-lg;
+  width: columns(1, 2);
+
+  @include mq($md) {
+    margin-bottom: $sp-xl;
+    width: columns(1, 3);
+  }
+
+  @include mq($lg) {
+    width: columns(2, 8);
+  }
+}
+
+.footer-content--attribution {
+  p {
+    margin-bottom: $sp-base;
+  }
+}
+
+.footer-logo {
+  a {
+    background-image: none;
+  }
+}

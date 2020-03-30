@@ -1,0 +1,29 @@
+{% set footer = site.data['footer.json'].footer %}
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-content--block">
+      {% for footerNav in footer %}
+      <div class="footer-content--col">
+        {% include '@templates/partials/footer-nav.html' with {footerNav} %}
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="footer-content--block">
+      <div class="footer-content--col footer-content--attribution">
+        <div class="footer-logo">
+          <p>
+            <a href="https://mit.edu" target="_blank" rel="noopener">
+              {% include '../../../public/static/svgs/mit-logo.svg' %}
+            </a>
+          </p>
+        </div>
+        <p>Massachusetts Institute of Technology</p>
+        <p>Cambridge MA 02139-4307</p>
+        <p><a href="https://www.mit.edu/privacy/" target="_blank" rel="noopener">MIT Privacy Policy</a></p>
+        <p>©{{ "now"|date("Y") }}. SafePaths.</p>
+      </div>
+    </div>
+  </div>
+</footer>

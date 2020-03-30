@@ -1,0 +1,40 @@
+{
+  "footer": [
+    {
+      "nav": [
+        {
+          "label": "Support Safe Paths",
+          "link": "http://forms.gle/3fzhfJkq8kbF7uf89"
+        },
+        {
+          "label": "Donate",
+          "link": "https://giving.mit.edu/search/node/2741127"
+        }
+      ]
+    },
+    {
+      "nav": [
+        {
+          "label": "Related research",
+          "link": "https://splitlearning.github.io/"
+        },
+        {
+          "label": "Private Kit",
+          "link": "http://privatekit.mit.edu/"
+        }
+      ]
+    },
+    {
+      "nav": [
+        {
+          "label": "Signup for updates",
+          "link": "http://forms.gle/3fzhfJkq8kbF7uf89"
+        },
+        {
+          "label": "Contact us",
+          "link": "mailto:privatekit@media.mit.edu"
+        }
+      ]
+    }
+  ]
+}
