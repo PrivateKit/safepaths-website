@@ -7,12 +7,19 @@ $publicPath: '/';
 // Abstracts
 @import 'variables';
 @import 'mixins';
+@import 'functions';
 
 // Fonts
 @import 'fonts';
 
 // Base
 @import 'base';
+
+// Layouts
+@import 'layouts';
+
+// Sections
+@import 'sections';
 
 // Partials
 @import 'partials';

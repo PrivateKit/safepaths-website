@@ -1,0 +1,32 @@
+.page-section {
+  @include site-padding;
+  margin-bottom: $sp-xl;
+}
+
+.page-section-content {
+  @include padding($sp-xl x);
+  border-top: 1px solid $color-border;
+  display: flex;
+  flex-direction: column;
+
+  @include mq($lg) {
+    align-items: flex-start;
+    flex-direction: row;
+
+    .section-body {
+      width: columns(6);
+    }
+  }
+}
+
+.section-header {
+  @include mq($sm, $lg) {
+    margin-bottom: $sp-lg;
+  }
+
+  @include mq($lg) {
+    position: sticky;
+    top: $sp-xl;
+    width: columns(2);
+  }
+}

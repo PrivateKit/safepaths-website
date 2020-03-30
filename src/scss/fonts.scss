@@ -5,7 +5,9 @@
 */
 
 // Regular
-@include font-face($sans, 'Inter-Regular');
+@include font-face(Inter, 'Inter-Regular');
+@include font-face(Inter, 'Inter-Italic', $font-style: italic);
 
 // // Semibold
-@include font-face($sans, 'Inter-SemiBold', $font-weight: 600);
+@include font-face(Inter, 'Inter-Medium', $font-weight: 500);
+@include font-face(Inter, 'Inter-MediumItalic', $font-weight: 500, $font-style: italic);

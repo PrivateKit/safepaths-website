@@ -1,0 +1,24 @@
+{#
+title: Team section
+#}
+
+{% embed "@templates/layouts/section.twig" %}
+
+{% set team = site.data['team.json'] %}
+{% set introParagraph = "Our team is composed of a consortium of epidemiologists, engineers, data scientists, digital privacy evangelists, professors and researchers from reputable institutions, including: MIT, Harvard, The Mayo Clinic, TripleBlind, EyeNetra, Ernst & Young and Link Ventures." %}
+
+{% block header %}
+<h3 class="section-title">The Team</h3>
+{% endblock %}
+
+{% block content %}
+<div class="intro-content">
+  {% include '@templates/partials/intro-paragraph.twig' with {'paragraph': introParagraph} %}
+</div>
+{% for department in team.departments %}
+  {% include '@templates/partials/team-list.twig' with { department } %}
+{% endfor %}
+
+{% endblock %}
+
+{% endembed %}

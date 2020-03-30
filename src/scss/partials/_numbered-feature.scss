@@ -3,7 +3,7 @@
   counter-increment: point;
 
   &::before {
-    @include margin($sp-base x);
+    @include margin($sp-base x ($sp-base / 2) x);
     content: '0' counter(point);
     display: block;
   }

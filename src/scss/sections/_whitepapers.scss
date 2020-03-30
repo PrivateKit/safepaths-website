@@ -1,0 +1,15 @@
+.whitepapers-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+
+  @include mq($md) {
+    flex-direction: row;
+  }
+}
+
+.whitepapers-content-block {
+  @include mq($md) {
+    margin-right: $grid-gutter;
+  }
+}

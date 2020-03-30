@@ -20,7 +20,6 @@
 
 @mixin h3 {
   font-size: $fs-h4;
-  line-height: 1.1;
 
   @include mq($md) {
     font-size: $fs-h3;
@@ -49,6 +48,7 @@
 
 @mixin giant {
   font-size: $fs-lg;
+  font-weight: 500;
   letter-spacing: $ls-tight;
   line-height: 1.1;
 
@@ -58,5 +58,16 @@
 
   @include mq($lg) {
     font-size: $fs-giant;
+    font-weight: 400;
   }
+}
+
+@mixin paragraph {
+  @include h3;
+}
+
+@mixin uppercase {
+  font-size: $fs-base;
+  letter-spacing: $ls-loose;
+  text-transform: uppercase;
 }

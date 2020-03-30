@@ -1,0 +1,61 @@
+.team-list {
+  &:not(:last-child) {
+    margin-bottom: $sp-xl;
+  }
+}
+
+.team-list-title {
+  @include padding(x x $sp-md x);
+  @include uppercase;
+}
+
+.member-list,
+.member-list-inline {
+  @include margin(0);
+  @include padding(0);
+  list-style: none;
+}
+
+.member-list {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.member {
+  @include paragraph;
+  width: columns(1, 2);
+
+  @include mq($md) {
+    width: columns(1, 3);
+  }
+
+  .member-list-inline & {
+    display: inline;
+    line-height: 1.8;
+  }
+}
+
+.member-content {
+  @include padding($sp-base x);
+  margin-right: $grid-gutter / 2;
+
+  @include mq($md) {
+    margin-right: $grid-gutter;
+  }
+
+  .member-list-inline & {
+    @include margin(0);
+    @include padding(0);
+    border: 0;
+    display: inline;
+  }
+}
+
+.member-name {
+  display: inline;
+  font-weight: $fw-bold;
+}
+
+.member-affiliation {
+  font-size: $fs-base;
+}
