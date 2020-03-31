@@ -50,6 +50,7 @@
 
   h2 {
     @include giant;
+    margin-bottom: $sp-lg;
   }
 }
 

@@ -1,11 +1,21 @@
 <a
-  class="link--button"
+  class="link--button {{icon ? 'link--button-icon' : ''}}"
   href="{{link}}"
   {% if newTab %}
     target="_blank"
     rel="noopener"
   {% endif %}
 >
+  {# Before label icon #}
+  {% if icon %}
+    {% include '@templates/svgs/icon-'~icon~'.svg' %}
+  {% endif %}
+
+  {# Label #}
   {{label}}
-  {% include '@templates/svgs/arrow.svg' %}
+
+  {# Default: After label icon #}
+  {% if not icon %}
+    {% include '@templates/svgs/arrow.svg' %}
+  {% endif %}
 </a>

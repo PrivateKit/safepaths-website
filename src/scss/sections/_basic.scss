@@ -14,3 +14,19 @@
     width: columns(5, 6);
   }
 }
+
+.intro-section {
+  &:not(:last-child) {
+    margin-bottom: $sp-lg;
+
+    @include mq($md) {
+      margin-bottom: $sp-xl;
+    }
+  }
+}
+
+.section-art {
+  img {
+    @include size(100%, auto);
+  }
+}

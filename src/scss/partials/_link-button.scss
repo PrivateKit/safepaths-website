@@ -28,3 +28,23 @@
     margin-left: $sp-lg;
   }
 }
+
+.link--button-icon {
+  @include padding($sp-sm $sp-md);
+  @include paragraph;
+  background-color: $color-base;
+  color: $color-bg;
+  justify-content: flex-start;
+
+  @include mq($md) {
+    @include padding($sp-md $sp-lg);
+  }
+
+  @include mq($lg) {
+    @include padding($sp-lg $sp-xl);
+  }
+
+  svg {
+    @include margin(0 $sp-md 0 $sp-base);
+  }
+}

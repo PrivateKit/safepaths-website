@@ -9,10 +9,6 @@
     border-color: $color-spot;
   }
 
-  @include mq($sm, $md) {
-    margin-bottom: $sp-lg;
-  }
-
   @include mq($md) {
     @include padding(x $sp-lg $sp-lg);
   }
@@ -27,6 +23,7 @@
 
   svg {
     color: $color-spot;
+    margin-left: auto;
   }
 }
 
