@@ -1,22 +1,22 @@
 {
   "partners": [
-    { "name": "The Camera Culture", "logo": "/static/img/partners/camera-culture.jpg" },
+    { "name": "The Camera Culture", "logo": "/static/img/partners/camera-culture.png" },
     {
       "name": "MIT Connection Science",
-      "logo": "/static/img/partners/mit-connection-science.jpg"
+      "logo": "/static/img/partners/mit-connection-science.png"
     },
     {
       "name": "Digital Health & AI Research Collaborative",
-      "logo": "/static/img/partners/i-dar.jpg"
+      "logo": "/static/img/partners/i-dar.png"
     },
     {
       "name": "Research Innovation Incubation Design Labs",
-      "logo": "/static/img/partners/riidl.jpg"
+      "logo": "/static/img/partners/riidl.png"
     },
-    { "name": "Somaiya Trust", "logo": "/static/img/partners/somaiya.jpg" },
-    { "name": "Somaiya Medical", "logo": "/static/img/partners/somaiya-medical.jpg" },
-    { "name": "Mila - Quebec AI Institute", "logo": "/static/img/partners/mila.jpg" },
-    { "name": "Partner", "logo": "/static/img/partners/partner.jpg" },
+    { "name": "Somaiya Trust", "logo": "/static/img/partners/somaiya.png" },
+    { "name": "Somaiya Medical", "logo": "/static/img/partners/somaiya-medical.png" },
+    { "name": "Mila - Quebec AI Institute", "logo": "/static/img/partners/mila.png" },
+    { "name": "Partner", "logo": "/static/img/partners/partner.png" },
     {
       "name": "Upstatement",
       "logo": "/static/img/partners/upstatement.svg",
