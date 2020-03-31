@@ -54,7 +54,35 @@ a {
   }
 }
 
+// Images
+img {
+  @include size(100%);
+}
+
 // Visually hidden
 .visually-hidden {
   @include visually-hidden;
+}
+
+// Layout
+.intro-block {
+  @include padding(x $grid-gutter $grid-gutter x);
+
+  @include mq($sm, $md) {
+    width: 100%;
+  }
+}
+
+// Grid
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.grid-cell {
+  box-sizing: border-box;
+
+  @include mq($md) {
+    padding-right: $grid-gutter;
+  }
 }

@@ -1,17 +1,26 @@
 {
-  "departments": [
+  "partners": [
+    { "name": "The Camera Culture", "logo": "/static/img/partners/camera-culture.jpg" },
     {
-      "inline": true,
-      "members": [
-        { "name": "The Camera Culture" },
-        { "name": "MIT Connection Science" },
-        { "name": "Digital Health & AI Research Collaborative" },
-        { "name": "Research Innovation Incubation Design Labs" },
-        { "name": "Somaiya Trust" },
-        { "name": "Somaiya Ayurvihar" },
-        { "name": "Mila - Quebec AI Institute" },
-        { "name": "Upstatement", "link": "https://upstatement.com" }
-      ]
+      "name": "MIT Connection Science",
+      "logo": "/static/img/partners/mit-connection-science.jpg"
+    },
+    {
+      "name": "Digital Health & AI Research Collaborative",
+      "logo": "/static/img/partners/i-dar.jpg"
+    },
+    {
+      "name": "Research Innovation Incubation Design Labs",
+      "logo": "/static/img/partners/riidl.jpg"
+    },
+    { "name": "Somaiya Trust", "logo": "/static/img/partners/somaiya.jpg" },
+    { "name": "Somaiya Medical", "logo": "/static/img/partners/somaiya-medical.jpg" },
+    { "name": "Mila - Quebec AI Institute", "logo": "/static/img/partners/mila.jpg" },
+    { "name": "Partner", "logo": "/static/img/partners/partner.jpg" },
+    {
+      "name": "Upstatement",
+      "logo": "/static/img/partners/upstatement.svg",
+      "link": "https://upstatement.com"
     }
   ]
 }

@@ -1,0 +1,27 @@
+{#
+title: Basic section
+#}
+
+{% embed "@templates/layouts/section.twig"  %}
+
+{% block header %}
+<h3 class="section-title">The App</h3>
+{% endblock %}
+
+{% block content %}
+<div class="intro-content">
+  <p class="intro-paragraph">Remember where you&rsquo;ve been and see if you&rsquo;ve encountered anyone diagnosed with COVID-19. Designed with security as the No. 1 priority.</p>
+</div>
+
+<div class="intro-content section-art">
+  <img src="/static/img/app-screenshot.png" alt="Private Kit app screenshot" />
+</div>
+
+<p>*Please note both downloads are prototype versions, with significant upgrades being released this week. Add your email
+here, and we will notify you as updates are released. The app is now at "Phase 2" functionality. We have rolled out
+features that will now inform you if you've crossed paths with published data -- however the availability of published
+data is currently limited. Be watching for email updates, and we will notify you when more data will become available.
+We are currently working with several cities across the US and countries across the world for this.</p>
+{% endblock %}
+
+{% endembed %}
