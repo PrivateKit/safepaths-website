@@ -24,7 +24,8 @@ $border: 1px solid $color-base;
       }
     }
 
-    &:last-child {
+    &:last-child,
+    &:nth-last-child(2):nth-child(odd) {
       .content-block-inner {
         border-bottom: 0;
       }
@@ -33,9 +34,8 @@ $border: 1px solid $color-base;
 }
 
 .content-block-inner {
+  @include padding($grid-gutter x);
   border-bottom: $border;
-  margin-bottom: $grid-gutter;
-  padding-bottom: $grid-gutter;
 
   @include mq($md) {
     padding-right: $grid-gutter;

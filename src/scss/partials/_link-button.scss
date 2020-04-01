@@ -27,6 +27,16 @@
     color: $color-spot;
     margin-left: $sp-lg;
   }
+
+  &-primary {
+    background-color: $color-spot;
+    border-color: transparent;
+    color: $color-bg;
+
+    svg {
+      color: $color-bg;
+    }
+  }
 }
 
 .link--button-icon {

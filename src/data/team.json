@@ -1,6 +1,127 @@
 {
   "departments": [
     {
+      "members": [
+        {
+          "name": "Ramesh Raskar",
+          "affiliation": "MIT Media Lab"
+        },
+        {
+          "name": "John Werner",
+          "affiliation": "MIT Fellow/VC/TEDx/IIA"
+        },
+        {
+          "name": "Khahlil Louisy",
+          "affiliation": "MIT"
+        },
+        {
+          "name": "Sienna Leis",
+          "affiliation": "HKS"
+        },
+        {
+          "name": "Francesco Benedetti",
+          "affiliation": "MIT"
+        },
+        {
+          "name": "Susan Garfield",
+          "affiliation": "EY"
+        },
+        {
+          "name": "Steve Penrod",
+          "affiliation": "TripleBlind"
+        },
+        {
+          "name": "Ken Pugsley",
+          "affiliation": "Workday"
+        },
+        {
+          "name": "Rich Paret"
+        },
+        {
+          "name": "Abhishek Singh",
+          "affiliation": "MIT Media Lab"
+        },
+        {
+          "name": "Alina Clough",
+          "affiliation": "Harvard Kennedy School"
+        },
+        {
+          "name": "Vitor Pamplona",
+          "affiliation": "EyeNetra Inc"
+        },
+        {
+          "name": "Kristen Vilcans",
+          "affiliation": "MIT SDM"
+        },
+        {
+          "name": "Elizabeth Yekhtikian",
+          "affiliation": "Earned Media Consultants"
+        },
+        {
+          "name": "Yasaman Rajaee",
+          "affiliation": "MIT"
+        },
+        {
+          "name": "Suraj Kapa",
+          "affiliation": "Mayo Clinic"
+        },
+        {
+          "name": "Dazza Greenwood",
+          "affiliation": "MIT, CIVICS.com"
+        },
+        {
+          "name": "Russ Wilcox",
+          "affiliation": "Pillar VC"
+        },
+        {
+          "name": "Kaushal Jain",
+          "affiliation": "HBS"
+        },
+        {
+          "name": "Jeff Saviano",
+          "affiliation": "EY"
+        },
+        {
+          "name": "Vinit Nijhawan",
+          "affiliation": "Massachusetts Tech Transfer Center; Boston University; VentureCafe Foundation"
+        },
+        {
+          "name": "Greg Nadeau",
+          "affiliation": "Public Consulting Group"
+        },
+        {
+          "name": "Hiren Shukla",
+          "affiliation": "EY"
+        },
+        {
+          "name": "Tito Bottitta",
+          "affiliation": "Upstatement"
+        }
+      ]
+    },
+    {
+      "department": "Faculty Team",
+      "inline": true,
+      "members": [
+        {
+          "name": "Ramesh Raskar",
+          "link": "http://www.media.mit.edu/~raskar"
+        },
+        {
+          "name": "Sandy Pentland",
+          "link": "https://www.media.mit.edu/people/sandy/overview/"
+        },
+        {
+          "name": "Kent Larson",
+          "link": "https://www.media.mit.edu/people/kll/overview/"
+        },
+        {
+          "name": "Kevin Esvelt",
+          "link": "https://www.media.mit.edu/people/esvelt/overview/"
+        }
+      ]
+    },
+    {
       "department": "Mentors",
       "inline": true,
       "members": [

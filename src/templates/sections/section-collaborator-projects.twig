@@ -1,0 +1,23 @@
+{#
+title: Basic section
+#}
+
+{% set projects = site.data['collaborator-projects.json'] %}
+
+{% embed "@templates/layouts/section.twig" %}
+
+{% block header %}
+<h3 class="section-title">Collaborator Projects</h3>
+{% endblock %}
+
+{% block content %}
+<div class="grid">
+  {% for project in projects %}
+    <div class="project grid-cell">
+      {% include '@templates/partials/link-block.html' with {project} %}
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}
+
+{% endembed %}

@@ -1,6 +1,12 @@
 {
   "news": [
     {
+      "source": "The Wall Street Journal",
+      "headline": "MIT Researchers Launch Location-Tracking Effort for the New Coronavirus",
+      "link": "https://www.wsj.com/articles/mit-researchers-launch-location-tracking-effort-for-the-new-coronavirus-11585315674",
+      "date": "2020-03-27"
+    },
+    {
       "source": "Science",
       "headline": "Cellphone tracking could help stem the spread of coronavirus. Is privacy the price?",
       "link": "https://www.sciencemag.org/news/2020/03/cellphone-tracking-could-help-stem-spread-coronavirus-privacy-price",

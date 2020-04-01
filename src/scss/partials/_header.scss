@@ -21,17 +21,12 @@
 .header-logo {
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
-
-  @include mq($sm, $md) {
-    margin-bottom: $sp-base;
-  }
 }
 
 .header-logo--link {
   background-image: none;
+  display: flex;
   margin-right: $sp-md;
-  width: 50%;
 
   @include mq($md) {
     width: auto;
@@ -43,11 +38,28 @@
   }
 }
 
-.header-signup {
+.header-button-group {
   @include mq($sm, $md) {
     bottom: $sp-md;
     position: fixed;
     width: calc(100% - (2 * #{$sp-md}));
     z-index: 10;
+  }
+
+  @include mq($md) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.header-button {
+  @include mq($md) {
+    margin-left: $sp-md;
+  }
+}
+
+.header-button--donate {
+  @include mq($sm, $md) {
+    display: none;
   }
 }

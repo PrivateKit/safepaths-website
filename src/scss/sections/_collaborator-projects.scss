@@ -1,0 +1,8 @@
+.project {
+  margin-bottom: $sp-lg;
+  width: columns($grid-col-count);
+
+  @include mq($md) {
+    width: columns(4);
+  }
+}

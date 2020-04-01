@@ -32,3 +32,11 @@
     width: columns(2);
   }
 }
+
+.section-art {
+  margin-bottom: $sp-xl;
+
+  @include mq($md) {
+    margin-right: $grid-gutter;
+  }
+}
