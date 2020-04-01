@@ -1,10 +1,19 @@
-
 # Safe Paths [![Netlify Status](https://api.netlify.com/api/v1/badges/05d740ff-e5ec-48ce-86b9-3f24ec60be9d/deploy-status)](https://app.netlify.com/sites/safepaths/deploys) ![Prerequisite](https://img.shields.io/badge/node-10.13.0-blue.svg) ![Prerequisite](https://img.shields.io/badge/npm-6.4.1-blue.svg)
 
 > A new look for https://safepaths.mit.edu
 
 - **Website**: https://safepaths.netlify.com/
-- **Netlify Admin**: https://app.netlify.com/sites/safepaths/settings/general 
+- **Netlify Admin**: https://app.netlify.com/sites/safepaths/settings/general
+
+## 📜 About
+
+- Pages are authored in HTML or, optionally, [Twig](https://github.com/twigjs/twig.js/wiki) and live in the [`src/pages`](src/pages) directory. Pages are compiled to static HTML with `npm run build`.
+- Twig templates and partials live in [`src/templates`](src/templates).
+- Site data files live in [`src/data`](src/data). Drop any `.json`, `.yml`, or `.js` file exporting a function into this directory and access the resulting data in Twig templates using `{{ site.data['filename.js'] }}`.
+- Styles are authored with [Sass]() and live in [`src/scss`](src/scss).
+- Javascripts live in [`src/scss`](src/scss). They are transipiled at build time with [Babel](https://babeljs.io/) so that they can take advantage of [modern JS syntax](https://babeljs.io/docs/en/learn)
+- Static assets are bundled at build time using [Webpack](https://webpack.js.org/).
+- All source assets are pulled together with [Gulp](https://gulpjs.com/) and used to generate a static site in the `dist` directory.
 
 ## ✨ Install
 
@@ -50,10 +59,6 @@ This site is hosted on [Netlify](https://www.netlify.com/).
 
 Deployments to https://safepaths.netlify.com/ are triggered automatically by commits to the `master` branch via their [GitHub App](https://github.com/apps/netlify).
 
-## 📝 License
-
-Copyright &copy; 2020 Upstatement, LLC
-
 ---
 
-A [Puppy](https://github.com/Upstatement/puppy/wiki) 🐶 powered project
+A [Puppy](https://github.com/Upstatement/puppy) 🐶 powered project

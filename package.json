@@ -17,9 +17,6 @@
     "lint:fix-scss": "npm run lint:scss -- --fix",
     "format": "prettier --write **/*"
   },
-  "ava": {
-    "babel": false
-  },
   "lint-staged": {
     "*.{js,css,json,md}": [
       "prettier --write",
