@@ -11,10 +11,12 @@ title: Basic section
 {% endblock %}
 
 {% block content %}
-<div class="grid">
+<div class="news-content">
   {% for project in projects %}
-    <div class="project grid-cell">
-      {% include '@templates/partials/link-block.html' with {project} %}
+    <div class="news-content-block">
+      <div class="content-block-inner">
+        {% include '@templates/partials/link-block.html' with {project} %}
+      </div>
     </div>
   {% endfor %}
 </div>
