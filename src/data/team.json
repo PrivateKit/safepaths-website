@@ -7,6 +7,18 @@
           "affiliation": "MIT Media Lab"
         },
         {
+          "name": "Sandy Pentland",
+          "affiliation": "MIT"
+        },
+        {
+          "name": "Kent Larson",
+          "affiliation": "MIT"
+        },
+        {
+          "name": "Kevin Esvelt",
+          "affiliation": "MIT"
+        },
+        {
           "name": "John Werner",
           "affiliation": "MIT Fellow/VC/TEDx/IIA"
         },
@@ -96,85 +108,6 @@
         {
           "name": "Tito Bottitta",
           "affiliation": "Upstatement"
-        }
-      ]
-    },
-    {
-      "department": "Faculty Team",
-      "inline": true,
-      "members": [
-        {
-          "name": "Ramesh Raskar",
-          "link": "http://www.media.mit.edu/~raskar"
-        },
-        {
-          "name": "Sandy Pentland",
-          "link": "https://www.media.mit.edu/people/sandy/overview/"
-        },
-        {
-          "name": "Kent Larson",
-          "link": "https://www.media.mit.edu/people/kll/overview/"
-        },
-        {
-          "name": "Kevin Esvelt",
-          "link": "https://www.media.mit.edu/people/esvelt/overview/"
-        }
-      ]
-    },
-    {
-      "department": "Mentors",
-      "inline": true,
-      "members": [
-        { "name": "Amandeep Gill", "link": "https://www.weforum.org/people/amandeep-singh-gill" },
-        {
-          "name": "Bernardo Mariano Jr",
-          "link": "https://www.gartner.com/en/conferences/emea/symposium-spain/speakers/featured-speakers/bernardo-mariano"
-        },
-        {
-          "name": "Brian McClendon",
-          "link": "https://www.linkedin.com/in/brianmcclendon/"
-        },
-        {
-          "name": "Don Rucker",
-          "link": "https://www.hhs.gov/about/leadership/don-rucker/index.html"
-        },
-        {
-          "name": "Subbu Subramanian",
-          "link": "https://www.linkedin.com/in/drsubbu/"
-        }
-      ]
-    },
-    {
-      "department": "Faculty Mentors",
-      "inline": true,
-      "members": [
-        {
-          "name": "Ronald L. Rivest",
-          "link": "https://people.csail.mit.edu/rivest/"
-        },
-        {
-          "name": "Yael T. Kalai",
-          "link": "https://www.csail.mit.edu/person/yael-kalai"
-        },
-        {
-          "name": "Daniel J. Weitzner",
-          "link": "https://www.csail.mit.edu/person/daniel-weitzner"
-        },
-        {
-          "name": "Hal Abelson",
-          "link": "https://www.csail.mit.edu/person/hal-abelson"
-        },
-        {
-          "name": "Jonathan Gruber",
-          "link": "https://economics.mit.edu/faculty/gruberj"
-        },
-        {
-          "name": "Nickolai Zeldovich",
-          "link": "https://people.csail.mit.edu/nickolai/"
-        },
-        {
-          "name": "Adi Shamir",
-          "link": "http://www.wisdom.weizmann.ac.il/profile/scientists/shamir-profile.html"
         }
       ]
     }

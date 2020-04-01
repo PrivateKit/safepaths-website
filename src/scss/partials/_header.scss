@@ -21,6 +21,8 @@
 .header-logo {
   align-items: center;
   display: flex;
+  flex: 1 1 0;
+  flex-flow: row wrap;
 }
 
 .header-logo--link {
@@ -35,6 +37,13 @@
   svg {
     max-width: 200px;
     width: 100%;
+  }
+}
+
+.header-logo--tagline {
+  margin-bottom: 0;
+  @include mq($sm, $md) {
+    width: columns(8);
   }
 }
 
@@ -59,7 +68,7 @@
 }
 
 .header-button--donate {
-  @include mq($sm, $md) {
+  @include mq($sm, $lg) {
     display: none;
   }
 }
