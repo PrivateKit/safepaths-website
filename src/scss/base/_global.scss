@@ -54,6 +54,11 @@ a {
   }
 }
 
+// Strong
+strong {
+  font-weight: bold;
+}
+
 // Images
 img {
   @include size(100%);

@@ -1,17 +1,17 @@
 {
-  "title": "Can we slow the spread without giving up privacy?",
-  "desc": "Safe Paths is the only secure solution that allows users to privately track where they’ve been and check against verified public health data. It’s the first step in getting freedom back.",
+  "title": "Slow the spread without giving up privacy",
+  "desc": "Safe Paths is a community-led movement to develop free, open-source, privacy-by-design tools for individuals, public health officials, and larger communities to flatten the curve of COVID-19, reduce fear, and prevent a surveillance-state response to the pandemic.",
   "features": [
     {
-      "title": "Patient interview",
+      "title": "A Faster and More Accurate Patient Interview",
       "description": "Instead of relying on memory, diagnosed patients can opt to provide their 28-day Private Kit: Safe Paths location trail to their health official."
     },
     {
-      "title": "Safe Places",
+      "title": "Personal Information is Fully Removed",
       "description": "Using the web app Safe Places, the health official redacts personally identifiable information from the location trail."
     },
     {
-      "title": "Safe Paths",
+      "title": "Be Notified if you've Crossed Paths",
       "description": "Patient's redacted and blurred location trail is released. Private Kit: Safe Paths notifies users who came in close contact with a diagnosed patient. Healthy user's data never leaves their phone."
     }
   ]

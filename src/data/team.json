@@ -1,59 +1,113 @@
 {
   "departments": [
     {
-      "department": "Mentors",
-      "inline": true,
-      "members": [
-        { "name": "Amandeep Gill", "link": "https://www.weforum.org/people/amandeep-singh-gill" },
-        {
-          "name": "Bernardo Mariano Jr",
-          "link": "https://www.gartner.com/en/conferences/emea/symposium-spain/speakers/featured-speakers/bernardo-mariano"
-        },
-        {
-          "name": "Brian McClendon",
-          "link": "https://www.linkedin.com/in/brianmcclendon/"
-        },
-        {
-          "name": "Don Rucker",
-          "link": "https://www.hhs.gov/about/leadership/don-rucker/index.html"
-        },
-        {
-          "name": "Subbu Subramanian",
-          "link": "https://www.linkedin.com/in/drsubbu/"
-        }
-      ]
-    },
-    {
-      "department": "Faculty Mentors",
-      "inline": true,
       "members": [
         {
-          "name": "Ronald L. Rivest",
-          "link": "https://people.csail.mit.edu/rivest/"
+          "name": "Ramesh Raskar",
+          "affiliation": "MIT"
         },
         {
-          "name": "Yael T. Kalai",
-          "link": "https://www.csail.mit.edu/person/yael-kalai"
+          "name": "Sandy Pentland",
+          "affiliation": "MIT"
         },
         {
-          "name": "Daniel J. Weitzner",
-          "link": "https://www.csail.mit.edu/person/daniel-weitzner"
+          "name": "Kent Larson",
+          "affiliation": "MIT"
         },
         {
-          "name": "Hal Abelson",
-          "link": "https://www.csail.mit.edu/person/hal-abelson"
+          "name": "Kevin Esvelt",
+          "affiliation": "MIT"
         },
         {
-          "name": "Jonathan Gruber",
-          "link": "https://economics.mit.edu/faculty/gruberj"
+          "name": "John Werner",
+          "affiliation": "MIT, Link Ventures"
         },
         {
-          "name": "Nickolai Zeldovich",
-          "link": "https://people.csail.mit.edu/nickolai/"
+          "name": "Khahlil Louisy",
+          "affiliation": "MIT"
         },
         {
-          "name": "Adi Shamir",
-          "link": "http://www.wisdom.weizmann.ac.il/profile/scientists/shamir-profile.html"
+          "name": "Sienna Leis",
+          "affiliation": "Harvard University"
+        },
+        {
+          "name": "Francesco Benedetti",
+          "affiliation": "MIT"
+        },
+        {
+          "name": "Susan Garfield",
+          "affiliation": "Ernst & Young"
+        },
+        {
+          "name": "Steve Penrod",
+          "affiliation": "TripleBlind"
+        },
+        {
+          "name": "Ken Pugsley",
+          "affiliation": "Workday"
+        },
+        {
+          "name": "Rich Paret"
+        },
+        {
+          "name": "Abhishek Singh",
+          "affiliation": "MIT"
+        },
+        {
+          "name": "Alina Clough",
+          "affiliation": "Harvard Kennedy School"
+        },
+        {
+          "name": "Vitor Pamplona",
+          "affiliation": "EyeNetra Inc"
+        },
+        {
+          "name": "Kristen Vilcans",
+          "affiliation": "MIT"
+        },
+        {
+          "name": "Elizabeth Yekhtikian",
+          "affiliation": "Earned Media Consultants"
+        },
+        {
+          "name": "Yasaman Rajaee",
+          "affiliation": "MIT"
+        },
+        {
+          "name": "Suraj Kapa",
+          "affiliation": "Mayo Clinic"
+        },
+        {
+          "name": "Dazza Greenwood",
+          "affiliation": "MIT, CIVICS.com"
+        },
+        {
+          "name": "Russ Wilcox",
+          "affiliation": "Pillar VC"
+        },
+        {
+          "name": "Kaushal Jain",
+          "affiliation": "Harvard University"
+        },
+        {
+          "name": "Jeff Saviano",
+          "affiliation": "Ernst & Young"
+        },
+        {
+          "name": "Vinit Nijhawan",
+          "affiliation": "Massachusetts Technology Transfer Center, Boston University"
+        },
+        {
+          "name": "Greg Nadeau",
+          "affiliation": "Public Consulting Group"
+        },
+        {
+          "name": "Hiren Shukla",
+          "affiliation": "Ernst & Young"
+        },
+        {
+          "name": "Tito Bottitta",
+          "affiliation": "Upstatement"
         }
       ]
     }

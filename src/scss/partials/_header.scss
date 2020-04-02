@@ -21,33 +21,58 @@
 .header-logo {
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
+  flex: 1 1 auto;
+  flex-flow: row wrap;
 
-  @include mq($sm, $md) {
-    margin-bottom: $sp-base;
+  @include mq($md) {
+    flex: 1 1 0;
   }
 }
 
 .header-logo--link {
   background-image: none;
+  display: flex;
   margin-right: $sp-md;
-  width: 50%;
 
   @include mq($md) {
     width: auto;
   }
 
   svg {
-    max-width: 200px;
+    max-width: 250px;
     width: 100%;
   }
 }
 
-.header-signup {
+.header-logo--tagline {
+  margin-bottom: 0;
+  @include mq($sm, $md) {
+    width: columns(8);
+  }
+}
+
+.header-button-group {
   @include mq($sm, $md) {
     bottom: $sp-md;
     position: fixed;
     width: calc(100% - (2 * #{$sp-md}));
     z-index: 10;
+  }
+
+  @include mq($md) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.header-button {
+  @include mq($md) {
+    margin-left: $sp-md;
+  }
+}
+
+.header-button--donate {
+  @include mq($sm, $lg) {
+    display: none;
   }
 }
