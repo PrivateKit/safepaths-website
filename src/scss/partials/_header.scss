@@ -49,7 +49,9 @@
 }
 
 .header-logo--tagline {
+  font-size: $fs-base;
   margin-bottom: 0;
+
   @include mq($sm, $md) {
     width: columns(8);
   }
