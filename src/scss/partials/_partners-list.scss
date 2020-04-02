@@ -62,6 +62,7 @@
 
   a {
     @include size(100%);
+    align-items: center;
     background-image: none;
     display: flex;
     justify-content: center;
