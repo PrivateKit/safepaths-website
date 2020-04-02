@@ -3,5 +3,6 @@
 }
 
 .news-article--headline {
+  @include h3;
   display: inline;
 }
