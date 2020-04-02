@@ -59,6 +59,17 @@
     max-width: 200px;
     opacity: 0.7;
   }
+
+  a {
+    @include size(100%);
+    background-image: none;
+    display: flex;
+    justify-content: center;
+
+    @include on-focus {
+      opacity: 0.5;
+    }
+  }
 }
 
 .partners-list--two.partners-list--two {
