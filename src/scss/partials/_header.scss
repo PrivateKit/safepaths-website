@@ -21,8 +21,12 @@
 .header-logo {
   align-items: center;
   display: flex;
-  flex: 1 1 0;
+  flex: 1 1 auto;
   flex-flow: row wrap;
+
+  @include mq($md) {
+    flex: 1 1 0;
+  }
 }
 
 .header-logo--link {
