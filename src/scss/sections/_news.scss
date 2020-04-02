@@ -38,6 +38,6 @@ $border: 1px solid $color-base;
   border-bottom: $border;
 
   @include mq($md) {
-    padding-right: $grid-gutter;
+    @include padding(($grid-gutter * 2) $grid-gutter ($grid-gutter * 2) x);
   }
 }
