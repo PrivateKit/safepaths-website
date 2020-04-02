@@ -1,3 +1,5 @@
+{% set favicon = '/static/img/favicon' %}
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,6 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
     <meta name="description" content="{{ page.description | e('html_attr') }}">
+    <link rel="icon" 
+      type="image/png" 
+      href="{{favicon ~ '.png'}}">
+
+    <link rel="apple-touch-icon" sizes="120x120" href="{{favicon ~ '120' ~ '.png'}}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{favicon ~ '.png'}}">
+    <link rel="apple-touch-icon" sizes="167x167" href="{{favicon ~ '167' ~ '.png'}}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{favicon ~ '180' ~ '.png'}}">
+    <link rel="apple-touch-icon" href="{{favicon ~ '.png'}}">
 
     {% block styles %}
     <link rel="stylesheet" type="text/css" href="{{ puppy.assetUrl('main.css') }}">
