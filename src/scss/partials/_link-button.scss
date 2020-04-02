@@ -47,7 +47,7 @@
   justify-content: flex-start;
 
   @include mq($lg) {
-    @include padding($sp-lg $sp-xl);
+    @include padding(x $sp-xl);
   }
 
   svg {

@@ -71,14 +71,10 @@
   @include mq($lg) {
     font-size: $fs-giant;
   }
-
-  @include mq($xl) {
-    font-size: $fs-gargantuan;
-  }
 }
 
 @mixin paragraph {
-  @include h3;
+  @include h4;
 }
 
 @mixin uppercase {

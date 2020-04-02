@@ -7,6 +7,14 @@
           "affiliation": "MIT"
         },
         {
+          "name": "Steve Penrod",
+          "affiliation": "TripleBlind"
+        },
+        {
+          "name": "Ken Pugsley",
+          "affiliation": "Workday"
+        },
+        {
           "name": "Sandy Pentland",
           "affiliation": "MIT"
         },
@@ -37,14 +45,6 @@
         {
           "name": "Susan Garfield",
           "affiliation": "Ernst & Young"
-        },
-        {
-          "name": "Steve Penrod",
-          "affiliation": "TripleBlind"
-        },
-        {
-          "name": "Ken Pugsley",
-          "affiliation": "Workday"
         },
         {
           "name": "Rich Paret"
@@ -107,7 +107,8 @@
         },
         {
           "name": "Tito Bottitta",
-          "affiliation": "Upstatement"
+          "affiliation": "Upstatement",
+          "link": "https://upstatement.com/"
         }
       ]
     }

@@ -24,6 +24,10 @@
   flex: 1 1 auto;
   flex-flow: row wrap;
 
+  @include mq($sm, $md) {
+    flex-direction: column;
+  }
+
   @include mq($md) {
     flex: 1 1 0;
   }
@@ -45,7 +49,9 @@
 }
 
 .header-logo--tagline {
+  font-size: $fs-base;
   margin-bottom: 0;
+
   @include mq($sm, $md) {
     width: columns(8);
   }

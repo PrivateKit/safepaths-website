@@ -56,7 +56,33 @@
 
   img {
     height: auto;
-    max-width: 130px;
+    max-width: 200px;
     opacity: 0.7;
+  }
+
+  a {
+    @include size(100%);
+    align-items: center;
+    background-image: none;
+    display: flex;
+    justify-content: center;
+
+    @include on-focus {
+      opacity: 0.5;
+    }
+  }
+}
+
+.partners-list--two.partners-list--two {
+  li {
+    border-bottom: 0;
+
+    @include mq($md) {
+      width: columns(1, 2);
+    }
+  }
+
+  img {
+    opacity: 1;
   }
 }

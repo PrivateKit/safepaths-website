@@ -19,6 +19,7 @@
   @include uppercase;
   color: $color-base;
   display: flex;
+  font-size: $fs-base;
   justify-content: space-between;
 
   svg {

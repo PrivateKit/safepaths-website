@@ -6,13 +6,19 @@
     @include margin($sp-base x ($sp-base / 2) x);
     content: '0' counter(point);
     display: block;
+    font-size: $fs-base;
   }
 }
 
 .numbered-feature--title {
+  @include h4;
   margin-bottom: $sp-md;
 
   @include mq($md) {
     margin-bottom: $sp-lg;
   }
+}
+
+.numbered-feature--desc {
+  font-size: $fs-base;
 }

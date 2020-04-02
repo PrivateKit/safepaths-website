@@ -48,7 +48,13 @@
 }
 
 .footer-logo {
+  max-width: 250px;
+
   a {
     background-image: none;
+  }
+
+  svg {
+    @include size(100%);
   }
 }

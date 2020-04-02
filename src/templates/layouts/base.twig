@@ -1,10 +1,37 @@
+{% set siteUrl = 'https://covidsafepaths.org' %}
+{% set favicon = '/static/img/favicon' %}
+{% set ogImage = siteUrl ~ '/static/img/og-image.jpg' %}
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
     <meta name="description" content="{{ page.description | e('html_attr') }}">
+
+    {# Open Graph #}
+    <meta property="og:title" content="COVID SafePaths" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{siteUrl}}" />
+    <meta property="og:image" content="{{ogImage}}" />
+
+    {# Twitter Card #}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@covidsafepaths">
+    <meta name="twitter:title" content="COVID SafePaths">
+    <meta name="twitter:description" content="Safe Paths is a community-led movement to develop free, open-source, privacy-by-design tools for individuals, public health officials, and larger communities to flatten the curve of COVID-19, reduce fear, and prevent a surveillance-state response to the pandemic.">
+    <meta name="twitter:image" content="{{ogImage}}">
+
+    <link rel="icon" 
+      type="image/png" 
+      href="{{favicon ~ '.png'}}">
+
+    <link rel="apple-touch-icon" sizes="120x120" href="{{favicon ~ '120' ~ '.png'}}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{favicon ~ '.png'}}">
+    <link rel="apple-touch-icon" sizes="167x167" href="{{favicon ~ '167' ~ '.png'}}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{favicon ~ '180' ~ '.png'}}">
+    <link rel="apple-touch-icon" href="{{favicon ~ '.png'}}">
 
     {% block styles %}
     <link rel="stylesheet" type="text/css" href="{{ puppy.assetUrl('main.css') }}">
