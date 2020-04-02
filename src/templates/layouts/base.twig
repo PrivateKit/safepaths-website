@@ -1,4 +1,5 @@
 {% set favicon = '/static/img/favicon' %}
+{% set ogImage = '/static/img/og-image.jpg' %}
 
 <!DOCTYPE html>
 <html>
@@ -7,6 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
     <meta name="description" content="{{ page.description | e('html_attr') }}">
+
+    {# Open Graph #}
+    <meta property="og:title" content="COVID SafePaths" />
+    <meta property="og:url" content="https://covidsafepaths.org/" />
+    <meta property="og:image" content="{{ogImage}}" />
+
+    {# Twitter Card #}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@covidsafepaths">
+    <meta name="twitter:title" content="COVID SafePaths">
+    <meta name="twitter:description" content="Safe Paths is a community-led movement to develop free, open-source, privacy-by-design tools for individuals, public health officials, and larger communities to flatten the curve of COVID-19, reduce fear, and prevent a surveillance-state response to the pandemic.">
+    <meta name="twitter:image" content="{{ogImage}}">
+
     <link rel="icon" 
       type="image/png" 
       href="{{favicon ~ '.png'}}">
