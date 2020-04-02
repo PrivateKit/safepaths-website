@@ -21,10 +21,6 @@
       width: columns(6);
     }
   }
-
-  @include mq($xl) {
-    @include padding($sp-xxl x);
-  }
 }
 
 .section-header {

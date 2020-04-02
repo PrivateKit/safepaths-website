@@ -56,7 +56,21 @@
 
   img {
     height: auto;
-    max-width: 130px;
+    max-width: 200px;
     opacity: 0.7;
+  }
+}
+
+.partners-list--two.partners-list--two {
+  li {
+    border-bottom: 0;
+
+    @include mq($md) {
+      width: columns(1, 2);
+    }
+  }
+
+  img {
+    opacity: 1;
   }
 }

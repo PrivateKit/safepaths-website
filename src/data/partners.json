@@ -1,22 +1,10 @@
 {
   "partners": [
-    { "name": "The Camera Culture", "logo": "/static/img/partners/camera-culture.png" },
     {
-      "name": "MIT Connection Science",
-      "logo": "/static/img/partners/mit-connection-science.png"
+      "name": "TripleBlind",
+      "logo": "/static/img/partners/triple-blind.png",
+      "link": "https://tripleblind.market"
     },
-    {
-      "name": "Digital Health & AI Research Collaborative",
-      "logo": "/static/img/partners/i-dar.png"
-    },
-    {
-      "name": "Research Innovation Incubation Design Labs",
-      "logo": "/static/img/partners/riidl.png"
-    },
-    { "name": "Somaiya Trust", "logo": "/static/img/partners/somaiya.png" },
-    { "name": "Somaiya Medical", "logo": "/static/img/partners/somaiya-medical.png" },
-    { "name": "Mila - Quebec AI Institute", "logo": "/static/img/partners/mila.png" },
-    { "name": "Partner", "logo": "/static/img/partners/partner.png" },
     {
       "name": "Upstatement",
       "logo": "/static/img/partners/upstatement.svg",
