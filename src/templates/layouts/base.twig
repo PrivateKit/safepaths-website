@@ -1,5 +1,6 @@
+{% set siteUrl = 'https://covidsafepaths.org' %}
 {% set favicon = '/static/img/favicon' %}
-{% set ogImage = '/static/img/og-image.jpg' %}
+{% set ogImage = siteUrl ~ '/static/img/og-image.jpg' %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +12,8 @@
 
     {# Open Graph #}
     <meta property="og:title" content="COVID SafePaths" />
-    <meta property="og:url" content="https://covidsafepaths.org/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{siteUrl}}" />
     <meta property="og:image" content="{{ogImage}}" />
 
     {# Twitter Card #}
