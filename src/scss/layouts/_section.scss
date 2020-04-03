@@ -33,10 +33,6 @@
     top: $sp-xl;
     width: columns(2);
   }
-
-  @include mq($xl) {
-    top: $sp-xxl;
-  }
 }
 
 .section-art {
