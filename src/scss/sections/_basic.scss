@@ -29,4 +29,11 @@
   img {
     @include size(100%, auto);
   }
+
+  figcaption {
+    @include margin($sp-base x);
+    @include padding(x $sp-base);
+    border-left: 1px solid $color-base;
+    font-size: $fs-xs;
+  }
 }
