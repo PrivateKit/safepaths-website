@@ -4,7 +4,7 @@ title: Basic section
 
 {% embed "@templates/layouts/section.twig" %}
 
-{% set news = site.data['news.json'] %}
+{% set news = site.data['news.yaml'] %}
 
 {% block header %}
 <h3 class="section-title">{{news.title}}</h3>
