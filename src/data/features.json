@@ -1,14 +1,18 @@
-[
-  {
-    "title": "A Faster and More Accurate Patient Interview",
-    "description": "Instead of relying on memory, diagnosed patients can opt to provide their 28-day <strong>Private Kit: Safe Paths</strong> location trail to their health official."
-  },
-  {
-    "title": "Personal Information is Fully Removed",
-    "description": "Using the web app <strong>Safe Places</strong>, the health official redacts personally identifiable information from the location trail."
-  },
-  {
-    "title": "Be Notified if you've Crossed Paths",
-    "description": "Patient's redacted and blurred location trail is released. <strong>Private Kit: Safe Paths</strong> notifies users who came in close contact with a diagnosed patient. Healthy user's data never leaves their phone."
-  }
-]
+{
+  "title": "The App",
+  "intro": "Be notified if you if you've been potentially exposed to COVID-19. Designed with privacy as the No. 1 priority.",
+  "features": [
+    {
+      "title": "A Faster and More Accurate Patient Interview",
+      "description": "Instead of relying on memory, diagnosed patients can opt to provide their 28-day <strong>Private Kit: Safe Paths</strong> location trail to their health official."
+    },
+    {
+      "title": "Personal Information is Fully Removed",
+      "description": "Using the web app <strong>Safe Places</strong>, the health official redacts personally identifiable information from the location trail."
+    },
+    {
+      "title": "Be Notified if you've Crossed Paths",
+      "description": "Patient's redacted and blurred location trail is released. <strong>Private Kit: Safe Paths</strong> notifies users who came in close contact with a diagnosed patient. Healthy user's data never leaves their phone."
+    }
+  ]
+}

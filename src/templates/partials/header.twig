@@ -1,3 +1,15 @@
+{% set donate = {
+  "label": "Donate",
+  "link": "https://giving.mit.edu/search/node/2741127"
+  } 
+%}
+
+{% set signup = {
+  "label": "Signup for updates",
+  "link": "https://forms.gle/v5dTVptSAGa93Bh36"
+  } 
+%}
+
 <header class="header">
   <div class="header-content">
     <h1 class="visually-hidden">Safe Paths</h1>
@@ -9,12 +21,17 @@
     </div>
     
     <div class="header-button-group">
-      <div class="header-button header-button--donate">
-        {% include 'link-button.twig' with {'label': 'Donate', 'link': 'https://giving.mit.edu/search/node/2741127', 'newTab': true, 'primary': true} %}
-      </div>
+      {% if donate %}
+        <div class="header-button header-button--donate">
+          {% include 'link-button.twig' with {'label': donate.label, 'link': donate.link, 'newTab': true, 'primary': true} %}
+        </div>
+      {% endif %}
+
+      {% if signup %}
       <div class="header-button">
-        {% include 'link-button.twig' with {'label': 'Signup for updates', 'link': 'https://forms.gle/v5dTVptSAGa93Bh36', 'newTab': true} %}
+        {% include 'link-button.twig' with {'label': signup.label, 'link': signup.link, 'newTab': true} %}
       </div>
+      {% endif %}
     </div>
   </div>
 </header>

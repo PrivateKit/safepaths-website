@@ -1,5 +1,5 @@
-<ul class="partners-list {{partners.length == 2 ? 'partners-list--two' : ''}}">
-  {% for partner in partners %}
+<ul class="partners-list {{partners.partners.length == 2 ? 'partners-list--two' : ''}}">
+  {% for partner in partners.partners %}
   <li>
     {% if partner.link %}
       <a href="{{partner.link}}" target="_blank" rel="noopener">

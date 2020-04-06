@@ -7,12 +7,12 @@ title: Team section
 {% set team = site.data['team.json'] %}
 
 {% block header %}
-<h3 class="section-title">The Team</h3>
+<h3 class="section-title">{{team.title}}</h3>
 {% endblock %}
 
 {% block content %}
 <div class="intro-content">
-  <p class="intro-paragraph">Our team is composed of a consortium of epidemiologists, engineers, data scientists, digital privacy evangelists, professors and researchers from reputable institutions.</p>
+  <p class="intro-paragraph">{{team.intro}}</p>
 </div>
 {% for department in team.departments %}
   {% include '@templates/partials/team-list.twig' with { department } %}

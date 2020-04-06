@@ -4,14 +4,14 @@ title: Partners section
 
 {% embed "@templates/layouts/section.twig" %}
 
-{% set partners = site.data['partners.json'].partners %}
+{% set partners = site.data['partners.json'] %}
 
 {% block header %}
-<h3 class="section-title">Partners</h3>
+<h3 class="section-title">{{partners.title}}</h3>
 {% endblock %}
 
 {% block content %}
-{% include '@templates/partials/partners-list.html' with {partners} %}
+{% include '@templates/partials/partners-list.html' with {partners.partners} %}
 {% endblock %}
 
 {% endembed %}
