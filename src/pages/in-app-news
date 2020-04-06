@@ -1,0 +1,17 @@
+---
+title: COVID SafePaths: In-App Newsfeed
+---
+
+{% extends "@templates/layouts/base.twig" %}
+
+{% block header %}
+  {% include '@templates/partials/header.twig' %}
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}
