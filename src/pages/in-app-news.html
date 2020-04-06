@@ -2,16 +2,22 @@
 title: COVID SafePaths - In-App Newsfeed
 ---
 
-{% extends "@templates/layouts/base.twig" %}
+{% extends "@templates/layouts/basic-page.twig" %}
 
-{% block header %}
-  {% include '@templates/partials/header.twig' %}
+{% set news = site.data['news.json'].news %}
+
+{% block basicHeader %}
+<h2>In the news</h2>
 {% endblock %}
 
-{% block content %}
-
-{% endblock %}
-
-{% block footer %}
-
+{% block basicBody %}
+<div class="news-content">
+  {% for article in news %}
+    <div class="news-content-block">
+      <div class="content-block-inner">
+        {% include '@templates/partials/news-article.html' with {article} %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
 {% endblock %}

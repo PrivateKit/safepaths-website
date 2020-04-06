@@ -1,0 +1,7 @@
+.basic-page--header {
+  @include padding($sp-xl x);
+}
+
+.basic-page--content {
+  @include site-padding;
+}

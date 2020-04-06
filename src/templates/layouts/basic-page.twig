@@ -1,0 +1,19 @@
+{% extends '@templates/layouts/base.twig' %}
+
+{% block header %} 
+  {% include '@templates/partials/header.twig' %}
+{% endblock %}
+
+{% block content %}
+<div class="basic-page--header">
+  <div class="basic-page--content">
+    {% block basicHeader %} {% endblock %}
+  </div>
+</div>
+
+<div class="basic-page--body">
+  <div class="basic-page--content">
+    {% block basicBody %} {% endblock %}
+  </div>
+</div>
+{% endblock %}
