@@ -1,0 +1,26 @@
+title: In the news
+news:
+  - source: The Wall Street Journal
+    headline: MIT Researchers Launch Location-Tracking Effort for the New Coronavirus
+    link: https://www.wsj.com/articles/mit-researchers-launch-location-tracking-effort-for-the-new-coronavirus-11585315674
+    date: 2020-03-27
+  - source: Science
+    headline: Cellphone tracking could help stem the spread of coronavirus. Is privacy the price?
+    link: https://www.sciencemag.org/news/2020/03/cellphone-tracking-could-help-stem-spread-coronavirus-privacy-price
+    date: 2020-03-22
+  - source: Indiatimes
+    headline: Ramesh Raskar's MIT Team Builds App That Tells If Someone's Infected With COVID-19 Near You
+    link: https://www.indiatimes.com/technology/news/ramesh-raskars-mit-team-builds-app-that-tells-if-someones-infected-with-covid-19-near-you-508804.html
+    date: 2020-03-19
+  - source: Fast Company
+    headline: An app for tracking coronavirus in your community is almost here
+    link: https://www.fastcompany.com/90478703/an-app-for-tracking-coronavirus-in-your-community-is-almost-here
+    date: 2020-03-19
+  - source: MIT Technology Review
+    headline: A New App Would Say If You're Crossed Paths With Someone Who Is Infected
+    link: https://www.technologyreview.com/s/615372/coronavirus-infection-tests-app-pandemic-location-privacy/
+    date: 2020-03-17
+  - source: Wired
+    headline: Phones Could Track the Spread of Covid-19. Is it a Good Idea?
+    link: https://www.wired.com/story/phones-track-spread-covid19-good-idea/
+    date: 2020-03-15

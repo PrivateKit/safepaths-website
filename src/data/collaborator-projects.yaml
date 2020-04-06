@@ -1,0 +1,11 @@
+title: Collaborator Projects
+projects:
+  - name: OpenMined
+    desc: is providing free open-source support to protect their user's data privacy.
+    link: https://www.openmined.org/
+  - name: Covid Watch
+    desc: is providing open-source Bluetooth proximity data in an anonymized way and working with <a href='https://www.coepi.org/' target='_blank' rel='noopener'>CoEpi</a> for community epidemiology.
+    link: https://www.covid-watch.org/
+  - name: Covid ActNow
+    desc: is a visualization of how interventions affect the impact of Corona Virus across each US State and County.
+    link: https://covidactnow.org/

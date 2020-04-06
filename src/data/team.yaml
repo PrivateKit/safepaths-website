@@ -1,0 +1,64 @@
+title: The Team
+intro: Our team is composed of a consortium of epidemiologists, engineers, data scientists,
+  digital privacy evangelists, professors and researchers from reputable institutions.
+departments:
+  - members:
+      - name: Ramesh Raskar
+        affiliation: MIT
+      - name: Greg Nadeau
+        affiliation: Public Consulting Group
+      - name: Steve Penrod
+        affiliation: TripleBlind
+      - name: Ken Pugsley
+        affiliation: Workday
+      - name: Sandy Pentland
+        affiliation: MIT
+      - name: Kent Larson
+        affiliation: MIT
+      - name: Kevin Esvelt
+        affiliation: MIT
+      - name: John Werner
+        affiliation: MIT, Link Ventures
+      - name: Khahlil Louisy
+        affiliation: MIT
+      - name: Sienna Leis
+        affiliation: Harvard University
+      - name: Francesco Benedetti
+        affiliation: MIT
+      - name: Susan Garfield
+        affiliation: Ernst & Young
+      - name: Rich Paret
+      - name: Abhishek Singh
+        affiliation: MIT
+      - name: Alina Clough
+        affiliation: Harvard Kennedy School
+      - name: Vitor Pamplona
+        affiliation: EyeNetra Inc
+      - name: Kristen Vilcans
+        affiliation: MIT
+      - name: Elizabeth Yekhtikian
+        affiliation: Earned Media Consultants
+      - name: Yasaman Rajaee
+        affiliation: MIT
+      - name: Suraj Kapa
+        affiliation: Mayo Clinic
+      - name: Dazza Greenwood
+        affiliation: MIT, CIVICS.com
+      - name: Russ Wilcox
+        affiliation: Pillar VC
+      - name: Kaushal Jain
+        affiliation: Harvard University
+      - name: Jeff Saviano
+        affiliation: Ernst & Young
+      - name: Vinit Nijhawan
+        affiliation: Massachusetts Technology Transfer Center, Boston University
+      - name: Hiren Shukla
+        affiliation: Ernst & Young
+      - name: A.J. Pape
+        affiliation: Impact Leadership Network
+      - name: Luba Greenwood
+        affiliation: Dana Farber
+      - name: Rachel Barbar
+      - name: Tito Bottitta
+        affiliation: Upstatement
+        link: https://upstatement.com/

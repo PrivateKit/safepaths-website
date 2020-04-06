@@ -4,15 +4,15 @@ title: Basic section
 
 {% embed "@templates/layouts/section.twig" %}
 
-{% set news = site.data['news.json'].news %}
+{% set news = site.data['news.yaml'] %}
 
 {% block header %}
-<h3 class="section-title">In the news</h3>
+<h3 class="section-title">{{news.title}}</h3>
 {% endblock %}
 
 {% block content %}
 <div class="news-content">
-  {% for article in news %}
+  {% for article in news.news %}
     <div class="news-content-block">
       <div class="content-block-inner">
         {% include '@templates/partials/news-article.html' with {article} %}

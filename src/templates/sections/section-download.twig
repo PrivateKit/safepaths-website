@@ -2,17 +2,17 @@
 title: Basic section
 #}
 
-{% set features = site.data['features.json'] %}
+{% set features = site.data['features.yaml'] %}
 
 {% embed "@templates/layouts/section.twig"  %}
 
 {% block header %}
-<h3 class="section-title">The App</h3>
+<h3 class="section-title">{{features.title}}</h3>
 {% endblock %}
 
 {% block content %}
 <div class="intro-content">
-  <p class="intro-paragraph">Be notified if you if you've been potentially exposed to COVID-19. Designed with privacy as the No. 1 priority.</p>
+  <p class="intro-paragraph">{{features.intro}}</p>
 </div>
 
 <figure class="section-art">
@@ -23,7 +23,7 @@ title: Basic section
 </figure>
 
 <div class="topper-section">
-  {% for feature in features %}
+  {% for feature in features.features %}
   <div class="topper-section--col topper-feature">
     {% include '@templates/partials/numbered-feature.twig' with {
       'title': feature.title, 
