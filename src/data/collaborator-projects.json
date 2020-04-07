@@ -13,5 +13,10 @@
     "name": "Covid ActNow",
     "desc": "is a visualization of how interventions affect the impact of Corona Virus across each US State and County.",
     "link": "https://covidactnow.org/"
+  },
+  {
+    "name": "Corona Trace",
+    "desc": "Helps you instantly & anonymously learn if you’ve come into contact with someone infected with COVID-19.",
+    "link": "https://www.coronatrace.org/"
   }
 ]
