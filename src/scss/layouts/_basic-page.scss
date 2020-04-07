@@ -5,3 +5,11 @@
 .basic-page--content {
   @include site-padding;
 }
+
+.basic-section-content {
+  @include padding($sp-xl x);
+}
+
+.no-updates {
+  text-align: center;
+}
