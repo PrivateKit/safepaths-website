@@ -38,6 +38,20 @@
   }
 }
 
+@mixin fs-h3 {
+  font-size: $fs-md;
+  letter-spacing: $ls-tight;
+  line-height: 1.1;
+
+  @include mq($md) {
+    font-size: $fs-lg;
+  }
+
+  @include mq($xl) {
+    font-size: $fs-h2;
+  }
+}
+
 @mixin h4 {
   font-size: $fs-h5;
 
@@ -78,7 +92,12 @@
 }
 
 @mixin uppercase {
-  font-size: $fs-base;
+  font-size: $fs-xs;
   letter-spacing: $ls-loose;
   text-transform: uppercase;
+}
+
+@mixin label {
+  @include uppercase;
+  font-family: $mono;
 }

@@ -4,22 +4,12 @@
 }
 
 .page-section-content {
-  @include margin(x auto);
   @include padding($sp-xl x);
-  border-top: 1px solid $color-border;
-  display: flex;
-  flex-direction: column;
-  max-width: $layout-max-width;
   position: relative;
   z-index: 1;
 
   @include mq($lg) {
-    align-items: flex-start;
-    flex-direction: row;
-
-    .section-body {
-      width: columns(6);
-    }
+    @include padding($sp-xxl x);
   }
 }
 

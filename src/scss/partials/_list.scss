@@ -1,0 +1,25 @@
+// List
+.list {
+  margin-bottom: $sp-lg;
+}
+
+.list--items {
+  @include margin(0);
+  @include padding(0);
+  list-style: none;
+}
+
+.list--item {
+  font-size: $fs-base;
+}
+
+.list--title {
+  @include body-text;
+}
+
+.list--item {
+  svg {
+    color: $color-spot;
+    margin-right: $sp-xs;
+  }
+}

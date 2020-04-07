@@ -1,0 +1,68 @@
+.callout {
+  display: flex;
+  flex-direction: column;
+
+  @include mq($md) {
+    border-bottom: $border;
+    flex-direction: row;
+  }
+}
+
+.callout--col {
+  display: flex;
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.callout--content {
+  align-self: flex-end;
+  position: relative;
+  width: 100%;
+}
+
+.collout--content--text {
+  @include padding($grid-gutter x);
+
+  @include mq($md) {
+    @include padding(x x x $grid-gutter);
+  }
+
+  @include mq($lg) {
+    @include padding($grid-gutter-lg x $grid-gutter-lg $grid-gutter-lg);
+  }
+
+  @include mq($xl) {
+    margin-left: $grid-gutter-lg;
+  }
+}
+
+.callout--label {
+  @include absolute($sp-lg x x 50%);
+  @include label;
+  transform: translateX(-50%);
+}
+
+.callout--art {
+  display: flex;
+
+  @include mq($lg) {
+    @include padding(x $sp-xl);
+  }
+
+  img {
+    margin-top: $sp-xl;
+
+    @include mq($lg) {
+      margin-top: $sp-xl + $sp-lg;
+    }
+  }
+}
+
+.callout--title {
+  @include fs-h3;
+  margin-bottom: $sp-base;
+}
+
+.callout--deck {
+  margin-bottom: $sp-lg;
+}

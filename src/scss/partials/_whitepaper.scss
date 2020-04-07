@@ -30,7 +30,7 @@
 
 .whitepaper-title {
   @include paragraph;
-  border-top: 1px solid $color-base;
+  border-top: $border;
   margin-bottom: 0;
   padding-top: $sp-base;
 }

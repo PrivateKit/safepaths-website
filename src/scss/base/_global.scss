@@ -86,6 +86,11 @@ img {
 
 .grid-cell {
   box-sizing: border-box;
+  margin-bottom: $grid-gutter;
+
+  @include mq($sm, $md) {
+    width: columns(8);
+  }
 
   @include mq($md) {
     padding-right: $grid-gutter;

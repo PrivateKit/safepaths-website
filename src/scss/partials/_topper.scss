@@ -28,7 +28,7 @@
 
   @include mq($lg) {
     @include padding($sp-xxl x);
-    max-width: $col-3;
+    max-width: columns(5);
 
     h2 {
       margin-right: $grid-gutter;

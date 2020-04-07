@@ -1,0 +1,28 @@
+<div class="callout">
+  <div class="callout--col">
+    <div class="callout--content">
+      <p class="callout--label">Available now</p>
+      <div class="callout--art">
+        {% include '@templates/svgs/private-kit-dome.svg' %}
+      </div>
+    </div>
+  </div>
+  <div class="callout--col">
+    <div class="callout--content collout--content--text">
+      <h3 class="callout--title">Stay safe, feel secure</h3>
+      <div class="callout--deck">
+        <p>Remember where you’ve been and see if you’ve encountered anyone diagnosed with COVID-19. Designed with security as the No. 1 priority.</p>
+      </div>
+
+      <div class="grid">
+        <div class="grid-cell">
+          {% include '@templates/partials/link-button.twig' with {'label': 'App Store', 'link':
+        'https://apps.apple.com/us/app/private-kit-prototype/id1501903733', 'icon': 'app-store', 'newTab': true} %}
+        </div>
+        <div class="grid-cell">
+          {% include '@templates/partials/link-button.twig' with {'label': 'Google Play', 'link': 'https://play.google.com/store/apps/details?id=edu.mit.privatekit', 'icon': 'google-play', 'newTab': true} %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
