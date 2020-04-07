@@ -3,7 +3,6 @@
   align-items: center;
   background-color: $color-bg;
   background-image: none;
-  border: 1px solid $color-base;
   border-radius: $br;
   display: flex;
   font-weight: $fw-bold;
@@ -11,7 +10,6 @@
 
   @include on-focus {
     background-color: $color-spot;
-    border-color: $color-spot;
     color: $color-bg;
 
     svg {
@@ -25,7 +23,7 @@
 
   svg {
     color: $color-spot;
-    margin-left: $sp-lg;
+    margin-left: $sp-md;
   }
 
   &-primary {
