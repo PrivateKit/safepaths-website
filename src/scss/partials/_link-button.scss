@@ -3,6 +3,7 @@
   align-items: center;
   background-color: $color-bg;
   background-image: none;
+  border: 1px solid $color-base;
   border-radius: $br;
   display: flex;
   font-size: $fs-base;
@@ -11,6 +12,7 @@
 
   @include on-focus {
     background-color: $color-spot;
+    border-color: $color-spot;
     color: $color-bg;
 
     svg {
