@@ -1,6 +1,10 @@
 // List
 .list {
   margin-bottom: $sp-lg;
+
+  @include mq($lg) {
+    margin-right: $sp-lg;
+  }
 }
 
 .list--items {
@@ -9,17 +13,27 @@
   list-style: none;
 }
 
-.list--item {
-  font-size: $fs-base;
-}
-
+.list--item,
 .list--title {
   @include body-text;
 }
 
+.list--title {
+  color: $color-spot;
+}
+
 .list--item {
+  @include padding($sp-md x);
+  @include margin(0);
+  align-items: baseline;
+  display: flex;
+
+  &:not(:last-child) {
+    border-bottom: $border;
+  }
+
   svg {
     color: $color-spot;
-    margin-right: $sp-xs;
+    margin-right: $sp-base;
   }
 }

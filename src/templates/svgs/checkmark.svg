@@ -1,3 +1,4 @@
-<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 3.35294L3.82353 6.17647L9 1" stroke="currentColor" stroke-width="1.5"/>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="8" cy="8" r="8" fill="#475DF3"/>
+<path d="M4.80078 7.88235L7.0596 10.1412L11.2008 6" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
 </svg>

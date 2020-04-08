@@ -1,6 +1,5 @@
 .page-section {
   @include site-padding;
-  margin-bottom: $sp-xl;
 }
 
 .page-section-content {
@@ -9,7 +8,7 @@
   z-index: 1;
 
   @include mq($lg) {
-    @include padding($sp-xxl x);
+    @include padding($sp-xxl x 0);
   }
 }
 
