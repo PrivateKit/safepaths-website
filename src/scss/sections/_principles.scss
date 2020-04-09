@@ -18,4 +18,8 @@
   @include padding($sp-lg);
   background-color: $color-white;
   border-radius: $br;
+
+  h3 {
+    @include margin(0);
+  }
 }
