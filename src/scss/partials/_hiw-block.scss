@@ -1,5 +1,5 @@
 .hiw-block {
-  background-color: mix($color-spot, $color-bg, $weight: 5%);
+  background-color: $color-bg-light;
   border-radius: $br-sm;
   position: relative;
 }

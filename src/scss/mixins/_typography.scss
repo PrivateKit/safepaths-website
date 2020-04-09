@@ -89,7 +89,11 @@
 }
 
 @mixin paragraph {
-  @include h4;
+  font-size: $fs-h4;
+
+  @include mq($md) {
+    font-size: $fs-h3;
+  }
 }
 
 @mixin uppercase {

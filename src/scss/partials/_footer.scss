@@ -11,14 +11,6 @@
 .footer-content {
   @include padding($sp-xl x);
   @include site-padding;
-
-  @include mq($lg) {
-    padding-top: $sp-xxl;
-  }
-
-  @include mq($xl) {
-    padding-top: $sp-xxl * 2;
-  }
 }
 
 .footer-content--block {

@@ -5,6 +5,7 @@ $color-highlight: #ff5656;
 $color-bg: #f0f0f0;
 $color-white: #ffffff;
 $color-border: $color-base;
+$color-bg-light: mix($color-spot, $color-bg, $weight: 5%);
 
 // Typefaces
 $sans: Inter, sans-serif;

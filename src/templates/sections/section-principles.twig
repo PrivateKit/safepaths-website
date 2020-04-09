@@ -3,13 +3,35 @@ title: Principles section
 #}
 
 <div class="page-section section-principles">
-  <div class="page-section-content">
-    <h2 class="principles-title">Guiding Principles</h2>
+  <div class="page-section-content section-principles-content grid">
+    <div class="principles-block grid-cell">
+      <div class="principles-block-content">
+        <div class="principles-title">Who we are</div>
+        <h2 class="principles-headline">Community-led movement.</h2>
+        <p  class="principles-deck">We are developing free, open-source, privacy-by-design tools for individuals, public health officials, and larger communities to flatten the curve of COVID-19, reduce fear, and prevent a surveillance-state response to the pandemic.</p>
+        <p><a href="#">Learn more</a></p>
+      </div>
+    </div>
+    
+    <div class="principles-block grid-cell">
+      <div class="principles-block-content principles-list-container">
+        <div class="principles-title">Guiding Principles</div>
 
-    <ul class="principles-list grid">
-      <li class="principles-list-item grid-cell"><h3>You control your data</h3></li>
-      <li class="principles-list-item grid-cell"><h3>Doctor-verified cases</h3></li>
-      <li class="principles-list-item grid-cell"><h3>We only win together</h3></li>
-    </ul>
+        <ul class="principles-list">
+          <li class="principles-list-item">
+          {% include '@templates/svgs/checkmark.svg' %}
+          <h3>You control your data</h3>
+          </li>
+          <li class="principles-list-item">
+          {% include '@templates/svgs/checkmark.svg' %}
+          <h3>Doctor-verified cases</h3>
+          </li>
+          <li class="principles-list-item">
+          {% include '@templates/svgs/checkmark.svg' %}
+          <h3>We only win together</h3>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>

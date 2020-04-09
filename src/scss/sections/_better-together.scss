@@ -11,7 +11,7 @@
   }
 
   @include mq($lg) {
-    @include padding($sp-xxl);
+    @include padding(x $sp-xxl $sp-xxl);
   }
 }
 

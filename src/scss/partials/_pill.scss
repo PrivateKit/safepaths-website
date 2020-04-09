@@ -21,15 +21,6 @@
   @include mq($md) {
     @include padding($sp-xl);
   }
-
-  // @include mq($md-lg) {
-  //   &:first-child {
-  //     text-align: right;
-  //   }
-  //   &:last-child {
-  //     text-align: left;
-  //   }
-  // }
 }
 
 .pill-side-content {
