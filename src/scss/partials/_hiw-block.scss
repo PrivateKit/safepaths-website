@@ -1,0 +1,30 @@
+.hiw-block {
+  background-color: mix($color-spot, $color-bg, $weight: 5%);
+  border-radius: $br-sm;
+  position: relative;
+}
+
+.hiw-block-content {
+  @include padding($sp-lg);
+  @include mq($sm, $md) {
+    position: absolute;
+  }
+
+  @include mq($md-lg) {
+    position: absolute;
+  }
+}
+
+.hiw-block-art {
+  svg {
+    @include size(100%);
+  }
+}
+
+.hiw-block--heading {
+  margin-bottom: $sp-lg;
+}
+
+.hiw-block--deck {
+  color: transparentize($color-base, 0.3);
+}

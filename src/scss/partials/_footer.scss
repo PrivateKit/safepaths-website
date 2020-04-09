@@ -11,7 +11,6 @@
 .footer-content {
   @include padding($sp-xl x);
   @include site-padding;
-  max-width: $layout-max-width;
 
   @include mq($lg) {
     padding-top: $sp-xxl;

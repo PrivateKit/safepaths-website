@@ -1,9 +1,38 @@
 // List
 .list {
+  @include padding(0);
+  display: flex;
   margin-bottom: $sp-lg;
 
+  @include mq($md, $md-lg) {
+    .benefits & {
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+
+  @include mq($md) {
+    &:not(:last-child) {
+      margin-right: $grid-gutter;
+    }
+  }
+
   @include mq($lg) {
-    margin-right: $sp-lg;
+    &:not(:last-child) {
+      margin-right: $grid-gutter + $sp-base;
+    }
+  }
+}
+
+.list-content {
+  @include padding($sp-md);
+  background-color: $color-white;
+  border-radius: $br-sm;
+  width: 100%;
+
+  @include mq($md) {
+    @include padding($sp-lg);
   }
 }
 
@@ -13,13 +42,14 @@
   list-style: none;
 }
 
-.list--item,
-.list--title {
+.list--item {
   @include body-text;
 }
 
 .list--title {
+  @include paragraph;
   color: $color-spot;
+  margin-bottom: $sp-lg;
 }
 
 .list--item {

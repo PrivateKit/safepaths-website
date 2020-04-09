@@ -1,0 +1,21 @@
+.section-principles {
+  text-align: center;
+}
+
+.principles-list {
+  @include margin($sp-xl 0 0);
+  @include padding(0);
+  justify-content: center;
+  list-style: none;
+}
+
+.principles-title {
+  @include label;
+}
+
+.principles-list-item {
+  @include h3;
+  @include padding($sp-lg);
+  background-color: $color-white;
+  border-radius: $br;
+}

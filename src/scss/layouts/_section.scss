@@ -9,6 +9,10 @@
 
   @include mq($lg) {
     @include padding($sp-xxl x 0);
+
+    .page-section:last-child & {
+      padding-bottom: $sp-xxl;
+    }
   }
 }
 

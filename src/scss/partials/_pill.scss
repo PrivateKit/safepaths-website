@@ -1,0 +1,93 @@
+.pill {
+  background-color: $color-spot;
+  border-radius: $br;
+  color: $color-bg;
+}
+
+.pill-content {
+  @include padding($sp-xl x);
+
+  @include mq($md-lg) {
+    @include padding(0 x);
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.pill-side {
+  @include padding($sp-xl $sp-lg);
+  text-align: center;
+
+  @include mq($md) {
+    @include padding($sp-xl);
+  }
+
+  // @include mq($md-lg) {
+  //   &:first-child {
+  //     text-align: right;
+  //   }
+  //   &:last-child {
+  //     text-align: left;
+  //   }
+  // }
+}
+
+.pill-side-content {
+  @include margin(x auto);
+  max-width: $sm;
+}
+
+.pill-side--deck {
+  @include margin(0);
+}
+
+.pill-icon {
+  color: $color-spot;
+  position: relative;
+
+  @include mq(0, $md-lg) {
+    @include size(100%, 0);
+    border-top: 2px solid $color-white;
+
+    &::after {
+      @include absolute(0 x x 50%);
+    }
+
+    &::before {
+      @include relative(0 x x 50%);
+    }
+  }
+
+  @include mq($md-lg) {
+    @include size(0, auto);
+    border-right: 2px solid $color-white;
+
+    &::before {
+      @include relative(50% x x 50%);
+      transform: translate(-50%, -50%);
+    }
+
+    &::after {
+      @include absolute(50% x x 50%);
+    }
+  }
+
+  &::after,
+  &::before {
+    display: block;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    @include size(39px);
+    content: url('/static/svgs/icon-plus.svg');
+  }
+
+  &::before {
+    @include size($sp-xl);
+    background-color: $color-white;
+    border-radius: $br;
+    box-shadow: 0 0 0 $sp-base transparentize($color-white, 0.9);
+    content: '';
+  }
+}

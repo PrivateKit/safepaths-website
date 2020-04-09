@@ -15,20 +15,12 @@
           {{ topper.desc }}
         </p>
       </div>
+    </div>
 
-      {# <div class="grid intro-section">
-        <div class="grid-cell intro-block">
-          {% include '@templates/partials/link-button.twig' with {'label': 'App Store', 'link':
-        'https://apps.apple.com/us/app/private-kit-prototype/id1501903733', 'icon': 'app-store', 'newTab': true} %}
-        </div>
-        <div class="grid-cell intro-block">
-          {% include '@templates/partials/link-button.twig' with {'label': 'Google Play', 'link': 'https://play.google.com/store/apps/details?id=edu.mit.privatekit', 'icon': 'google-play', 'newTab': true} %}
-        </div>
-      </div> #}
-
-      <div class="grid">
-        {% for benefit in benefits %}
-        <div class="grid-cell list col">
+    <div class="grid benefits">
+      {% for benefit in benefits %}
+      <div class="grid-cell list">
+        <div class="list-content">
           <h4 class="list--title">
             {{benefit.title}}
           </h4>
@@ -41,9 +33,9 @@
           {% endfor %}
           </ul>
         </div>
-        {% endfor %}
       </div>
-
+      {% endfor %}
+      <div class="grid-cell list"></div>
     </div>
   </div>
 </div>

@@ -44,7 +44,8 @@ $sp-xxl: 140px;
 
 // Breakpoints
 $sm: 320px;
-$md: 768px;
+$md: 640px;
+$md-lg: 960px;
 $lg: 1024px;
 $xl: 1440px;
 
@@ -53,6 +54,7 @@ $border: 1px solid darken($color-bg, 10%);
 
 // Border radius
 $br: 999rem;
+$br-sm: 1.5rem;
 
 // Easings
 $outQuint: 0.3s cubic-bezier(0.22, 1, 0.36, 1);
@@ -63,7 +65,7 @@ $col-2: 50%;
 $col-3: 75%;
 $col-4: 100%;
 
-$layout-max-width: 1366px;
+$layout-max-width: 1200px;
 
 $grid-gutter: $sp-lg;
 $grid-gutter-lg: $grid-gutter * 2;

@@ -1,0 +1,35 @@
+.bt-section {
+  background-color: $color-white;
+  border-radius: $br-sm;
+}
+
+.bt-section-content {
+  @include padding($sp-lg);
+
+  @include mq($md) {
+    @include padding($sp-xl);
+  }
+
+  @include mq($lg) {
+    @include padding($sp-xxl);
+  }
+}
+
+.bt-section-text {
+  @include margin(x auto $sp-lg);
+  max-width: $md;
+  text-align: center;
+
+  @include mq($lg) {
+    margin-bottom: $sp-xl;
+  }
+}
+
+.bt-section--overline {
+  @include label;
+  color: $color-spot;
+}
+
+.bt-section--heading {
+  margin-bottom: $sp-lg;
+}

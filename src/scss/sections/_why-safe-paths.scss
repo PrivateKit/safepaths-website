@@ -1,0 +1,115 @@
+$fade-size: $sp-xxl;
+$fade-size-lg: $sp-xxl * 1.5;
+
+.wsp-title {
+  justify-content: center;
+  text-align: center;
+}
+
+.wsp-title-col.wsp-title-col {
+  display: inline-block;
+  position: relative;
+
+  @include mq(0, $md-lg) {
+    @include padding(0);
+    width: auto;
+  }
+
+  @include mq($md-lg) {
+    &:not(:last-child) {
+      &::before {
+        @include absolute(50% x x 50%);
+        border-bottom: 1px solid $color-spot;
+        content: '';
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.wsp-title-word {
+  @include padding(x $sp-base x x);
+  background-color: $color-bg;
+  display: inline-block;
+  position: relative;
+
+  @include mq($md) {
+    @include padding(x $sp-md x x);
+  }
+
+  @include mq($md-lg) {
+    @include padding(x $sp-md);
+  }
+}
+
+.wsp-list {
+  @include margin(0);
+  @include padding(0);
+  counter-reset: step;
+}
+
+.wsp-list-item.wsp-list-item {
+  @include padding($sp-lg x x);
+  background-color: $color-white;
+  border-radius: $br-sm;
+  counter-increment: step;
+  list-style: none;
+  padding-right: 0;
+  position: relative;
+  text-align: center;
+
+  @include mq($md-lg) {
+    @include padding($sp-xl x);
+    border-radius: $br-sm $br-sm 0 0;
+    margin-bottom: $fade-size;
+
+    &::after {
+      @include absolute(100% x x 0);
+      @include size(100%, $fade-size);
+      background-image: linear-gradient(to bottom,
+      $color-white 10%,
+      transparentize($color-white, 1));
+      content: '';
+      display: block;
+    }
+  }
+
+  @include mq($xl) {
+    margin-bottom: $fade-size-lg;
+
+    &::after {
+      height: $fade-size-lg;
+    }
+  }
+
+  &::before {
+    @include label;
+    @include size($sp-lg);
+    align-items: center;
+    border: 1px solid $color-spot;
+    border-radius: $br;
+    color: $color-spot;
+    content: counter(step);
+    display: inline-flex;
+    justify-content: center;
+  }
+}
+
+.wps-list-item-content {
+  @include padding($sp-lg);
+}
+
+.wsp-screenshots {
+  @include padding(x $sp-lg);
+  margin-top: -$fade-size;
+  position: relative;
+
+  @include mq(0, $md) {
+    display: none;
+  }
+
+  @include mq($xl) {
+    margin-top: -$fade-size-lg;
+  }
+}
