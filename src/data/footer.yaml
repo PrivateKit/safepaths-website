@@ -1,5 +1,7 @@
 footer:
   - nav:
+      - label: FAQ
+        link: https://docs.google.com/document/d/15NsBijM4xRGKAcKnepBtZeEO2mXM3aVN2a6IhZLeQqg/edit
       - label: Join us
         link: http://forms.gle/3fzhfJkq8kbF7uf89
       - label: Signup for updates

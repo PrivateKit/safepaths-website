@@ -38,6 +38,19 @@
       color: $color-bg;
     }
   }
+
+  &-inline {
+    @include padding(0);
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid $color-spot;
+    border-radius: 0;
+
+    @include on-focus {
+      background-color: transparent;
+      color: $color-spot;
+    }
+  }
 }
 
 .link--button-icon {
