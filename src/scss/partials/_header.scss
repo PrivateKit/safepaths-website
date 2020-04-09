@@ -6,29 +6,28 @@
 
 .header-content {
   @include padding($sp-md x);
-  align-items: flex-start;
+  align-items: center;
   border-bottom: 1px solid $color-border;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 
   @include mq($md) {
     align-items: center;
-    flex-direction: row;
   }
 }
 
 .header-logo {
-  align-items: center;
   display: flex;
   flex: 1 1 auto;
   flex-flow: row wrap;
 
-  @include mq($sm, $md) {
+  @include mq(0, $md) {
+    align-items: baseline;
     flex-direction: column;
   }
 
   @include mq($md) {
+    align-items: center;
     flex: 1 1 0;
   }
 }

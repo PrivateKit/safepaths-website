@@ -6,6 +6,12 @@
   } 
 %}
 
+{% set faq = {
+  "label": "FAQ",
+  "link": "https://docs.google.com/document/d/15NsBijM4xRGKAcKnepBtZeEO2mXM3aVN2a6IhZLeQqg/edit"
+  } 
+%}
+
 <header class="header">
   <div class="header-content">
     <h1 class="visually-hidden">Safe Paths</h1>
@@ -29,5 +35,10 @@
       </div>
       {% endif %}
     </div>
+    {% if faq %}
+      <div class="header-button">
+        {% include 'link-button.twig' with {'label': faq.label, 'link': faq.link, 'newTab': true, 'inline': true} %}
+      </div>
+    {% endif %}
   </div>
 </header>
