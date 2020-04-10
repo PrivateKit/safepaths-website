@@ -17,11 +17,11 @@
 
     @include mq($sm, $md) {
       &:nth-child(odd) {
-        border-right: 1px solid $color-base;
+        border-right: $border;
       }
 
       &:not(:last-child) {
-        border-bottom: 1px solid $color-base;
+        border-bottom: $border;
       }
     }
 
@@ -30,12 +30,12 @@
       width: columns(1, 3);
 
       &:not(:last-child) {
-        border-bottom: 1px solid $color-base;
+        border-bottom: $border;
       }
 
       &:nth-child(odd),
       &:nth-child(even) {
-        border-right: 1px solid $color-base;
+        border-right: $border;
       }
 
       &:last-child,

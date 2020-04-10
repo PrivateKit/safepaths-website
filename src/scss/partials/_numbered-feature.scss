@@ -1,5 +1,5 @@
 .numbered-feature {
-  border-top: 1px solid $color-base;
+  border-top: $border;
   counter-increment: point;
 
   &::before {

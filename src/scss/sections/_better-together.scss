@@ -1,0 +1,37 @@
+.bt-section {
+  background-color: $color-bg;
+  border: 1px solid transparentize($color-white, 0.75);
+  border-radius: $br-sm;
+  box-shadow: inset -5px -5px 25px $color-white, inset 5px 5px 25px darken($color-bg, 8%);
+}
+
+.bt-section-content {
+  @include padding($sp-lg);
+
+  @include mq($md) {
+    @include padding($sp-xl);
+  }
+
+  @include mq($lg) {
+    @include padding($sp-xxl);
+  }
+}
+
+.bt-section-text {
+  @include margin(x auto $sp-lg);
+  max-width: $md;
+  text-align: center;
+
+  @include mq($lg) {
+    margin-bottom: $sp-xl;
+  }
+}
+
+.bt-section--overline {
+  @include label;
+  color: $color-spot;
+}
+
+.bt-section--heading {
+  margin-bottom: $sp-lg;
+}

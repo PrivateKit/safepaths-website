@@ -1,0 +1,93 @@
+.callout {
+  display: flex;
+  flex-direction: column;
+
+  @include mq($md) {
+    border-bottom: $border;
+    flex-direction: row;
+
+    .page-section--alt-layout & {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.callout--col {
+  display: flex;
+
+  @include mq($md) {
+    width: columns(4);
+  }
+}
+
+.callout--content {
+  align-self: flex-end;
+  position: relative;
+  width: 100%;
+}
+
+.collout--content--text {
+  @include padding($grid-gutter x);
+  align-self: center;
+
+  @include mq($md) {
+    @include padding(x x x $grid-gutter);
+
+    .page-section--alt-layout & {
+      @include padding(x $grid-gutter x 0);
+    }
+  }
+
+  @include mq($lg) {
+    @include padding($grid-gutter-lg x $grid-gutter-lg $grid-gutter-lg);
+
+    .page-section--alt-layout & {
+      @include padding($grid-gutter-lg $grid-gutter-lg $grid-gutter-lg 0);
+    }
+  }
+
+  @include mq($xl) {
+    margin-left: $grid-gutter-lg;
+
+    .page-section--alt-layout & {
+      @include margin(x $grid-gutter-lg x 0);
+    }
+  }
+}
+
+.callout--label {
+  @include absolute($sp-lg x x 50%);
+  @include label;
+  transform: translateX(-50%);
+
+  &-muted {
+    opacity: 0.5;
+  }
+}
+
+.callout--art {
+  display: flex;
+
+  svg {
+    @include size(100%);
+  }
+}
+
+.callout--title {
+  @include fs-h3;
+  margin-bottom: $sp-base;
+}
+
+.callout--title-label {
+  @include label;
+  color: $color-spot;
+}
+
+.callout--deck {
+  margin-bottom: $sp-lg;
+}
+
+.callout--button {
+  @include margin(x $grid-gutter / 2 $grid-gutter x);
+  display: inline-block;
+}

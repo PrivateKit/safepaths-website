@@ -1,0 +1,9 @@
+.inline-button {
+  background-size: 0% 2px;
+  color: $color-spot;
+  font-weight: $fw-bold;
+
+  @include on-focus {
+    background-size: 100% 2px;
+  }
+}

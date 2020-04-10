@@ -1,0 +1,38 @@
+// Grid
+.grid {
+  display: flex;
+
+  @include mq($sm, $md-lg) {
+    flex-flow: row wrap;
+  }
+}
+
+.grid-cell {
+  box-sizing: border-box;
+  margin-bottom: $grid-gutter;
+  width: 100%;
+
+  @include mq($md, $md-lg) {
+    padding-right: $grid-gutter;
+  }
+
+  @include mq($md-lg) {
+    &:not(:last-child) {
+      margin-right: $sp-lg;
+    }
+  }
+
+  @include mq($lg) {
+    &:not(:last-child) {
+      margin-right: $sp-lg + $sp-base;
+    }
+  }
+}
+
+.col-3 {
+  width: 100%;
+
+  @include mq($md, $md-lg) {
+    width: columns(4);
+  }
+}

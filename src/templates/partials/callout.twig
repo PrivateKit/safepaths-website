@@ -1,0 +1,26 @@
+<div class="callout">
+  <div class="callout--col">
+    <div class="callout--content">
+      <p class="callout--label {{callout.available ? '' : 'callout--label-muted'}}">{{callout.label}}</p>
+      <div class="callout--art">
+        <img src="{{callout.art}}" alt="Private Kit" />
+      </div>
+    </div>
+  </div>
+  <div class="callout--col">
+    <div class="callout--content collout--content--text">
+      <div class="callout--title-label"><p>{{callout.overline}}</p></div>
+      <h3 class="callout--title">{{callout.title}}</h3>
+      <div class="callout--deck">
+        <p>{{callout.deck}}</p>
+      </div>
+
+        {% for button in callout.buttons %}
+          <div class="callout--button">
+            {% include '@templates/partials/link-button.twig' with {'label': button.label, 'link':
+        button.link, 'icon': button.icon, 'newTab': button.newTab} %}
+          </div>
+        {% endfor %}
+    </div>
+  </div>
+</div>

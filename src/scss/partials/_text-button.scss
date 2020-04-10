@@ -1,0 +1,7 @@
+.text--button {
+  @include uppercase;
+  background-size: 100% 2px;
+  display: inline-block;
+  font-family: $mono;
+  font-weight: $fw-bold;
+}

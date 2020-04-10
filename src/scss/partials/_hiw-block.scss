@@ -1,0 +1,24 @@
+.hiw-block {
+  background-image: linear-gradient(-45deg, $color-bg-light, $color-bg-blue);
+  border-radius: $br-sm;
+  position: relative;
+}
+
+.hiw-block-content {
+  @include padding($sp-lg);
+  position: absolute;
+}
+
+.hiw-block-art {
+  svg {
+    @include size(100%);
+  }
+}
+
+.hiw-block--heading {
+  margin-bottom: $sp-lg;
+}
+
+.hiw-block--deck {
+  color: transparentize($color-base, 0.3);
+}

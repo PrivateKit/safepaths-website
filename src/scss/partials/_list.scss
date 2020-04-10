@@ -1,0 +1,70 @@
+// List
+.list {
+  @include padding(0);
+  display: flex;
+  margin-bottom: $sp-lg;
+
+  @include mq($md, $md-lg) {
+    .benefits & {
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+
+  @include mq($md) {
+    &:not(:last-child) {
+      margin-right: $grid-gutter;
+    }
+  }
+
+  @include mq($lg) {
+    &:not(:last-child) {
+      margin-right: $grid-gutter + $sp-base;
+    }
+  }
+}
+
+.list-content {
+  @include padding($sp-md);
+  background-color: $color-bg-light;
+  border-radius: $br-sm;
+  width: 100%;
+
+  @include mq($md) {
+    @include padding($sp-lg);
+  }
+}
+
+.list--items {
+  @include margin(0);
+  @include padding(0);
+  list-style: none;
+}
+
+.list--item {
+  @include body-text;
+}
+
+.list--title {
+  @include label;
+  font-weight: normal;
+  margin-bottom: $sp-lg;
+}
+
+.list--item {
+  @include padding($sp-md x);
+  @include margin(0);
+  align-items: baseline;
+  color: $color-spot;
+  display: flex;
+
+  &:not(:last-child) {
+    border-bottom: $border;
+  }
+
+  svg {
+    color: $color-spot;
+    margin-right: $sp-base;
+  }
+}
