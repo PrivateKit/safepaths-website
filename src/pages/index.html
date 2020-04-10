@@ -3,6 +3,7 @@ title: COVID SafePaths
 ---
 
 {% extends "@templates/layouts/base.twig" %}
+{% set callouts = site.data['callouts.yaml'] %}
 
 {% block header %}
   {% include '@templates/partials/header.twig' %}
@@ -12,8 +13,9 @@ title: COVID SafePaths
 <main>
   {% include '@templates/partials/topper.twig' %}
   <div class="home-body">
-    {% include '@templates/sections/section-callouts.twig' %}
-    {% include '@templates/sections/section-callouts.twig' with {'altLayout': true} %}
+    {% for callout in callouts %}
+      {% include '@templates/sections/section-callouts.twig' with {'altLayout': callout.altLayout} %}
+    {% endfor %}
     {% include '@templates/sections/section-how-it-works.twig' %}
     {% include '@templates/sections/section-better-together.twig' %}
     {% include '@templates/sections/section-why-safe-paths.twig' %}

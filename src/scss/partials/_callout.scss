@@ -59,6 +59,10 @@
   @include absolute($sp-lg x x 50%);
   @include label;
   transform: translateX(-50%);
+
+  &-muted {
+    opacity: 0.5;
+  }
 }
 
 .callout--art {
@@ -74,6 +78,16 @@
   margin-bottom: $sp-base;
 }
 
+.callout--title-label {
+  @include label;
+  color: $color-spot;
+}
+
 .callout--deck {
   margin-bottom: $sp-lg;
+}
+
+.callout--button {
+  @include margin(x $grid-gutter / 2 $grid-gutter x);
+  display: inline-block;
 }

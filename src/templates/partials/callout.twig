@@ -1,28 +1,26 @@
 <div class="callout">
   <div class="callout--col">
     <div class="callout--content">
-      <p class="callout--label">Available now</p>
+      <p class="callout--label {{callout.available ? '' : 'callout--label-muted'}}">{{callout.label}}</p>
       <div class="callout--art">
-        <img src="/static/img/private-kit.png" alt="Private Kit" />
+        <img src="{{callout.art}}" alt="Private Kit" />
       </div>
     </div>
   </div>
   <div class="callout--col">
     <div class="callout--content collout--content--text">
-      <h3 class="callout--title">Stay safe, feel secure</h3>
+      <div class="callout--title-label"><p>{{callout.overline}}</p></div>
+      <h3 class="callout--title">{{callout.title}}</h3>
       <div class="callout--deck">
-        <p>Remember where you’ve been and see if you’ve encountered anyone diagnosed with COVID-19. Designed with security as the No. 1 priority.</p>
+        <p>{{callout.deck}}</p>
       </div>
 
-      <div class="grid">
-        <div class="grid-cell">
-          {% include '@templates/partials/link-button.twig' with {'label': 'App Store', 'link':
-        'https://apps.apple.com/us/app/private-kit-prototype/id1501903733', 'icon': 'app-store', 'newTab': true} %}
-        </div>
-        <div class="grid-cell">
-          {% include '@templates/partials/link-button.twig' with {'label': 'Google Play', 'link': 'https://play.google.com/store/apps/details?id=edu.mit.privatekit', 'icon': 'google-play', 'newTab': true} %}
-        </div>
-      </div>
+        {% for button in callout.buttons %}
+          <div class="callout--button">
+            {% include '@templates/partials/link-button.twig' with {'label': button.label, 'link':
+        button.link, 'icon': button.icon, 'newTab': button.newTab} %}
+          </div>
+        {% endfor %}
     </div>
   </div>
 </div>

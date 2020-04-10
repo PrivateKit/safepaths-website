@@ -1,6 +1,8 @@
 .bt-section {
-  background-color: $color-white;
+  background-color: $color-bg;
+  border: 1px solid transparentize($color-white, 0.75);
   border-radius: $br-sm;
+  box-shadow: inset -5px -5px 25px $color-white, inset 5px 5px 25px darken($color-bg, 8%);
 }
 
 .bt-section-content {
@@ -11,7 +13,7 @@
   }
 
   @include mq($lg) {
-    @include padding(x $sp-xxl $sp-xxl);
+    @include padding($sp-xxl);
   }
 }
 

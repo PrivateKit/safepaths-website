@@ -27,7 +27,7 @@
 
 .list-content {
   @include padding($sp-md);
-  background-color: $color-white;
+  background-color: $color-bg-light;
   border-radius: $br-sm;
   width: 100%;
 
@@ -47,8 +47,8 @@
 }
 
 .list--title {
-  @include paragraph;
-  color: $color-spot;
+  @include label;
+  font-weight: normal;
   margin-bottom: $sp-lg;
 }
 
@@ -56,6 +56,7 @@
   @include padding($sp-md x);
   @include margin(0);
   align-items: baseline;
+  color: $color-spot;
   display: flex;
 
   &:not(:last-child) {

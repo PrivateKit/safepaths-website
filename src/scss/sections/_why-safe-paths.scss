@@ -19,7 +19,7 @@ $fade-size-lg: $sp-xxl * 1.5;
     &:not(:last-child) {
       &::before {
         @include absolute(50% x x 50%);
-        border-bottom: 1px solid $color-spot;
+        border-top: 2px solid $color-bg-dark;
         content: '';
         display: inline-block;
         width: 100%;
@@ -51,7 +51,7 @@ $fade-size-lg: $sp-xxl * 1.5;
 
 .wsp-list-item.wsp-list-item {
   @include padding($sp-lg x x);
-  background-color: $color-white;
+  background-color: $color-bg-light;
   border-radius: $br-sm;
   counter-increment: step;
   list-style: none;
@@ -68,14 +68,15 @@ $fade-size-lg: $sp-xxl * 1.5;
       @include absolute(100% x x 0);
       @include size(100%, $fade-size);
       background-image: linear-gradient(to bottom,
-      $color-white 10%,
-      transparentize($color-white, 1));
+      $color-bg-light 10%,
+      transparentize($color-bg-light, 1));
       content: '';
       display: block;
     }
   }
 
   @include mq($xl) {
+    @include padding(x $sp-lg);
     margin-bottom: $fade-size-lg;
 
     &::after {
@@ -98,6 +99,14 @@ $fade-size-lg: $sp-xxl * 1.5;
 
 .wps-list-item-content {
   @include padding($sp-lg);
+}
+
+.wsp-list-item-heading {
+  @include paragraph;
+}
+
+.wsp-list-item-deck {
+  font-size: $fs-base;
 }
 
 .wsp-screenshots {

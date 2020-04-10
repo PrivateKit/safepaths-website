@@ -1,5 +1,6 @@
 .header {
-  background-color: $color-white;
+  background-color: $color-bg;
+  box-shadow: 0 5px 15px $box-shadow-dark;
   position: relative;
   z-index: 10;
 }
@@ -59,9 +60,11 @@
 
 .header-button-group {
   @include mq($sm, $md) {
-    bottom: $sp-md;
-    position: fixed;
-    width: calc(100% - (2 * #{$sp-md}));
+    @include fixed(x x 0 0);
+    @include padding($sp-md);
+    background-color: $color-bg;
+    box-shadow: 0 -5px 15px $box-shadow-light;
+    width: calc(100% - (#{$sp-md * 2}));
     z-index: 10;
   }
 

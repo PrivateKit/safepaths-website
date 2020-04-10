@@ -22,7 +22,7 @@ function setup() {
 
 function circ(x, y, rad, opacity) {
   ctx.beginPath();
-  ctx.strokeStyle = `rgba(200, 210, 250, ${opacity})`;
+  ctx.strokeStyle = `rgba(165, 175, 250, ${opacity})`;
   ctx.lineWidth = 45.5;
   ctx.arc(x, y, rad, 0, Math.PI * 2);
   ctx.stroke();

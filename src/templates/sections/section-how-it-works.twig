@@ -4,9 +4,11 @@ title: How it works section
 
 {% embed "@templates/layouts/section.twig" %}
 
+{% set howItWorks = site.data['how-it-works.yaml'] %}
+
 {% block content %}
 <div class="grid">
-  {% for i in 1..3 %}
+  {% for step in howItWorks %}
     <div class="grid-cell col-3">
       {% include '@templates/partials/hiw-block.html' %}
     </div>

@@ -1,6 +1,8 @@
 .pill {
-  background-color: $color-spot;
+  background-image: $gradient-blue;
+  border-bottom: 1px solid $color-bg-light;
   border-radius: $br;
+  border-top: 1px solid $color-bg-dark;
   color: $color-bg;
 }
 
@@ -30,6 +32,7 @@
 
 .pill-side--deck {
   @include margin(0);
+  font-size: $fs-base;
 }
 
 .pill-icon {
@@ -38,7 +41,7 @@
 
   @include mq(0, $md-lg) {
     @include size(100%, 0);
-    border-top: 2px solid $color-white;
+    border-top: 2px solid $color-bg;
 
     &::after {
       @include absolute(0 x x 50%);
@@ -51,7 +54,7 @@
 
   @include mq($md-lg) {
     @include size(0, auto);
-    border-right: 2px solid $color-white;
+    border-right: 2px solid $color-bg;
 
     &::before {
       @include relative(50% x x 50%);
@@ -76,9 +79,10 @@
 
   &::before {
     @include size($sp-xl);
-    background-color: $color-white;
+    background-color: $color-bg;
     border-radius: $br;
-    box-shadow: 0 0 0 $sp-base transparentize($color-white, 0.9);
+    box-shadow: -5px -5px 30px transparentize($color-white, 0.75),
+      5px 5px 30px transparentize(darken($color-spot, 25%), 0.5);
     content: '';
   }
 }

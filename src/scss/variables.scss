@@ -5,7 +5,14 @@ $color-highlight: #ff5656;
 $color-bg: #f0f0f0;
 $color-white: #ffffff;
 $color-border: $color-base;
-$color-bg-light: mix($color-spot, $color-bg, $weight: 5%);
+$color-bg-blue: mix($color-spot, $color-bg, $weight: 5%);
+$color-bg-light: lighten($color-bg, 3%);
+$color-bg-dark: darken($color-bg, 6%);
+$box-shadow-light: transparentize($color-white, 0.25);
+$box-shadow-dark: transparentize(darken($color-bg, 20%), 0.85);
+
+// Gradients
+$gradient-blue: linear-gradient(-45deg, darken($color-spot, 2%), lighten($color-spot, 2%));
 
 // Typefaces
 $sans: Inter, sans-serif;
@@ -32,7 +39,7 @@ $fw-bold: 500;
 
 // Letter spacing
 $ls-tight: -0.045em;
-$ls-loose: 0.05em;
+$ls-loose: 0.07em;
 
 // Spacing
 $sp-base: 10px;
@@ -56,6 +63,9 @@ $border: 1px solid darken($color-bg, 10%);
 // Border radius
 $br: 999rem;
 $br-sm: 1.5rem;
+
+// Box shadow
+$box-shadow: -5px -5px 15px $box-shadow-light, 5px 5px 15px $box-shadow-dark;
 
 // Easings
 $outQuint: 0.3s cubic-bezier(0.22, 1, 0.36, 1);

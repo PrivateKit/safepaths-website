@@ -10,6 +10,14 @@
   @include mq($md-lg) {
     padding-right: $grid-gutter;
   }
+
+  @include mq($lg) {
+    padding-right: $grid-gutter-lg;
+
+    .principles-block:last-child & {
+      padding-left: $grid-gutter;
+    }
+  }
 }
 
 .principles-list {
