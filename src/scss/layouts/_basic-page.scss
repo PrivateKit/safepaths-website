@@ -1,7 +1,19 @@
 .basic-page--header {
   @include padding($sp-xl x);
+
+  @include mq($lg) {
+    max-width: columns(6);
+  }
 }
 
 .basic-page--content {
   @include site-padding;
+}
+
+.basic-page--title {
+  margin-bottom: $sp-md;
+}
+
+.basic-page--deck {
+  @include paragraph;
 }

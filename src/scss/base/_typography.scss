@@ -46,3 +46,8 @@ h6 {
 em {
   font-style: italic;
 }
+
+.label {
+  @include label;
+  color: $color-spot;
+}

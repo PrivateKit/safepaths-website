@@ -1,10 +1,10 @@
 {% set donate = false %}
 
-{% set signup = {
+{# {% set signup = {
   "label": "Signup for updates",
   "link": "https://forms.gle/v5dTVptSAGa93Bh36"
   } 
-%}
+%} #}
 
 <header class="header">
   <div class="header-content">
@@ -16,7 +16,7 @@
       <p class="header-logo--tagline">Privacy-by-design contact tracing</p>
     </div>
     
-    <div class="header-button-group">
+    {# <div class="header-button-group">
       {% if donate %}
         <div class="header-button header-button--donate">
           {% include 'link-button.twig' with {'label': donate.label, 'link': donate.link, 'newTab': true, 'primary': true} %}
@@ -25,9 +25,20 @@
 
       {% if signup %}
       <div class="header-button">
-        {% include 'text-button.twig' with {'label': signup.label, 'link': signup.link, 'newTab': true} %}
+        {% include '@templates/partials/inline-button.html' with {'label': signup.label, 'link': signup.link, 'newTab': true} %}
       </div>
       {% endif %}
-    </div>
+    </div> #}
+
+      <div class="header-button-group">
+        <nav class="header--nav">
+          <div class="header--nav-item">
+            {% include '@templates/partials/inline-button.html' with {'link': '/about.html', 'label': 'About'} %}
+          </div>
+          <div class="header--nav-item">
+            {% include '@templates/partials/inline-button.html' with {'link': 'https://docs.google.com/document/d/15NsBijM4xRGKAcKnepBtZeEO2mXM3aVN2a6IhZLeQqg/edit', 'label': 'FAQ', 'newTab': true} %}
+          </div>
+        </nav>
+      </div>
   </div>
 </header>

@@ -40,7 +40,9 @@
   <body>
     <div class="home-content">
 
-      {% block header %}{% endblock header %}
+      {% block header %}
+        {% include '@templates/partials/header.twig' %}
+      {% endblock header %}
 
       {% block content %}{% endblock %}
 

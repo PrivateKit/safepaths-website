@@ -1,8 +1,9 @@
 .whitepaper-link {
   @include padding(x $sp-md $sp-md);
-  background-color: $color-white;
   background-image: none;
   border: 2px solid transparent;
+  border-radius: $br-sm;
+  box-shadow: $box-shadow;
   display: block;
 
   @include on-focus {
