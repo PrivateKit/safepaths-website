@@ -20,13 +20,6 @@
   }
 }
 
-.principles-pill {
-  @include padding($sp-xxl x);
-  background-color: $color-bg-light;
-  border-radius: $br;
-  text-align: center;
-}
-
 .principles-list {
   @include margin(0);
   @include padding(0);
@@ -36,13 +29,14 @@
 
 .principles-title {
   @include body-text;
+  border-bottom: $border;
   color: $color-spot;
   font-weight: $fw-bold;
-  margin-bottom: $sp-md;
+  padding-bottom: $sp-md;
 }
 
 .principles-headline {
-  margin-bottom: $sp-md;
+  @include margin($sp-md x);
 }
 
 .principles-deck {
@@ -52,10 +46,7 @@
 .principles-list-item {
   @include h3;
   @include padding($sp-md x);
-
-  &:not(:last-child) {
-    border-bottom: $border;
-  }
+  border-bottom: $border;
 
   h3 {
     @include margin(0);
