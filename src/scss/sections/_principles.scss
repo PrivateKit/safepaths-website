@@ -20,6 +20,13 @@
   }
 }
 
+.principles-pill {
+  @include padding($sp-xxl x);
+  background-color: $color-bg-light;
+  border-radius: $br;
+  text-align: center;
+}
+
 .principles-list {
   @include margin(0);
   @include padding(0);
@@ -28,13 +35,10 @@
 }
 
 .principles-title {
-  @include label;
+  @include body-text;
   color: $color-spot;
+  font-weight: $fw-bold;
   margin-bottom: $sp-md;
-
-  @include mq($md) {
-    margin-bottom: $sp-lg;
-  }
 }
 
 .principles-headline {
@@ -48,8 +52,6 @@
 .principles-list-item {
   @include h3;
   @include padding($sp-md x);
-  align-items: center;
-  display: flex;
 
   &:not(:last-child) {
     border-bottom: $border;
@@ -58,10 +60,13 @@
   h3 {
     @include margin(0);
     @include paragraph;
+    font-weight: normal;
   }
 
   svg {
-    @include size(1.5rem);
-    margin-right: $sp-md;
+    @include padding($sp-xs);
+    @include size($sp-md);
+    border: 1px solid $color-spot;
+    border-radius: $br;
   }
 }

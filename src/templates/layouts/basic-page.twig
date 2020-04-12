@@ -1,7 +1,7 @@
 {% extends '@templates/layouts/base.twig' %}
 
 {% block header %} 
-  {% include '@templates/partials/header.twig' %}
+  {% include '@templates/partials/header.twig' with {'nav': nav} %}
 {% endblock %}
 
 {% block content %}

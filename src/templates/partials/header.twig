@@ -33,7 +33,7 @@
       <div class="header-button-group">
         <nav class="header--nav">
           <div class="header--nav-item">
-            {% include '@templates/partials/inline-button.html' with {'link': '/about.html', 'label': 'About'} %}
+            {% include '@templates/partials/inline-button.html' with {'link': '/about.html', 'label': 'About', 'isActive': nav == 'About' ? true : false} %}
           </div>
           <div class="header--nav-item">
             {% include '@templates/partials/inline-button.html' with {'link': 'https://docs.google.com/document/d/15NsBijM4xRGKAcKnepBtZeEO2mXM3aVN2a6IhZLeQqg/edit', 'label': 'FAQ', 'newTab': true} %}

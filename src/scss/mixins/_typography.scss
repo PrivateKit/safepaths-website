@@ -2,7 +2,7 @@
   font-size: $fs-base;
 
   @include mq($xl) {
-    font-size: $fs-h5;
+    font-size: $fs-h4;
   }
 }
 
@@ -93,6 +93,14 @@
 
   @include mq($md) {
     font-size: $fs-h3;
+  }
+}
+
+@mixin page-deck {
+  font-size: $fs-sm;
+
+  @include mq($md) {
+    font-size: $fs-md;
   }
 }
 

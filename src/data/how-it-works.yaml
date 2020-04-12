@@ -4,6 +4,6 @@
 - title: Get notified if you come across anyone diagnosed with COVID-19
   deck: And tell you what to do next.
   illustration: '@templates/svgs/path-2.svg'
-- title: Share anonymized data to help others if you test positive.
+- title: Share anonymized data to help others if you test positive
   deck: Health officials can add your data to a verified public record — if you choose to share it.
   illustration: '@templates/svgs/path-3.svg'

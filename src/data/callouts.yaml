@@ -16,7 +16,7 @@
   altLayout: false
 - overline: Safe Places
   title: Map verified cases
-  deck: Patients who test positive can choose to anonymously share location history with public health officials, who use our secure tools to create a shared, verified public record.
+  deck: Patients who test positive can choose to anonymously share location history with public health officials, who use secure tools to create a shared, verified public record.
   label: Coming soon
   available: false
   art: '/static/img/safe-paths.png'

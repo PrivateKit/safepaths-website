@@ -101,12 +101,9 @@ $fade-size-lg: $sp-xxl * 1.5;
   @include padding($sp-lg);
 }
 
-.wsp-list-item-heading {
-  @include paragraph;
-}
-
+.wsp-list-item-heading,
 .wsp-list-item-deck {
-  font-size: $fs-base;
+  @include body-text;
 }
 
 .wsp-screenshots {

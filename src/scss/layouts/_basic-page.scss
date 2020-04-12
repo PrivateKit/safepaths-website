@@ -10,6 +10,12 @@
   @include site-padding;
 }
 
+.basic-page--overline {
+  @include paragraph;
+  color: $color-spot;
+  font-weight: $fw-bold;
+}
+
 .basic-page--title {
   margin-bottom: $sp-md;
 }

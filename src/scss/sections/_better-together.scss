@@ -1,8 +1,6 @@
 .bt-section {
-  background-color: $color-bg;
-  border: 1px solid transparentize($color-white, 0.75);
+  background-color: $color-bg-light;
   border-radius: $br-sm;
-  box-shadow: inset -5px -5px 25px $color-white, inset 5px 5px 25px darken($color-bg, 8%);
 }
 
 .bt-section-content {
@@ -28,10 +26,14 @@
 }
 
 .bt-section--overline {
-  @include label;
   color: $color-spot;
+  font-weight: $fw-bold;
 }
 
 .bt-section--heading {
   margin-bottom: $sp-lg;
+}
+
+.bt-section--deck {
+  @include body-text;
 }

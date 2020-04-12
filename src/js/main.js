@@ -1,5 +1,8 @@
 import 'modernizr';
 
+/* ---------------------------------------------
+Canvas Animation
+--------------------------------------------- */
 const canvas = document.getElementById('canvas');
 
 const w = 1000;

@@ -57,6 +57,7 @@
 
 .callout--label {
   @include absolute($sp-lg x x 50%);
+  @include label;
   transform: translateX(-50%);
 
   &-muted {
@@ -74,15 +75,22 @@
 
 .callout--title {
   @include fs-h3;
-  margin-bottom: $sp-base;
+  margin-bottom: $sp-md;
 }
 
 .callout--title-label {
-  @include label;
+  @include body-text;
   color: $color-spot;
+  font-weight: $fw-bold;
+  margin-bottom: $sp-base;
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .callout--deck {
+  @include body-text;
   margin-bottom: $sp-lg;
 }
 

@@ -2,10 +2,10 @@
 title: COVID SafePaths - About
 ---
 
-{% extends "@templates/layouts/basic-page.twig" %}
+{% embed "@templates/layouts/basic-page.twig" with {'nav': 'About'} %}
 
 {% block basicHeader %}
-<div class="label"><p>About</p></div>
+<div class="basic-page--overline"><p>About</p></div>
 <h2 class="basic-page--title">We are a community-led movement.</h2>
 <div class="basic-page--deck">
   <p>Safe Paths is developing free, open-source, privacy-by-design tools for individuals, public
@@ -17,7 +17,6 @@ title: COVID SafePaths - About
 
 {% block basicBody %}
 <main>
-  {# {% include '@templates/sections/section-download.twig' %} #}
   {% include '@templates/sections/section-collaborator-projects.twig' %}
   {% include '@templates/sections/section-partners.twig' %}
   {% include '@templates/sections/section-whitepapers.twig' %}
@@ -26,3 +25,5 @@ title: COVID SafePaths - About
   {% include '@templates/sections/section-news.twig' %}
 </main>
 {% endblock %}
+
+{% endembed %}

@@ -4,6 +4,12 @@
   display: flex;
   margin-bottom: $sp-lg;
 
+  @include mq($md) {
+    &:not(:first-child):not(:last-child) {
+      border-left: $border;
+    }
+  }
+
   @include mq($md, $md-lg) {
     .benefits & {
       &:last-child {
@@ -12,27 +18,21 @@
     }
   }
 
-  @include mq($md) {
-    &:not(:last-child) {
-      margin-right: $grid-gutter;
-    }
-  }
-
-  @include mq($lg) {
-    &:not(:last-child) {
-      margin-right: $grid-gutter + $sp-base;
-    }
+  .benefits & {
+    margin-right: 0;
   }
 }
 
 .list-content {
-  @include padding($sp-md);
-  background-color: $color-bg-light;
-  border-radius: $br-sm;
+  @include padding(0 $sp-md 0 0);
   width: 100%;
 
   @include mq($md) {
-    @include padding($sp-lg);
+    @include padding(0 $sp-lg 0 0);
+
+    .list:not(:first-child) & {
+      padding-left: $grid-gutter;
+    }
   }
 }
 
@@ -47,16 +47,17 @@
 }
 
 .list--title {
-  @include label;
-  font-weight: normal;
-  margin-bottom: $sp-lg;
+  @include paragraph;
+  border-bottom: $border;
+  color: $color-spot;
+  margin-bottom: 0;
+  padding-bottom: $sp-md;
 }
 
 .list--item {
   @include padding($sp-md x);
   @include margin(0);
   align-items: baseline;
-  color: $color-spot;
   display: flex;
 
   &:not(:last-child) {
