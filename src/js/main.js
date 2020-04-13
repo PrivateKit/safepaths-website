@@ -55,7 +55,7 @@ function offset(source, offset) {
 }
 
 function animate() {
-  // window.requestAnimationFrame(animate);
+  window.requestAnimationFrame(animate);
   frame += 0.2;
 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -143,7 +143,7 @@ Reveal animations
 --------------------------------------------- */
 let revealElements;
 let revealStaggerItems;
-const THRESHOLD = 0.65;
+const THRESHOLD = 0.5;
 
 window.addEventListener(
   'load',
