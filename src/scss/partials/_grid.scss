@@ -32,7 +32,7 @@
 .col-3 {
   width: 100%;
 
-  @include mq($md, $md-lg) {
-    width: columns(4);
+  @include mq($br-col-3, $md-lg) {
+    width: 33.33%;
   }
 }

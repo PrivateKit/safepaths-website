@@ -111,7 +111,7 @@ $fade-size-lg: $sp-xxl * 1.5;
   margin-top: -$fade-size;
   position: relative;
 
-  @include mq(0, $md) {
+  @include mq(0, $md-lg) {
     display: none;
   }
 

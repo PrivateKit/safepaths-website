@@ -1,15 +1,24 @@
 .hiw-block {
   background-color: $color-bg-blue;
   border-radius: $br-sm;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   position: relative;
 }
 
 .hiw-block-content {
   @include padding($sp-lg);
   position: absolute;
+
+  @include mq($br-col-3, $lg) {
+    position: relative;
+  }
 }
 
 .hiw-block-art {
+  margin-top: auto;
+
   svg {
     @include size(100%);
   }
