@@ -8,15 +8,15 @@
     </div>
   </div>
   <div class="callout--col">
-    <div class="callout--content collout--content--text">
-      <div class="callout--title-label"><p>{{callout.overline}}</p></div>
-      <h3 class="callout--title">{{callout.title}}</h3>
-      <div class="callout--deck">
+    <div class="callout--content collout--content--text js-reveal">
+      <div class="callout--title-label js-reveal-stagger-item"><p>{{callout.overline}}</p></div>
+      <h3 class="callout--title js-reveal-stagger-item">{{callout.title}}</h3>
+      <div class="callout--deck js-reveal-stagger-item">
         <p>{{callout.deck}}</p>
       </div>
 
         {% for button in callout.buttons %}
-          <div class="callout--button">
+          <div class="callout--button js-reveal-stagger-item">
             {% include '@templates/partials/link-button.twig' with {'label': button.label, 'link':
         button.link, 'icon': button.icon, 'newTab': button.newTab} %}
           </div>

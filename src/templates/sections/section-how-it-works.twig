@@ -7,9 +7,9 @@ title: How it works section
 {% set howItWorks = site.data['how-it-works.yaml'] %}
 
 {% block content %}
-<div class="grid">
+<div class="grid js-reveal">
   {% for step in howItWorks %}
-    <div class="grid-cell col-3">
+    <div class="grid-cell col-3 js-reveal-stagger-item">
       {% include '@templates/partials/hiw-block.html' %}
     </div>
   {% endfor %}
