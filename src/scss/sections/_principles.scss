@@ -46,7 +46,9 @@
 .principles-list-item {
   @include h3;
   @include padding($sp-md x);
+  align-items: center;
   border-bottom: $border;
+  display: flex;
 
   h3 {
     @include margin(0);
@@ -55,9 +57,10 @@
   }
 
   svg {
-    @include padding($sp-xs);
+    @include padding($sp-xs / 2);
     @include size($sp-md);
     border: 1px solid $color-spot;
     border-radius: $br;
+    margin-right: $sp-md;
   }
 }

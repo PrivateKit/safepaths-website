@@ -81,8 +81,10 @@
     @include size($sp-xl);
     background-color: $color-bg;
     border-radius: $br;
-    box-shadow: -5px -5px 30px transparentize($color-white, 0.75),
-      5px 5px 30px transparentize(darken($color-spot, 25%), 0.5);
+    box-shadow: -5px -5px 10px transparentize($color-white, 0.85),
+      -5px -5px 30px transparentize($color-white, 0.75),
+      5px 5px 10px transparentize(darken($color-spot, 15%), 0.65),
+      5px 5px 30px transparentize(darken($color-spot, 15%), 0.75);
     content: '';
   }
 }

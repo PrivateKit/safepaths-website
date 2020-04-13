@@ -59,6 +59,7 @@
   @include absolute($sp-lg x x 50%);
   @include label;
   transform: translateX(-50%);
+  z-index: 1;
 
   &-muted {
     opacity: 0.5;

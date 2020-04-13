@@ -1,4 +1,22 @@
+import { gsap } from 'gsap';
 import 'modernizr';
+
+/* ---------------------------------------------
+Utilities
+--------------------------------------------- */
+const setInitialStyles = targets => {
+  targets.forEach(target => {
+    target.style.opacity = 0;
+    target.style.transform = 'translateY(10px)';
+  });
+};
+
+const removeInitialStyles = targets => {
+  targets.forEach(target => {
+    target.style.opacity = 1;
+    target.style.transform = 'initial';
+  });
+};
 
 /* ---------------------------------------------
 Canvas Animation
@@ -51,3 +69,113 @@ function animate() {
   }
 }
 animate();
+
+/* ---------------------------------------------
+Topper animations
+--------------------------------------------- */
+const header = document.querySelector('.js-site-header');
+const topperHeadline = document.querySelector('.js-topper-headline');
+const topperDeck = document.querySelector('.js-topper-deck');
+const topperList = document.querySelectorAll('.js-topper-list');
+const topperListItem = document.querySelectorAll('.js-topper-list-item');
+const topperArt = document.querySelector('.js-topper-art');
+
+let ww = window.innerWidth;
+
+// register the effect with GSAP:
+gsap.registerEffect({
+  name: 'fadeIn',
+  effect: (targets, config) =>
+    gsap.to(targets, {
+      duration: config.duration,
+      y: 0,
+      autoAlpha: 1,
+      ease: 'power2.out',
+      stagger: config.stagger,
+      force3D: true,
+    }),
+  defaults: { duration: 0.8, stagger: 0.2 },
+  extendTimeline: true,
+});
+
+const topperAnimation = () => {
+  const tl = gsap.timeline();
+
+  gsap.fromTo(
+    topperArt,
+    { autoAlpha: 0 },
+    { autoAlpha: 1, duration: 1, ease: 'power3.out', delay: 1 },
+  );
+
+  if (ww >= 960) {
+    setInitialStyles([header, topperHeadline, topperDeck]);
+    setInitialStyles(topperList);
+    setInitialStyles(topperListItem);
+
+    tl.fadeIn(header)
+      .fadeIn(topperHeadline, { duration: 1 }, '-=0.6')
+      .fadeIn(topperDeck, '-=0.9')
+      .fadeIn(topperList, { stagger: 0.1 }, '-=0.8')
+      .fadeIn(topperListItem, { stagger: 0.025 }, '-=1.2');
+  } else {
+    removeInitialStyles([header, topperHeadline, topperDeck]);
+    removeInitialStyles(topperList);
+    removeInitialStyles(topperListItem);
+    removeInitialStyles(topperArt);
+  }
+};
+
+window.addEventListener('resize', () => {
+  ww = window.innerWidth;
+
+  if (ww < 960) {
+    removeInitialStyles([header, topperHeadline, topperDeck]);
+    removeInitialStyles(topperList);
+    removeInitialStyles(topperListItem);
+    removeInitialStyles(topperArt);
+  }
+});
+
+topperAnimation();
+
+/* ---------------------------------------------
+Reveal animations
+--------------------------------------------- */
+let revealElements;
+let revealStaggerItems;
+const THRESHOLD = 0.5;
+
+window.addEventListener(
+  'load',
+  () => {
+    revealElements = document.querySelectorAll('.js-reveal');
+    revealStaggerItems = document.querySelectorAll('.js-reveal-stagger-item');
+
+    setInitialStyles(revealElements);
+    setInitialStyles(revealStaggerItems);
+    createObserver();
+  },
+  false,
+);
+
+function handleIntersect(entries) {
+  entries.forEach(entry => {
+    const staggerItems = entry.target.querySelectorAll('.js-reveal-stagger-item');
+
+    if (entry.intersectionRatio >= THRESHOLD) {
+      gsap.effects.fadeIn(entry.target).delay(0.1);
+      gsap.effects.fadeIn(staggerItems, { stagger: 0.2 });
+    }
+  });
+}
+
+function createObserver() {
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: THRESHOLD,
+  };
+
+  const observer = new IntersectionObserver(handleIntersect, options);
+  revealElements.forEach(revealElement => observer.observe(revealElement));
+}
