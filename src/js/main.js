@@ -1,3 +1,4 @@
+import { gsap } from 'gsap';
 import 'modernizr';
 
 /* ---------------------------------------------
@@ -51,3 +52,111 @@ function animate() {
   }
 }
 animate();
+
+/* ---------------------------------------------
+Topper animations
+--------------------------------------------- */
+const header = document.querySelector('.js-site-header');
+const topperHeadline = document.querySelector('.js-topper-headline');
+const topperDeck = document.querySelector('.js-topper-deck');
+const topperList = document.querySelectorAll('.js-topper-list');
+const topperListItem = document.querySelectorAll('.js-topper-list-item');
+const topperArt = document.querySelector('.js-topper-art');
+
+let ww = window.innerWidth;
+
+// register the effect with GSAP:
+gsap.registerEffect({
+  name: 'fadeIn',
+  effect: (targets, config) =>
+    gsap.to(targets, {
+      duration: config.duration,
+      y: 0,
+      opacity: 1,
+      ease: 'power3.out',
+      stagger: config.stagger,
+    }),
+  defaults: { duration: 0.6, stagger: 0 },
+  extendTimeline: true,
+});
+
+const setInitialStyles = targets => {
+  targets.forEach(target => {
+    target.style.opacity = 0;
+    target.style.transform = 'translateY(5px)';
+  });
+};
+
+const removeInitialStyles = targets => {
+  targets.forEach(target => {
+    target.style.opacity = 1;
+    target.style.transform = 'initial';
+  });
+};
+
+const topperAnimation = () => {
+  const tl = gsap.timeline();
+
+  gsap.fromTo(topperArt, { opacity: 0 }, { opacity: 1, duration: 1, ease: 'power3.out', delay: 1 });
+
+  if (ww >= 960) {
+    setInitialStyles([header, topperHeadline, topperDeck]);
+    setInitialStyles(topperList);
+    setInitialStyles(topperListItem);
+
+    tl.fadeIn(header)
+      .delay(0.2)
+      .fadeIn(topperHeadline, { duration: 1 })
+      .fadeIn(topperDeck, '-=0.9')
+      .fadeIn(topperList, { stagger: 0.1, duration: 1.2 }, '-=0.8')
+      .fadeIn(topperListItem, { stagger: 0.025 }, '-=1.2');
+  } else {
+    removeInitialStyles([header, topperHeadline, topperDeck]);
+    removeInitialStyles(topperList);
+    removeInitialStyles(topperListItem);
+    removeInitialStyles(topperArt);
+  }
+};
+
+window.addEventListener('resize', () => {
+  ww = window.innerWidth;
+
+  if (ww < 960) {
+    removeInitialStyles([header, topperHeadline, topperDeck]);
+    removeInitialStyles(topperList);
+    removeInitialStyles(topperListItem);
+    removeInitialStyles(topperArt);
+  }
+});
+
+topperAnimation();
+
+/* ---------------------------------------------
+Reveal animations
+--------------------------------------------- */
+// Set up intersection observer
+// const options = {
+//   root: document.querySelector('#scrollArea'),
+//   rootMargin: '0px',
+//   threshold: 1.0,
+// };
+
+// const callback = (entries, observer) => {
+//   entries.forEach(entry => {
+//     console.log(entry);
+//     // Each entry describes an intersection change for one observed
+//     // target element:
+//     //   entry.boundingClientRect
+//     //   entry.intersectionRatio
+//     //   entry.intersectionRect
+//     //   entry.isIntersecting
+//     //   entry.rootBounds
+//     //   entry.target
+//     //   entry.time
+//   });
+// };
+
+// const observer = new IntersectionObserver(callback, options);
+
+// const target = document.querySelector('.js-reveal');
+// observer.observe(target);
