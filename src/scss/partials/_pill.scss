@@ -1,24 +1,20 @@
 .pill {
+  @include margin(x auto);
   position: relative;
+
+  @include mq(0, $md-lg) {
+    max-width: 320px;
+  }
 }
 
 .pill-bg {
   @include absolute(0 x x 50%);
-  @include size(253px);
   background-image: $gradient-blue;
   border-radius: $br;
   transform: translateX(-50%);
 
   @include mq(0, $md-lg) {
     display: none;
-  }
-
-  @include mq(1180px) {
-    @include size(229px);
-  }
-
-  @include mq($xl) {
-    @include size(235px);
   }
 }
 

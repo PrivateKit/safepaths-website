@@ -3,7 +3,17 @@
     <div class="callout--content">
       <p class="callout--label {{callout.available ? '' : 'callout--label-muted'}}">{{callout.label}}</p>
       <div class="callout--art">
-        <img src="{{callout.art}}" alt="Private Kit" />
+        <div class="callout--art-image">
+          <img src="{{callout.art}}" alt="{{callout.artCaption}}" />
+
+          {# {% if callout.dots %}
+            <div class="callout--dots">
+              {% for i in 1..20 %}
+                <span></span>
+              {% endfor %}
+            </div>
+          {% endif %} #}
+        </div>
         {% include '@templates/svgs/callout-dome.svg' %}
       </div>
     </div>

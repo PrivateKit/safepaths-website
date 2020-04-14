@@ -58,9 +58,9 @@
 .header-button-group {
   @include mq($sm, $md) {
     @include fixed(x x 0 0);
-    @include padding($sp-md);
+    @include padding($sp-base $sp-md);
     background-color: $color-bg;
-    box-shadow: 0 -5px 15px $box-shadow-light;
+    border-top: $border;
     width: calc(100% - (#{$sp-md * 2}));
     z-index: 10;
   }

@@ -1,9 +1,11 @@
 .hiw-block {
+  @include margin(0 auto);
   background-color: $color-bg-blue;
   border-radius: $br-sm;
   display: flex;
   flex-direction: column;
   height: 100%;
+  max-width: 400px;
   position: relative;
 }
 
@@ -25,9 +27,12 @@
 }
 
 .hiw-block--heading {
+  @include paragraph;
   margin-bottom: $sp-lg;
 }
 
 .hiw-block--deck {
   color: transparentize($color-base, 0.3);
+  font-size: $fs-base;
+  margin-right: $grid-gutter;
 }

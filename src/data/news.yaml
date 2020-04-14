@@ -1,9 +1,29 @@
 title: In the news
 news:
+  - source: Wired
+    headline: Clever Cryptography Could Protect Privacy in Covid-19 Contact-Tracing Apps
+    link: https://www.wired.com/story/covid-19-contact-tracing-apps-cryptography/
+    date: 2020-04-08
+  - source: The Atlantic
+    headline: The Technology That Could Free America From Quarantine
+    link: https://www.theatlantic.com/ideas/archive/2020/04/contact-tracing-could-free-america-from-its-quarantine-nightmare/609577/
+    date: 2020-04-07
   - source: The Wall Street Journal
     headline: MIT Researchers Launch Location-Tracking Effort for the New Coronavirus
     link: https://www.wsj.com/articles/mit-researchers-launch-location-tracking-effort-for-the-new-coronavirus-11585315674
     date: 2020-03-27
+  - source: CBS - Face the Nation
+    headline: Mayo Clinic working hard to predict coronavirus hotspots
+    link: https://www.cbsnews.com/news/transcript-gianrico-farrugia-on-face-the-nation-march-29-2020/
+    date: 2020-03-29
+  - source: NBC News
+    headline: Behind the global efforts to make a privacy-first coronavirus tracking app
+    link: https://www.nbcnews.com/tech/tech-news/behind-global-efforts-make-privacy-first-coronavirus-tracking-app-n1177871
+    date: 2020-04-10
+  - source: CNET
+    headline: Local governments warm to MIT coronavirus-tracking app
+    link: https://www.cnet.com/news/local-governments-warm-to-mit-coronavirus-tracking-app/
+    date: 2020-04-10
   - source: Science
     headline: Cellphone tracking could help stem the spread of coronavirus. Is privacy the price?
     link: https://www.sciencemag.org/news/2020/03/cellphone-tracking-could-help-stem-spread-coronavirus-privacy-price
@@ -20,7 +40,31 @@ news:
     headline: A New App Would Say If You're Crossed Paths With Someone Who Is Infected
     link: https://www.technologyreview.com/s/615372/coronavirus-infection-tests-app-pandemic-location-privacy/
     date: 2020-03-17
-  - source: Wired
-    headline: Phones Could Track the Spread of Covid-19. Is it a Good Idea?
-    link: https://www.wired.com/story/phones-track-spread-covid19-good-idea/
-    date: 2020-03-15
+  - source: Agenda Digitale
+    headline: Stopping Covid-19 with technology is possible
+    link: https://www.agendadigitale.eu/sicurezza/privacy/fermare-il-covid-19-con-le-tecnologie-e-possibile-tutte-le-sfide-privacy-e-come-superarle/
+    date: 2020-03-31
+  - source: Chicago Sun-Times
+    headline: Stop the spread of COVID-19? There’s an app for that
+    link: https://chicago.suntimes.com/columnists/2020/4/10/21216397/coronavirus-contact-tracing-app-mit-jb-pritzker-ramesh-raskar-privatekit-safepaths
+    date: 2020-03-31
+  - source: Corriere della Sera
+    headline: The three Italians of COVIDSafePaths - The MIT app that tracks infections
+    link: https://www.corriere.it/cronache/20_marzo_28/coronavirus-tre-italiani-private-kit-l-app-mit-che-traccia-contagi-03c36c12-710d-11ea-a7a2-3889c819a91b.shtml
+    date: 2020-03-31
+  - source: Il Giornale
+    headline: This anti-coronavirus app will keep us in check and won't reveal who we are
+    link: https://www.ilgiornale.it/news/politica/lapp-anti-coronavirus-ci-terr-sotto-controllo-e-non-sveler-1852386.html
+    date: 2020-04-10
+  - source: Mint
+    headline: India is pinning hopes on apps in virus fight
+    link: https://www.livemint.com/news/india/india-is-pinning-hopes-on-apps-in-virus-fight-11586447095280.html
+    date: 2020-04-10
+  - source: VentureBeat
+    headline: MIT announces Bluetooth breakthrough in coronavirus-tracing app for Android and iOS
+    link: https://venturebeat.com/2020/04/08/mit-announces-bluetooth-breakthrough-in-coronavirus-tracing-app-for-android-and-ios/
+    date: 2020-04-8
+  - source: PBS NewsHour
+    headline: Can my phone tell if I’ve been near someone with COVID-19?
+    link: https://www.pbs.org/newshour/health/how-apple-and-google-plan-to-track-covid-19-cases
+    date: 2020-04-12

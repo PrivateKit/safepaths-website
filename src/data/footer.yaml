@@ -1,15 +1,15 @@
 footer:
   - nav:
+      - label: FAQ
+        link: https://docs.google.com/document/d/15NsBijM4xRGKAcKnepBtZeEO2mXM3aVN2a6IhZLeQqg/edit
+      - label: Join us
+        link: http://forms.gle/3fzhfJkq8kbF7uf89
+      - label: Signup for updates
+        link: https://docs.google.com/forms/d/e/1FAIpQLScHKRQVd1kZjIF5TMth_qwxYt4N6yV0kOpQp7-W2EUUjiSeGw/viewform
+      - label: Contact us
+        link: mailto:privatekit@media.mit.edu
+  - nav:
       - label: Related research
         link: https://splitlearning.github.io/
       - label: Private Kit
         link: http://privatekit.mit.edu/
-  - nav:
-      - label: Signup for updates
-        link: http://forms.gle/3fzhfJkq8kbF7uf89
-      - label: Join us
-        link: http://forms.gle/3fzhfJkq8kbF7uf89
-      - label: Contact us
-        link: mailto:privatekit@media.mit.edu
-      - label: FAQ
-        link: https://docs.google.com/document/d/15NsBijM4xRGKAcKnepBtZeEO2mXM3aVN2a6IhZLeQqg/edit

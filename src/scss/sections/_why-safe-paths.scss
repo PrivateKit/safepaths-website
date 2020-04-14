@@ -103,19 +103,27 @@ $fade-size-lg: $sp-xxl * 1.5;
 
 .wsp-list-item-heading,
 .wsp-list-item-deck {
-  @include body-text;
+  font-size: $fs-h4;
 }
 
 .wsp-screenshots {
   @include padding(x $sp-lg);
-  margin-top: -$fade-size;
+  align-items: flex-start;
   position: relative;
 
-  @include mq(0, $md-lg) {
-    display: none;
+  @include mq($md-lg) {
+    margin-top: -$fade-size;
   }
 
   @include mq($xl) {
     margin-top: -$fade-size-lg;
+  }
+
+  .col-2 {
+    @include mq($md-lg) {
+      &:nth-child(even) {
+        margin-top: $sp-xl;
+      }
+    }
   }
 }

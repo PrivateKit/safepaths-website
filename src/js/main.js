@@ -8,7 +8,7 @@ const setInitialStyles = targets => {
   targets.forEach(target => {
     target.style.opacity = 0;
     target.style.transformOrigin = 'top';
-    target.style.transform = 'translateY(10px) scaleY(1.05)';
+    target.style.transform = 'translateY(10px) scaleY(1.025)';
   });
 };
 
@@ -93,7 +93,7 @@ gsap.registerEffect({
         duration: 0.6,
         autoAlpha: 1,
         ease: 'power2.out',
-        stagger: config.stagger,
+        stagger: index => index * 0.12,
       })
       .to(
         targets,
@@ -102,12 +102,12 @@ gsap.registerEffect({
           y: 0,
           scaleY: 1,
           ease: 'power2.out',
-          stagger: config.stagger,
+          stagger: index => index * 0.12,
           force3D: true,
         },
         '<',
       ),
-  defaults: { duration: 0.8, stagger: 0.2 },
+  defaults: { duration: 0.8 },
   extendTimeline: true,
 });
 
@@ -128,8 +128,8 @@ const topperAnimation = () => {
     tl.fadeIn(header)
       .fadeIn(topperHeadline, { duration: 1 }, '-=0.6')
       .fadeIn(topperDeck, '-=0.9')
-      .fadeIn(topperList, { stagger: 0.1 }, '-=0.8')
-      .fadeIn(topperListItem, { stagger: 0.025 }, '-=1.2');
+      .fadeIn(topperList, '-=0.8')
+      .fadeIn(topperListItem, '-=1.2');
   } else {
     removeInitialStyles([header, topperHeadline, topperDeck]);
     removeInitialStyles(topperList);
@@ -177,9 +177,9 @@ function handleIntersect(entries) {
     const entryPill = entry.target.querySelector('.js-pill');
     const entryPillBg = entry.target.querySelector('.js-pill-bg');
 
-    if (entry.intersectionRatio >= THRESHOLD) {
+    if (entry.isIntersecting) {
       gsap.effects.fadeIn(entry.target).delay(0.1);
-      gsap.effects.fadeIn(staggerItems, { stagger: 0.2 });
+      gsap.effects.fadeIn(staggerItems);
       tl.to(entryPillBg, { width: '100%', ease: 'power3.out', duration: 0.6 }).to(entryPill, {
         autoAlpha: 1,
         duration: 0.3,

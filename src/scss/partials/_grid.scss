@@ -29,6 +29,20 @@
   }
 }
 
+.col-2 {
+  width: columns(1, 2);
+
+  @include mq(0, $md-lg) {
+    &:nth-child(odd) {
+      padding-right: $grid-gutter;
+    }
+  }
+
+  @include mq($md) {
+    width: columns(1, 4);
+  }
+}
+
 .col-3 {
   width: 100%;
 
