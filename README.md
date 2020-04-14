@@ -1,8 +1,8 @@
 # Safe Paths [![Netlify Status](https://api.netlify.com/api/v1/badges/05d740ff-e5ec-48ce-86b9-3f24ec60be9d/deploy-status)](https://app.netlify.com/sites/safepaths/deploys) ![Prerequisite](https://img.shields.io/badge/node-10.13.0-blue.svg) ![Prerequisite](https://img.shields.io/badge/npm-6.4.1-blue.svg)
 
-> A new look for https://safepaths.mit.edu
+> A new look for https://covidsafepaths.org
 
-- **Website**: https://safepaths.netlify.com/
+- **Website**: https://covidsafepaths.org/
 - **Netlify Admin**: https://app.netlify.com/sites/safepaths/settings/general
 
 ## 📜 About
@@ -58,7 +58,7 @@ npx serve dist
 
 This site is hosted on [Netlify](https://www.netlify.com/).
 
-Deployments to https://safepaths.netlify.com/ are triggered automatically by commits to the `master` branch via their [GitHub App](https://github.com/apps/netlify).
+Deployments to https://covidsafepaths.org/ are triggered automatically by commits to the `master` branch via their [GitHub App](https://github.com/apps/netlify).
 
 ---
 

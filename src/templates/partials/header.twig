@@ -1,11 +1,3 @@
-{% set donate = false %}
-
-{# {% set signup = {
-  "label": "Signup for updates",
-  "link": "https://forms.gle/v5dTVptSAGa93Bh36"
-  } 
-%} #}
-
 <header class="header js-site-header">
   <div class="header-content">
     <h1 class="visually-hidden">Safe Paths</h1>
@@ -14,30 +6,16 @@
         {% include '@templates/svgs/logo.svg' %}
       </a>
     </div>
-    
-    {# <div class="header-button-group">
-      {% if donate %}
-        <div class="header-button header-button--donate">
-          {% include 'link-button.twig' with {'label': donate.label, 'link': donate.link, 'newTab': true, 'primary': true} %}
+
+    <div class="header-button-group">
+      <nav class="header--nav">
+        <div class="header--nav-item">
+          {% include '@templates/partials/inline-button.html' with {'link': '/about.html', 'label': 'About', 'isActive': nav == 'About' ? true : false} %}
         </div>
-      {% endif %}
-
-      {% if signup %}
-      <div class="header-button">
-        {% include '@templates/partials/inline-button.html' with {'label': signup.label, 'link': signup.link, 'newTab': true} %}
-      </div>
-      {% endif %}
-    </div> #}
-
-      <div class="header-button-group">
-        <nav class="header--nav">
-          <div class="header--nav-item">
-            {% include '@templates/partials/inline-button.html' with {'link': '/about.html', 'label': 'About', 'isActive': nav == 'About' ? true : false} %}
-          </div>
-          <div class="header--nav-item">
-            {% include '@templates/partials/inline-button.html' with {'link': 'https://docs.google.com/document/d/15NsBijM4xRGKAcKnepBtZeEO2mXM3aVN2a6IhZLeQqg/edit', 'label': 'FAQ', 'newTab': true} %}
-          </div>
-        </nav>
-      </div>
+        <div class="header--nav-item">
+          {% include '@templates/partials/inline-button.html' with {'link': 'https://docs.google.com/document/d/15NsBijM4xRGKAcKnepBtZeEO2mXM3aVN2a6IhZLeQqg/edit', 'label': 'FAQ', 'newTab': true} %}
+        </div>
+      </nav>
+    </div>
   </div>
 </header>

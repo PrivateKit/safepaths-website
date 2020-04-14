@@ -1,5 +1,5 @@
 <a
-  class="link--button {{icon ? 'link--button-icon' : primary ? 'link--button-primary' : ''}}"
+  class="link--button {{icon ? 'link--button-icon' : primary ? 'link--button-primary' : inline ? 'link--button-inline' : ''}}"
   href="{{link}}"
   {% if newTab %}
     target="_blank"
@@ -15,7 +15,7 @@
   {{label}}
 
   {# Default: After label icon #}
-  {% if not icon %}
+  {% if not icon and not inline %}
     {% include '@templates/svgs/arrow.svg' %}
   {% endif %}
 </a>
