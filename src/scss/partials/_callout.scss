@@ -24,6 +24,11 @@
   align-self: flex-end;
   position: relative;
   width: 100%;
+
+  &:not(.collout--content--text) {
+    border-radius: $br $br 0 0;
+    overflow: hidden;
+  }
 }
 
 .collout--content--text {

@@ -10,7 +10,7 @@
     }
   }
 
-  @include mq($md, $md-lg) {
+  @include mq($md, $lg) {
     .benefits & {
       &:last-child {
         display: none;
