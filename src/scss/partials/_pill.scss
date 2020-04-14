@@ -1,13 +1,33 @@
 .pill {
+  position: relative;
+}
+
+.pill-bg {
+  @include absolute(0 x x 50%);
+  @include size(253px);
   background-image: $gradient-blue;
-  border-bottom: 1px solid $color-bg-light;
   border-radius: $br;
-  border-top: 1px solid $color-bg-dark;
-  color: $color-bg;
+  transform: translateX(-50%);
+
+  @include mq(0, $md-lg) {
+    display: none;
+  }
+
+  @include mq(1180px) {
+    @include size(229px);
+  }
+
+  @include mq($xl) {
+    @include size(235px);
+  }
 }
 
 .pill-content {
   @include padding($sp-xl x);
+  background-image: $gradient-blue;
+  border-radius: $br;
+  color: $color-bg;
+  position: relative;
 
   @include mq($md-lg) {
     @include padding(0 x);

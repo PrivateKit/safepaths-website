@@ -7,7 +7,8 @@ Utilities
 const setInitialStyles = targets => {
   targets.forEach(target => {
     target.style.opacity = 0;
-    target.style.transform = 'translateY(10px)';
+    target.style.transformOrigin = 'top';
+    target.style.transform = 'translateY(10px) scaleY(1.05)';
   });
 };
 
@@ -86,14 +87,26 @@ let ww = window.innerWidth;
 gsap.registerEffect({
   name: 'fadeIn',
   effect: (targets, config) =>
-    gsap.to(targets, {
-      duration: config.duration,
-      y: 0,
-      autoAlpha: 1,
-      ease: 'power2.out',
-      stagger: config.stagger,
-      force3D: true,
-    }),
+    gsap
+      .timeline()
+      .to(targets, {
+        duration: 0.6,
+        autoAlpha: 1,
+        ease: 'power2.out',
+        stagger: config.stagger,
+      })
+      .to(
+        targets,
+        {
+          duration: config.duration,
+          y: 0,
+          scaleY: 1,
+          ease: 'power2.out',
+          stagger: config.stagger,
+          force3D: true,
+        },
+        '<',
+      ),
   defaults: { duration: 0.8, stagger: 0.2 },
   extendTimeline: true,
 });
@@ -125,17 +138,6 @@ const topperAnimation = () => {
   }
 };
 
-window.addEventListener('resize', () => {
-  ww = window.innerWidth;
-
-  if (ww < 960) {
-    removeInitialStyles([header, topperHeadline, topperDeck]);
-    removeInitialStyles(topperList);
-    removeInitialStyles(topperListItem);
-    removeInitialStyles(topperArt);
-  }
-});
-
 topperAnimation();
 
 /* ---------------------------------------------
@@ -143,6 +145,9 @@ Reveal animations
 --------------------------------------------- */
 let revealElements;
 let revealStaggerItems;
+let pill;
+let pillHeight;
+let pillBg;
 const THRESHOLD = 0.5;
 
 window.addEventListener(
@@ -150,6 +155,12 @@ window.addEventListener(
   () => {
     revealElements = document.querySelectorAll('.js-reveal');
     revealStaggerItems = document.querySelectorAll('.js-reveal-stagger-item');
+    pill = document.querySelector('.js-pill');
+    pillBg = document.querySelector('.js-pill-bg');
+    pillHeight = pill.getBoundingClientRect().height;
+
+    gsap.set(pill, { autoAlpha: 0 });
+    gsap.set(pillBg, { width: pillHeight, height: pillHeight });
 
     setInitialStyles(revealElements);
     setInitialStyles(revealStaggerItems);
@@ -159,12 +170,20 @@ window.addEventListener(
 );
 
 function handleIntersect(entries) {
+  const tl = gsap.timeline();
+
   entries.forEach(entry => {
     const staggerItems = entry.target.querySelectorAll('.js-reveal-stagger-item');
+    const entryPill = entry.target.querySelector('.js-pill');
+    const entryPillBg = entry.target.querySelector('.js-pill-bg');
 
     if (entry.intersectionRatio >= THRESHOLD) {
       gsap.effects.fadeIn(entry.target).delay(0.1);
       gsap.effects.fadeIn(staggerItems, { stagger: 0.2 });
+      tl.to(entryPillBg, { width: '100%', ease: 'power3.out', duration: 0.6 }).to(entryPill, {
+        autoAlpha: 1,
+        duration: 0.3,
+      });
     }
   });
 }
@@ -179,3 +198,17 @@ function createObserver() {
   const observer = new IntersectionObserver(handleIntersect, options);
   revealElements.forEach(revealElement => observer.observe(revealElement));
 }
+
+window.addEventListener('resize', () => {
+  ww = window.innerWidth;
+
+  pillHeight = pill.getBoundingClientRect().height;
+  gsap.set(pillBg, { width: pillHeight, height: pillHeight });
+
+  if (ww < 960) {
+    removeInitialStyles([header, topperHeadline, topperDeck]);
+    removeInitialStyles(topperList);
+    removeInitialStyles(topperListItem);
+    removeInitialStyles(topperArt);
+  }
+});

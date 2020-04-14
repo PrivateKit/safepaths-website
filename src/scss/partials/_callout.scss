@@ -68,6 +68,14 @@
 
 .callout--art {
   display: flex;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    @include absolute(x x -20% 50%);
+    transform: translateX(-50%);
+    width: auto;
+  }
 
   svg {
     @include size(100%);
