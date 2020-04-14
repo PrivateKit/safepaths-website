@@ -1,3 +1,6 @@
 .intro-paragraph {
   @include page-deck;
+  .intro-section & {
+    max-width: 800px;
+  }
 }
