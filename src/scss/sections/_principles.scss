@@ -49,6 +49,7 @@
   align-items: center;
   border-bottom: $border;
   display: flex;
+  margin-bottom: 0;
 
   h3 {
     @include margin(0);

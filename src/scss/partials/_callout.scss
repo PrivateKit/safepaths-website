@@ -71,14 +71,38 @@
   overflow: hidden;
   position: relative;
 
-  img {
-    @include absolute(x x -20% 50%);
-    transform: translateX(-50%);
-    width: auto;
-  }
-
   svg {
     @include size(100%);
+  }
+}
+
+.callout--art-image {
+  @include absolute(x x -40% 50%);
+  @include size(70%, 100%);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transform: translateX(-50%);
+
+  img {
+    @include size(100%, auto);
+    @include margin(x auto);
+  }
+}
+
+.callout--dots {
+  @include margin(x auto);
+  @include size(97%, 89%);
+  border-radius: $br-sm;
+  overflow: hidden;
+  position: absolute;
+
+  span {
+    background-color: transparentize($color-spot, 0.7);
+    border: 2px solid transparentize($color-spot, 0.5);
+    border-radius: $br;
+    display: block;
+    position: absolute;
   }
 }
 

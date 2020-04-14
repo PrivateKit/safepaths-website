@@ -4,15 +4,15 @@
       <p class="callout--label {{callout.available ? '' : 'callout--label-muted'}}">{{callout.label}}</p>
       <div class="callout--art">
         <div class="callout--art-image">
-          <img src="{{callout.art}}" alt="{{callout.artCaption}}" />
+          <img class="js-callout-img" src="{{callout.art}}" alt="{{callout.artCaption}}" />
 
-          {# {% if callout.dots %}
-            <div class="callout--dots">
+          {% if callout.dots %}
+            <div class="callout--dots js-callout-img js-reveal">
               {% for i in 1..20 %}
-                <span></span>
+                <span class="js-dot js-reveal-stagger-scale"></span>
               {% endfor %}
             </div>
-          {% endif %} #}
+          {% endif %}
         </div>
         {% include '@templates/svgs/callout-dome.svg' %}
       </div>

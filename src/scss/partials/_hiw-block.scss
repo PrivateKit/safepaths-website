@@ -10,7 +10,7 @@
 }
 
 .hiw-block-content {
-  @include padding($sp-lg);
+  @include padding($sp-xl $sp-lg);
   position: absolute;
 
   @include mq($br-col-3, $lg) {

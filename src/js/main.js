@@ -1,4 +1,5 @@
 import { gsap } from 'gsap';
+import Parallax from './parallax';
 import 'modernizr';
 
 /* ---------------------------------------------
@@ -145,6 +146,7 @@ Reveal animations
 --------------------------------------------- */
 let revealElements;
 let revealStaggerItems;
+let revealStaggerScale;
 let pill;
 let pillHeight;
 let pillBg;
@@ -155,12 +157,14 @@ window.addEventListener(
   () => {
     revealElements = document.querySelectorAll('.js-reveal');
     revealStaggerItems = document.querySelectorAll('.js-reveal-stagger-item');
+    revealStaggerScale = document.querySelectorAll('.js-reveal-stagger-scale');
     pill = document.querySelector('.js-pill');
     pillBg = document.querySelector('.js-pill-bg');
     pillHeight = pill.getBoundingClientRect().height;
 
-    gsap.set(pill, { autoAlpha: 0 });
+    gsap.set([pill, revealStaggerScale], { autoAlpha: 0 });
     gsap.set(pillBg, { width: pillHeight, height: pillHeight });
+    gsap.set(revealStaggerScale, { scale: 0.5 });
 
     setInitialStyles(revealElements);
     setInitialStyles(revealStaggerItems);
@@ -174,12 +178,20 @@ function handleIntersect(entries) {
 
   entries.forEach(entry => {
     const staggerItems = entry.target.querySelectorAll('.js-reveal-stagger-item');
+    const staggerScale = entry.target.querySelectorAll('.js-reveal-stagger-scale');
     const entryPill = entry.target.querySelector('.js-pill');
     const entryPillBg = entry.target.querySelector('.js-pill-bg');
 
     if (entry.isIntersecting) {
       gsap.effects.fadeIn(entry.target).delay(0.1);
       gsap.effects.fadeIn(staggerItems);
+      gsap.to(staggerScale, {
+        scale: 1,
+        autoAlpha: 1,
+        ease: 'power2.out',
+        duration: 0.6,
+        stagger: index => index * 0.1,
+      });
       tl.to(entryPillBg, { width: '100%', ease: 'power3.out', duration: 0.6 }).to(entryPill, {
         autoAlpha: 1,
         duration: 0.3,
@@ -198,6 +210,36 @@ function createObserver() {
   const observer = new IntersectionObserver(handleIntersect, options);
   revealElements.forEach(revealElement => observer.observe(revealElement));
 }
+
+/* ---------------------------------------------
+Parallax animations
+--------------------------------------------- */
+const setParallax = () => {
+  const parallaxImages = document.querySelectorAll('.js-callout-img');
+
+  parallaxImages.forEach(parallaxImage => Parallax.init(parallaxImage, -15));
+};
+
+/* ---------------------------------------------
+Dots animations
+--------------------------------------------- */
+const dots = document.querySelectorAll('.js-dot');
+
+dots.forEach(dot => {
+  const dotSize = Math.floor(Math.random() * 60);
+  const dotPositionX = Math.floor(Math.random() * 100);
+  const dotPositionY = Math.floor(Math.random() * 100);
+
+  dot.style.width = `${dotSize}px`;
+  dot.style.height = `${dotSize}px`;
+  dot.style.top = `${dotPositionY}%`;
+  dot.style.left = `${dotPositionX}%`;
+});
+
+/* ---------------------------------------------
+Event handlers
+--------------------------------------------- */
+window.addEventListener('scroll', () => requestAnimationFrame(setParallax));
 
 window.addEventListener('resize', () => {
   ww = window.innerWidth;
