@@ -30,13 +30,8 @@
 }
 
 .col-2 {
-  width: columns(1, 2);
-
-  @include mq(0, $md-lg) {
-    &:nth-child(odd) {
-      padding-right: $grid-gutter;
-    }
-  }
+  @include margin(x auto);
+  max-width: 320px;
 
   @include mq($md) {
     width: columns(1, 4);
