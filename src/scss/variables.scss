@@ -5,6 +5,7 @@ $color-highlight: #ff5656;
 $color-bg: #f0f0f0;
 $color-white: #ffffff;
 $color-border: $color-base;
+$color-border-light: rgba(darken($color-bg, 25%), 0.25);
 $color-bg-blue: mix($color-spot, $color-bg, $weight: 5%);
 $color-bg-light: lighten($color-bg, 3%);
 $color-bg-dark: darken($color-bg, 6%);
@@ -60,8 +61,8 @@ $xl: 1366px;
 $br-col-3: 820px;
 
 // Border
-$border: 1px solid darken($color-bg, 10%);
-$border-thick: 2px solid darken($color-bg, 10%);
+$border: 1px solid $color-border-light;
+$border-thick: 2px solid $color-border-light;
 
 // Border radius
 $br: 999rem;
