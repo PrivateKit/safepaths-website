@@ -115,7 +115,11 @@
 
 .callout--title {
   @include fs-h3;
-  margin-bottom: $sp-md;
+  margin-bottom: $sp-base;
+
+  @include mq($md-lg) {
+    margin-bottom: $sp-md;
+  }
 }
 
 .callout--title-label {
@@ -131,8 +135,12 @@
 
 .callout--deck {
   @include body-text;
-  @include margin(x x $sp-lg);
+  @include margin(x auto $sp-lg);
   max-width: 380px;
+
+  @include mq($md) {
+    margin-left: 0;
+  }
 
   @include mq($xl) {
     max-width: none;

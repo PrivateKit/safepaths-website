@@ -4,12 +4,16 @@
 }
 
 .news-article--meta {
-  @include label;
   color: $color-base;
+  font-size: $fs-xs;
 
   p {
     margin-bottom: $sp-xs;
   }
+}
+
+.news-article--meta-date {
+  @include label;
 }
 
 .news-article--headline {

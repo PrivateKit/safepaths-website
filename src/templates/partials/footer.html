@@ -12,14 +12,19 @@
     </div>
 
     <div class="footer-content--block">
-      <div class="footer-content--attribution">
-        <div class="footer-logo">
-          <p>
-            {% include '@templates/svgs/logo.svg' %}
-          </p>
+      <div class="footer-content--attribution grid">
+        <div class="grid-cell footer-block">
+          <div class="footer-logo">
+            <p>
+              {% include '@templates/svgs/logo.svg' %}
+            </p>
+          </div>
         </div>
-        <p>Cambridge MA 02139-4307</p>
-        <p>©{{ "now"|date("Y") }}. Path Checks, Inc. <a href="{{termsOfUseUrl}}" target="_blank" rel="noopener">Terms of Use</a></p>
+        <div class="grid-cell footer-block">
+          <p>Path Checks, Inc.</p>
+          <p>Cambridge MA 02139-4307</p>
+          <p>©{{ "now"|date("Y") }}. Path Checks, Inc. <a href="{{termsOfUseUrl}}" target="_blank" rel="noopener">Terms of Use</a></p>
+        </div>
       </div>
     </div>
   </div>

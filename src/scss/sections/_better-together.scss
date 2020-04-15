@@ -16,13 +16,9 @@
 }
 
 .bt-section-text {
-  @include margin(x auto $sp-lg);
+  @include margin(x auto $sp-xl);
   max-width: $md;
   text-align: center;
-
-  @include mq($lg) {
-    margin-bottom: $sp-xl;
-  }
 }
 
 .bt-section--overline {

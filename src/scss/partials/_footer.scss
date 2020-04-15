@@ -33,8 +33,27 @@
 }
 
 .footer-content--attribution {
+  align-items: flex-end;
+  width: 100%;
+
+  @include mq($md-lg) {
+    .footer-block:last-child {
+      text-align: right;
+    }
+  }
+
   p {
     margin-bottom: $sp-base;
+  }
+}
+
+.footer-block.footer-block {
+  margin-bottom: 0;
+
+  @include mq(0, $md-lg) {
+    &:last-child {
+      margin-bottom: $sp-lg;
+    }
   }
 }
 
