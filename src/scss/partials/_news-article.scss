@@ -4,6 +4,7 @@
 }
 
 .news-article--meta {
+  @include label;
   color: $color-base;
 
   p {

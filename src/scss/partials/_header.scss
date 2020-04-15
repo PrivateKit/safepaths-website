@@ -4,14 +4,17 @@
 }
 
 .header-content {
-  @include site-padding;
-  @include padding($sp-md x);
+  @include padding($sp-md);
   align-items: center;
   display: flex;
   justify-content: space-between;
 
   @include mq($md) {
     flex-direction: row;
+  }
+
+  @include mq($lg) {
+    @include padding($sp-base $sp-lg);
   }
 }
 

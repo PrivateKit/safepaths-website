@@ -29,7 +29,6 @@
   z-index: 1;
 
   @include mq($lg) {
-    @include padding($sp-xxl x x);
     max-width: columns(6);
 
     h2 {

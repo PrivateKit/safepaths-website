@@ -150,7 +150,7 @@ let revealStaggerScale;
 let pill;
 let pillHeight;
 let pillBg;
-const THRESHOLD = 0.5;
+const THRESHOLD = 0.33;
 
 window.addEventListener(
   'load',

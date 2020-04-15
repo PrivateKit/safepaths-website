@@ -8,6 +8,10 @@
 
   @include on-focus {
     border-color: $color-spot;
+
+    .whitepaper-title {
+      border-top-color: $color-spot;
+    }
   }
 
   @include mq($md) {
@@ -17,8 +21,7 @@
 
 .whitepaper-label {
   @include padding($sp-base x $sp-xl);
-  @include uppercase;
-  color: $color-base;
+  @include label;
   display: flex;
   justify-content: space-between;
 
