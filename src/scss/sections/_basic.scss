@@ -33,7 +33,7 @@
   figcaption {
     @include margin($sp-base x);
     @include padding(x $sp-base);
+    @include small-text;
     border-left: $border;
-    font-size: $fs-xs;
   }
 }

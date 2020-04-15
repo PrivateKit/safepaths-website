@@ -1,6 +1,6 @@
 <div class="news-article">
   <div class="news-article--meta">
-    <p><span class="news-article--meta-date">{{article.date|date('m.d.Y')}}</span> • <span class="news-article--meta-source">{{article.source}}</span></p>
+    <p><span class="news-article--meta-date">{{article.date|date('m.d.Y')}}</span> <span class="meta-dot">•</span> <span class="news-article--meta-source">{{article.source}}</span></p>
   </div>
   <h4 class="news-article--headline">
     {% include '@templates/partials/inline-button.html' with {'label': article.headline, 'link': article.link, 'newTab': true} %}

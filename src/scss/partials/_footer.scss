@@ -1,5 +1,5 @@
 .footer {
-  font-size: $fs-xs;
+  @include small-text;
   position: relative;
   z-index: 1;
 }

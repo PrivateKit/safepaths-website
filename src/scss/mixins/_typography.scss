@@ -1,3 +1,11 @@
+@mixin small-text {
+  font-size: $fs-xs;
+
+  @include mq($xl) {
+    font-size: $fs-base;
+  }
+}
+
 @mixin body-text {
   font-size: $fs-base;
 
@@ -101,7 +109,7 @@
 }
 
 @mixin uppercase {
-  font-size: $fs-xs;
+  @include small-text;
   letter-spacing: $ls-loose;
   text-transform: uppercase;
 }

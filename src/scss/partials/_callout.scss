@@ -65,8 +65,13 @@
 .callout--label {
   @include absolute($sp-lg x x 50%);
   @include label;
+  font-size: $fs-xs;
   transform: translateX(-50%);
   z-index: 1;
+
+  @include mq($xl) {
+    font-size: $fs-xs;
+  }
 
   &-muted {
     opacity: 0.5;

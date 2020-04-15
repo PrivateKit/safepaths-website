@@ -4,8 +4,8 @@
 }
 
 .news-article--meta {
+  @include small-text;
   color: $color-base;
-  font-size: $fs-xs;
 
   p {
     margin-bottom: $sp-xs;
@@ -18,4 +18,8 @@
 
 .news-article--headline {
   display: inline;
+}
+
+.meta-dot {
+  color: darken($color-bg, 15%);
 }

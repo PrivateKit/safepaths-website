@@ -46,7 +46,7 @@ function setup() {
 function circ(x, y, rad, opacity) {
   ctx.beginPath();
   ctx.strokeStyle = `rgba(165, 175, 250, ${opacity})`;
-  ctx.lineWidth = 62.5;
+  ctx.lineWidth = 83.5;
   ctx.arc(x, y, rad, 0, Math.PI * 2);
   ctx.stroke();
   ctx.closePath();
@@ -62,7 +62,7 @@ function animate() {
 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  const circleOffset = offset(w / 6, 20);
+  const circleOffset = offset(w / 6, 25);
 
   for (let i = 0; i < circleOffset; i++) {
     const radius = ((i * (w / circleOffset) + frame) % w) / 2;
@@ -94,7 +94,7 @@ gsap.registerEffect({
         duration: 0.6,
         autoAlpha: 1,
         ease: 'power2.out',
-        stagger: index => index * 0.12,
+        stagger: index => index * 0.1,
       })
       .to(
         targets,
@@ -103,7 +103,7 @@ gsap.registerEffect({
           y: 0,
           scaleY: 1,
           ease: 'power2.out',
-          stagger: index => index * 0.12,
+          stagger: index => index * 0.1,
           force3D: true,
         },
         '<',
