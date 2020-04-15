@@ -1,7 +1,7 @@
 - overline: Safe Paths
   title: Stay safe, feel secure
   deck: Remember where you’ve been and see if you’ve encountered anyone diagnosed with COVID-19. Designed with security as the No. 1 priority.
-  label: Available now
+  label: For everyone
   available: true
   art: '/static/img/private-kit.png'
   artCaption: Private Kit
@@ -18,8 +18,8 @@
 - overline: Safe Places
   title: Map verified cases
   deck: Patients who test positive can choose to anonymously donate location history to public health officials, who use secure tools to create a verified public record.
-  label: Coming soon
-  available: false
+  label: For health officials
+  available: true
   art: '/static/img/safe-places.png'
   artCaption: Safe Places
   dots: true
