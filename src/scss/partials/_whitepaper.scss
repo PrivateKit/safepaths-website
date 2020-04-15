@@ -20,10 +20,10 @@
   @include uppercase;
   color: $color-base;
   display: flex;
-  font-size: $fs-base;
   justify-content: space-between;
 
   svg {
+    @include size(18px);
     color: $color-spot;
     margin-left: auto;
   }

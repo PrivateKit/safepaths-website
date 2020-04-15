@@ -1,4 +1,5 @@
 .inline-button {
+  @include paragraph;
   background-size: 0% 2px;
   color: $color-spot;
   font-weight: $fw-bold;

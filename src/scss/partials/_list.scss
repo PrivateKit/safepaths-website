@@ -2,7 +2,6 @@
 .list {
   @include padding(0);
   display: flex;
-  margin-bottom: $sp-lg;
 
   @include mq($md) {
     &:not(:first-child):not(:last-child) {
@@ -16,6 +15,10 @@
         display: none;
       }
     }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 
   .benefits & {

@@ -39,11 +39,21 @@
   @include mq($md) {
     @include padding($sp-xl);
   }
+
+  @include mq($xl) {
+    &:last-child {
+      @include padding(x $sp-xl x ($sp-xl + $sp-base));
+    }
+
+    &:first-child {
+      @include padding(x($sp-xl + $sp-base) x $sp-xl);
+    }
+  }
 }
 
 .pill-side-content {
   @include margin(x auto);
-  max-width: $sm;
+  max-width: 300px;
 }
 
 .pill-side--deck {

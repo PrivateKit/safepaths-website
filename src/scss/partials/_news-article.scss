@@ -1,11 +1,14 @@
 .news-article-header {
   display: inline-block;
-  margin-bottom: $sp-md;
+  margin-bottom: $sp-base;
 }
 
 .news-article--meta {
   color: $color-base;
-  font-size: $fs-base;
+
+  p {
+    margin-bottom: $sp-xs;
+  }
 }
 
 .news-article--headline {

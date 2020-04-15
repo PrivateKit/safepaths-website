@@ -36,6 +36,11 @@
   @include mq($md) {
     width: columns(1, 4);
   }
+
+  @include mq($lg) {
+    display: flex;
+    max-width: none;
+  }
 }
 
 .col-3 {

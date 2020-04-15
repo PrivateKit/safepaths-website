@@ -39,4 +39,12 @@
   @include mq($md) {
     @include padding($grid-gutter-lg $grid-gutter $grid-gutter-lg x);
   }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .news-content-block:last-child & {
+    border-bottom: 0;
+  }
 }

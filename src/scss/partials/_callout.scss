@@ -34,9 +34,11 @@
 .collout--content--text {
   @include padding($grid-gutter x);
   align-self: center;
+  text-align: center;
 
   @include mq($md) {
     @include padding(x x x $grid-gutter);
+    text-align: left;
 
     .page-section--alt-layout & {
       @include padding(x $grid-gutter x 0);
@@ -129,7 +131,12 @@
 
 .callout--deck {
   @include body-text;
-  margin-bottom: $sp-lg;
+  @include margin(x x $sp-lg);
+  max-width: 380px;
+
+  @include mq($xl) {
+    max-width: none;
+  }
 }
 
 .callout--button {

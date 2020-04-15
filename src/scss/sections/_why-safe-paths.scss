@@ -116,7 +116,7 @@ $fade-size-lg: $sp-xxl * 1.5;
   }
 
   @include mq($xl) {
-    margin-top: -$fade-size-lg;
+    @include margin((-$fade-size-lg) (-$sp-xxl) x (-$sp-xxl));
   }
 
   .col-2 {
