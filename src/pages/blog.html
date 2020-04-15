@@ -11,5 +11,17 @@ title: COVID SafePaths - About
 </div>
 {% endblock %}
 
-
+{% block basicBody %}
+<main>
+  <div class="blog-body">
+    <div class="blog-grid news-content">
+      {% for i in 1..12 %}
+        <div class="blog-grid-cell news-content-block">
+          {% include '@templates/partials/post-tease.twig' %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</main>
+{% endblock %}
 {% endembed %}

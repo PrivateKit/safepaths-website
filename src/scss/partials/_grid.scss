@@ -2,7 +2,7 @@
 .grid {
   display: flex;
 
-  @include mq($sm, $md-lg) {
+  @include mq(0, $md-lg) {
     flex-flow: row wrap;
   }
 }

@@ -1,0 +1,26 @@
+.post-tease {
+  background-image: none;
+  display: block;
+
+  @include on-focus {
+    .post-tease--title h3 {
+      background-image: linear-gradient(to top, $color-spot, $color-spot);
+      background-position: bottom left;
+      background-repeat: no-repeat;
+      background-size: 100% 2px;
+    }
+  }
+}
+
+.post-tease--title {
+  color: $color-spot;
+  margin-bottom: $sp-md;
+
+  h3 {
+    display: inline;
+  }
+}
+
+.post-tease--deck {
+  color: $color-base;
+}
