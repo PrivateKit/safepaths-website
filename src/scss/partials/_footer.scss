@@ -2,10 +2,6 @@
   font-size: $fs-xs;
   position: relative;
   z-index: 1;
-
-  @include mq($lg) {
-    font-size: $fs-base;
-  }
 }
 
 .footer-content {
