@@ -2,8 +2,8 @@
   <div class="callout--col">
     <div class="callout--content">
       <div class="callout--label {{callout.available ? '' : 'callout--label-muted'}}">
-        {# <div class="callout--label-overline">{{ callout.overline }}</div> #}
-        {# <div>{{callout.label}}</div> #}
+        <div class="callout--label-overline">{{ callout.overline }}</div>
+        <div>{{callout.label}}</div>
       </div>
       <div class="callout--art">
         <div class="callout--art-image">
@@ -23,7 +23,7 @@
   </div>
   <div class="callout--col">
     <div class="callout--content collout--content--text js-reveal">
-      <div class="callout--title-label js-reveal-stagger-item"><p>{{callout.overline}}</p></div>
+      {# <div class="callout--title-label js-reveal-stagger-item"><p>{{callout.overline}}</p></div> #}
       <h3 class="callout--title js-reveal-stagger-item">{{callout.title}}</h3>
       <div class="callout--deck js-reveal-stagger-item">
         <p>{{callout.deck}}</p>
