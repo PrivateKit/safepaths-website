@@ -1,7 +1,10 @@
 <div class="callout">
   <div class="callout--col">
     <div class="callout--content">
-      <p class="callout--label {{callout.available ? '' : 'callout--label-muted'}}">{{callout.label}}</p>
+      <div class="callout--label {{callout.available ? '' : 'callout--label-muted'}}">
+        {# <div class="callout--label-overline">{{ callout.overline }}</div> #}
+        {# <div>{{callout.label}}</div> #}
+      </div>
       <div class="callout--art">
         <div class="callout--art-image">
           <img class="js-callout-img" src="{{callout.art}}" alt="{{callout.artCaption}}" />

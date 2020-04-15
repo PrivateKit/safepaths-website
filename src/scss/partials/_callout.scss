@@ -65,16 +65,17 @@
 .callout--label {
   @include absolute($sp-lg x x 50%);
   @include small-text;
+  text-align: center;
   transform: translateX(-50%);
   z-index: 1;
-
-  @include mq($lg) {
-    margin-top: $sp-lg;
-  }
 
   &-muted {
     opacity: 0.5;
   }
+}
+
+.callout--label-overline {
+  color: $color-spot;
 }
 
 .callout--art {
