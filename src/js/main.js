@@ -217,7 +217,7 @@ Parallax animations
 const setParallax = () => {
   const parallaxImages = document.querySelectorAll('.js-callout-img');
 
-  parallaxImages.forEach(parallaxImage => Parallax.init(parallaxImage, -15));
+  parallaxImages.forEach(parallaxImage => Parallax.init(parallaxImage, -25));
 };
 
 /* ---------------------------------------------

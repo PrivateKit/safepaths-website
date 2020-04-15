@@ -7,8 +7,7 @@
 
   @include mq($lg) {
     align-items: flex-start;
-    border-top: $border;
-    border-top-width: 2px;
+    border-top: $border-thick;
     flex-direction: row;
 
     .basic-page-section-body {

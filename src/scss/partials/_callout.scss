@@ -84,7 +84,7 @@
 }
 
 .callout--art-image {
-  @include absolute(x x -40% 50%);
+  @include absolute(x x -30% 50%);
   @include size(70%, 100%);
   align-items: center;
   display: flex;

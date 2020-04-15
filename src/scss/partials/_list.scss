@@ -51,10 +51,10 @@
 
 .list--title {
   @include paragraph;
-  border-bottom: $border;
+  border-bottom: $border-thick;
   color: $color-spot;
   margin-bottom: 0;
-  padding-bottom: $sp-md;
+  padding-bottom: $sp-base;
 }
 
 .list--item {

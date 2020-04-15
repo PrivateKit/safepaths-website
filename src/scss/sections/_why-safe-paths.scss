@@ -19,7 +19,7 @@ $fade-size-lg: $sp-xxl * 1.5;
     &:not(:last-child) {
       &::before {
         @include absolute(50% x x 50%);
-        border-top: 2px solid $color-bg-dark;
+        border-top: $border-thick;
         content: '';
         display: inline-block;
         width: 100%;

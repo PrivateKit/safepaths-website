@@ -29,10 +29,10 @@
 
 .principles-title {
   @include body-text;
-  border-bottom: $border;
+  border-bottom: $border-thick;
   color: $color-spot;
   font-weight: $fw-bold;
-  padding-bottom: $sp-md;
+  padding-bottom: $sp-base;
 }
 
 .principles-headline {
