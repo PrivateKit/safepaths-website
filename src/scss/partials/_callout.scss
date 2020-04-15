@@ -68,6 +68,10 @@
   transform: translateX(-50%);
   z-index: 1;
 
+  @include mq($lg) {
+    margin-top: $sp-lg;
+  }
+
   &-muted {
     opacity: 0.5;
   }
