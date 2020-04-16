@@ -2,53 +2,9 @@ title: The Team
 intro: Our team is composed of a consortium of epidemiologists, engineers, data scientists,
   digital privacy evangelists, professors and researchers from reputable institutions.
 departments:
-  - members:
-      - name: Ramesh Raskar
-        affiliation: MIT  
+  - members:  
       - name: A.J. Pape
         affiliation: Impact Leadership Network
-      - name: Alina Clough
-        affiliation: Harvard Kennedy School
-      - name: Christian Crumlish
-        affiliation: Design in Product
-      - name: Dazza Greenwood
-        affiliation: MIT, Civics.com
-      - name: Du Tri Duong
-        affiliation: EY
-      - name: Elizabeth Yekhtikian 
-        affiliation: Earned Media Consultants
-      - name: Francesco	Benedetti	
-        affiliation: MIT
-      - name: Greg Nadeau	
-        affiliation: Public Consulting Group
-      - name: Jeff Saviano 	
-        affiliation: EY
-      - name: Jocelyn	Rand 
-        affiliation: EY
-      - name: John	Werner	
-        affiliation: MIT Fellow, VC, TEDx, IIA
-      - name: Jon	Askin	
-        affiliation: Brooklyn Law School
-      - name: Ken Pugsley
-        affiliation: Workday
-      - name: Khalil Louisy
-        affiliation: MIT
-      - name: Kristen Vilcans
-        affiliation: MIT SDM
-      - name: Kyle Towle
-      - name: Russ Wilcox
-        affiliation: Pillar VC 
-      - name: Sam Zimmerman
-      - name: Sienna Leis
-        affiliation: Harvard Kennedy School
-      - name: Suraj Kapa
-        affiliation: Mayo Clinic
-      - name: Susan Garfield 
-        affiliation: EY
-      - name: Vinit Nijhawan
-        affiliation: Massachusetts Tech Transfer Center, Boston University, VentureCafe Foundation
-      - name: Yasaman Rajaee
-        affiliation: MIT
       - name: Aaron Kissler
         affiliation: FL Health
       - name: Abhishek Singh
@@ -57,6 +13,8 @@ departments:
         affiliation: Fastly
       - name: Alfred Spector
         affiliation: Two Sigma
+      - name: Alina Clough
+        affiliation: Harvard Kennedy School
       - name: Andrea Nuzzo
         affiliation: GSK
       - name: Ashley Mehra
@@ -75,21 +33,33 @@ departments:
         affiliation: Bond University
       - name: Chris Kreis
         affiliation: ASP.MD Inc.
+      - name: Christian Crumlish
+        affiliation: Design in Product
       - name: Christian Keegan
         affiliation: Westminster College
       - name: Craig Miller 
         affiliation: SpatialMinds, MapDrill 
       - name: David Biga 
         affiliation: Particle Space
+      - name: Dazza Greenwood
+        affiliation: MIT, Civics.com
       - name: Deepti Pahwa
         affiliation: Stanford Graduate School of Business
+      - name: Du Tri Duong
+        affiliation: EY
+      - name: Elizabeth Yekhtikian 
+        affiliation: Earned Media Consultants
       - name: Enrico Santus
         affiliation: Bayer
       - name: Fernando Morera
         affiliation: EY
+      - name: Francesco	Benedetti	
+        affiliation: MIT
       - name: Gabriel Harp
         affiliation: The MIT Press
       - name: Glenn Archer
+      - name: Greg Nadeau	
+        affiliation: Public Consulting Group
       - name: Harsh Vitra
         affiliation: Plant for the Planet
       - name: Heather Tartaglia
@@ -98,14 +68,29 @@ departments:
         affiliation: VLAB
       - name: Jay Summet
         affiliation: Georgia Insitute of Technology
+      - name: Jeff Saviano 	
+        affiliation: EY
       - name: Jenny	Ro
         affiliation: Curious Reactor
+      - name: Jocelyn	Rand 
+        affiliation: EY
+      - name: John	Werner	
+        affiliation: MIT Fellow, VC, TEDx, IIA
+      - name: Jon	Askin	
+        affiliation: Brooklyn Law School
       - name: Julia	Quinn
         affiliation: Citadel
       - name: Kasia	Chmielinski
         affiliation: Data Nutrition Project 
       - name: Kaushal	Jain
         affiliation: Harvard Business School
+      - name: Ken Pugsley
+        affiliation: Workday
+      - name: Khalil Louisy
+        affiliation: MIT
+      - name: Kristen Vilcans
+        affiliation: MIT SDM
+      - name: Kyle Towle
       - name: Lee	Brody
         affiliation: SRS Medical
       - name: Liv	Blackmon
@@ -126,11 +111,16 @@ departments:
         affiliation: Mayo Clinic
       - name: Rajeev	Surati
         affiliation: Computation and Imaging
+      - name: Ramesh Raskar
+        affiliation: MIT  
       - name: Renaud	Falgas
       - name: Rishank	Kanaparti
       - name: Rob	Brink
       - name: Robson Beaudry
         affiliation: Harvard University
+      - name: Russ Wilcox
+        affiliation: Pillar VC 
+      - name: Sam Zimmerman
       - name: Sam	Stowers
         affiliation: Minerva Schools
       - name: Samir	Goncalves
@@ -139,10 +129,16 @@ departments:
         affiliation: EY
       - name: Satam	Gaurav
         affiliation: Mayo Clinic
+      - name: Sienna Leis
+        affiliation: Harvard Kennedy School
       - name: Steve Penrod
         affiliation: TripleBlind
       - name: Steve	Vittorioso
         affiliation: Earned Media Consultants
+      - name: Suraj Kapa
+        affiliation: Mayo Clinic
+      - name: Susan Garfield 
+        affiliation: EY
       - name: Tal	Achituv
         affiliation: Hamagen (Israel)
       - name: Tarun	Nimmagadda
@@ -150,6 +146,10 @@ departments:
       - name: Tito	Bottitta
         affiliation: Upstatement 
       - name: Uduak	Eren
+      - name: Vinit Nijhawan
+        affiliation: Massachusetts Tech Transfer Center, Boston University, VentureCafe Foundation
       - name: Vitor	Pamplona
         affiliation: EyeNetra Inc.
+      - name: Yasaman Rajaee
+        affiliation: MIT
         
