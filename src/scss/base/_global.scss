@@ -4,6 +4,12 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+* {
+  &::selection {
+    background-color: rgba($color-highlight, 0.3);
+  }
+}
+
 // Headings
 h1,
 h2,
