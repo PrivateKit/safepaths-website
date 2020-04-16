@@ -26,6 +26,6 @@
   buttons:
     - label: Contact us
       icon: contact
-      link: privatekit@media.mit.edu
+      link: mailto:privatekit@media.mit.edu
       newTab: true
   altLayout: true
