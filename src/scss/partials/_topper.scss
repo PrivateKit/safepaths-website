@@ -29,6 +29,7 @@
   z-index: 1;
 
   @include mq($lg) {
+    margin-top: $sp-xl;
     max-width: columns(6);
 
     h2 {
@@ -38,6 +39,10 @@
 
   @include mq($md, $lg) {
     @include padding($sp-xl x x x);
+  }
+
+  @include mq($xl) {
+    margin-top: $sp-xl + $sp-lg;
   }
 
   h2 {
