@@ -2,7 +2,7 @@
   position: relative;
 
   @include mq($lg) {
-    margin-right: $grid-gutter * 2;
+    margin-right: $grid-gutter-lg;
   }
 }
 
@@ -33,7 +33,7 @@
   figcaption {
     @include margin($sp-base x);
     @include padding(x $sp-base);
-    border-left: 1px solid $color-base;
-    font-size: $fs-xs;
+    @include small-text;
+    border-left: $border;
   }
 }

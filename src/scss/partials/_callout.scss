@@ -1,0 +1,196 @@
+.callout {
+  display: flex;
+  flex-direction: column;
+
+  @include mq($br-col-3) {
+    border-bottom: $border;
+    flex-direction: row;
+
+    .page-section--alt-layout & {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.callout--col {
+  display: flex;
+
+  @include mq($br-col-3) {
+    width: columns(4);
+  }
+
+  @include mq($xl) {
+    &:first-child {
+      width: columns(5);
+    }
+  }
+}
+
+.callout--content {
+  align-self: flex-end;
+  position: relative;
+  width: 100%;
+
+  &:not(.collout--content--text) {
+    border-radius: $br $br 0 0;
+    overflow: hidden;
+  }
+}
+
+.collout--content--text {
+  @include padding($grid-gutter x);
+  align-self: center;
+  max-width: 550px;
+  text-align: center;
+
+  @include mq($br-col-3) {
+    @include padding(x x x $grid-gutter);
+    text-align: left;
+
+    .page-section--alt-layout & {
+      @include padding(x $grid-gutter x 0);
+    }
+  }
+
+  @include mq($lg) {
+    @include padding($grid-gutter-lg x $grid-gutter-lg $grid-gutter-lg);
+
+    .page-section--alt-layout & {
+      @include padding($grid-gutter-lg $grid-gutter-lg $grid-gutter-lg 0);
+    }
+  }
+
+  @include mq($xl) {
+    margin-left: $grid-gutter;
+
+    .page-section--alt-layout & {
+      @include margin(x $grid-gutter-lg x 0);
+    }
+  }
+}
+
+.callout--label {
+  @include absolute($sp-lg x x 50%);
+  @include small-text;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  @include mq($xl) {
+    margin-top: $sp-lg;
+  }
+
+  &-muted {
+    opacity: 0.5;
+  }
+}
+
+.callout--label-overline {
+  @include padding($sp-xs $sp-md);
+  background-color: $color-white;
+  border-radius: $br;
+  color: $color-spot;
+  font-weight: $fw-bold;
+  margin-bottom: $sp-xs;
+
+  @include mq($md) {
+    font-size: $fs-base;
+  }
+
+  @include mq($xl) {
+    font-size: $fs-h4;
+  }
+}
+
+.callout--art {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+
+  svg {
+    @include size(100%);
+  }
+}
+
+.callout--art-image {
+  @include absolute(x x -30% 50%);
+  @include size(70%, auto);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  transform: translateX(-50%);
+
+  img {
+    @include size(100%, auto);
+    @include margin(x auto);
+  }
+}
+
+.callout--art-image-ui {
+  border: 5px solid $color-white;
+  border-radius: $br-sm;
+  bottom: 0%;
+  overflow: hidden;
+  width: 80%;
+}
+
+.callout-img-ui {
+  position: absolute;
+}
+
+.callout--dots {
+  @include margin(x auto);
+  border-radius: $br-sm;
+  position: absolute;
+
+  span {
+    background-color: transparentize($color-spot, 0.7);
+    border: 2px solid transparentize($color-spot, 0.5);
+    border-radius: $br;
+    display: block;
+    position: absolute;
+  }
+}
+
+.callout--title {
+  @include fs-h3;
+  margin-bottom: $sp-base;
+
+  @include mq($md-lg) {
+    margin-bottom: $sp-md;
+  }
+}
+
+.callout--title-label {
+  @include body-text;
+  color: $color-spot;
+  font-weight: $fw-bold;
+  margin-bottom: $sp-base;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.callout--deck {
+  @include body-text;
+  @include margin(x auto $sp-lg);
+  max-width: 380px;
+
+  @include mq($br-col-3) {
+    margin-left: 0;
+  }
+
+  @include mq($xl) {
+    max-width: none;
+  }
+}
+
+.callout--button {
+  @include margin(x $grid-gutter / 2 $grid-gutter x);
+  display: inline-block;
+}

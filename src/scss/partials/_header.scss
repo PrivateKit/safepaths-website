@@ -1,22 +1,22 @@
 .header {
-  @include site-padding;
-  position: relative;
+  background-color: $color-bg;
   z-index: 10;
 }
 
 .header-content {
   @include padding($sp-md x);
+  @include site-padding;
   align-items: center;
-  border-bottom: 1px solid $color-border;
   display: flex;
   justify-content: space-between;
 
   @include mq($md) {
-    align-items: center;
+    flex-direction: row;
   }
 }
 
 .header-logo {
+  align-items: baseline;
   display: flex;
   flex: 1 1 auto;
   flex-flow: row wrap;
@@ -58,9 +58,11 @@
 
 .header-button-group {
   @include mq($sm, $md) {
-    bottom: $sp-md;
-    position: fixed;
-    width: calc(100% - (2 * #{$sp-md}));
+    @include fixed(x x 0 0);
+    @include padding($sp-base $sp-md);
+    background-color: $color-bg;
+    border-top: $border;
+    width: calc(100% - (#{$sp-md * 2}));
     z-index: 10;
   }
 
@@ -72,7 +74,7 @@
 
 .header-button {
   @include mq($md) {
-    margin-left: $sp-md;
+    margin-right: $sp-md;
   }
 }
 
@@ -80,4 +82,14 @@
   @include mq($sm, $lg) {
     display: none;
   }
+}
+
+// Nav
+.header--nav {
+  align-items: baseline;
+  display: flex;
+}
+
+.header--nav-item {
+  @include padding($sp-base $sp-md);
 }

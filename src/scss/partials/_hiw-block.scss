@@ -1,0 +1,37 @@
+.hiw-block {
+  @include margin(0 auto);
+  background-color: $color-bg-blue;
+  border-radius: $br-sm;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+.hiw-block-content {
+  @include padding($sp-xl $sp-lg);
+  position: absolute;
+
+  @include mq($br-col-3, $lg) {
+    position: relative;
+  }
+}
+
+.hiw-block-art {
+  margin-top: auto;
+
+  svg {
+    @include size(100%);
+  }
+}
+
+.hiw-block--heading {
+  @include paragraph;
+  margin-bottom: $sp-base;
+}
+
+.hiw-block--deck {
+  font-size: $fs-base;
+  margin-right: $grid-gutter;
+}

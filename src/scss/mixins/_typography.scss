@@ -1,8 +1,16 @@
+@mixin small-text {
+  font-size: $fs-xs;
+
+  @include mq($xl) {
+    font-size: $fs-base;
+  }
+}
+
 @mixin body-text {
   font-size: $fs-base;
 
   @include mq($xl) {
-    font-size: $fs-h5;
+    font-size: $fs-h4;
   }
 }
 
@@ -27,14 +35,25 @@
 }
 
 @mixin h3 {
-  font-size: $fs-h4;
-
-  @include mq($md) {
-    font-size: $fs-h3;
-  }
+  font-size: 1.4rem;
+  line-height: 1.3;
 
   @include mq($xl) {
     font-size: 1.6rem;
+  }
+}
+
+@mixin fs-h3 {
+  font-size: $fs-md;
+  letter-spacing: $ls-tight;
+  line-height: 1.1;
+
+  @include mq($md) {
+    font-size: $fs-lg;
+  }
+
+  @include mq($xl) {
+    font-size: $fs-h2;
   }
 }
 
@@ -59,7 +78,7 @@
 }
 
 @mixin giant {
-  font-size: $fs-lg;
+  font-size: $fs-xl;
   font-weight: 500;
   letter-spacing: $ls-tight;
   line-height: 1.1;
@@ -74,11 +93,28 @@
 }
 
 @mixin paragraph {
-  @include h4;
+  font-size: $fs-h4;
+
+  @include mq($md) {
+    font-size: $fs-h3;
+  }
+}
+
+@mixin page-deck {
+  font-size: $fs-sm;
+
+  @include mq($md) {
+    font-size: $fs-md;
+  }
 }
 
 @mixin uppercase {
-  font-size: $fs-base;
+  @include small-text;
   letter-spacing: $ls-loose;
   text-transform: uppercase;
+}
+
+@mixin label {
+  @include uppercase;
+  font-family: $mono;
 }

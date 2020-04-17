@@ -1,0 +1,74 @@
+// List
+.list {
+  @include padding(0);
+  display: flex;
+
+  @include mq($md) {
+    &:not(:first-child):not(:last-child) {
+      border-left: $border;
+    }
+  }
+
+  @include mq($md, $lg) {
+    .benefits & {
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .benefits & {
+    margin-right: 0;
+  }
+}
+
+.list-content {
+  @include padding(0 $sp-md 0 0);
+  width: 100%;
+
+  @include mq($md) {
+    @include padding(0 $sp-lg 0 0);
+
+    .list:not(:first-child) & {
+      padding-left: $grid-gutter;
+    }
+  }
+}
+
+.list--items {
+  @include margin(0);
+  @include padding(0);
+  list-style: none;
+}
+
+.list--item {
+  @include body-text;
+}
+
+.list--title {
+  @include paragraph;
+  border-bottom: $border-thick;
+  color: $color-spot;
+  margin-bottom: 0;
+  padding-bottom: $sp-base;
+}
+
+.list--item {
+  @include padding($sp-md x);
+  @include margin(0);
+  align-items: baseline;
+  display: flex;
+
+  &:not(:last-child) {
+    border-bottom: $border;
+  }
+
+  svg {
+    color: $color-spot;
+    margin-right: $sp-base;
+  }
+}

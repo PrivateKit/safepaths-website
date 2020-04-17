@@ -1,0 +1,33 @@
+- overline: Safe Paths
+  title: Stay safe, feel secure
+  deck: Remember where you’ve been and see if you’ve encountered anyone diagnosed with COVID-19. Designed with security as the No. 1 priority.
+  label: App for everyone
+  available: true
+  art: '/static/img/private-kit.png'
+  artCaption: Private Kit
+  buttons:
+    - label: App Store
+      icon: app-store
+      link: https://apps.apple.com/us/app/private-kit-prototype/id1501903733
+      newTab: true
+    - label: Google Play
+      icon: google-play
+      link: https://play.google.com/store/apps/details?id=edu.mit.privatekit
+      newTab: true
+  altLayout: false
+- overline: Safe Places
+  title: Map verified cases
+  deck: Public health officials maintain a verified record of COVID cases. Location data is anonymously donated by people who have tested positive.
+  label: Tool for health officials
+  available: true
+  art: '/static/img/safe-places.png'
+  artCaption: Safe Places
+  art2: '/static/img/safe-places-ui.png'
+  art2Caption: Safe Places UI
+  dots: true
+  buttons:
+    - label: Contact us
+      icon: contact
+      link: mailto:privatekit@media.mit.edu
+      newTab: true
+  altLayout: true

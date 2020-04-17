@@ -5,6 +5,8 @@
 
 .topper-art {
   margin-left: columns(6);
+  position: relative;
+  z-index: -1;
 }
 
 .topper-canvas {
@@ -17,7 +19,7 @@
 
   @include mq($lg) {
     @include fixed(x);
-    transform: translate(-50%, -25%);
+    transform: translate(-25%, 25%);
   }
 }
 
@@ -27,8 +29,8 @@
   z-index: 1;
 
   @include mq($lg) {
-    @include padding($sp-xxl x);
-    max-width: $col-3;
+    margin-top: $sp-xl;
+    max-width: columns(6);
 
     h2 {
       margin-right: $grid-gutter;
@@ -36,7 +38,11 @@
   }
 
   @include mq($md, $lg) {
-    @include padding($sp-xl x $sp-xxl x);
+    @include padding($sp-xl x x x);
+  }
+
+  @include mq($xl) {
+    margin-top: $sp-xl + $sp-lg;
   }
 
   h2 {
@@ -68,4 +74,18 @@
 
 .topper-feature {
   margin-bottom: $sp-lg;
+}
+
+// Benefits
+.benefits {
+  margin-bottom: $sp-xl;
+
+  @include mq($md) {
+    flex-wrap: nowrap;
+    margin-bottom: $sp-xxl;
+  }
+
+  .list {
+    width: 100%;
+  }
 }

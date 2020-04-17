@@ -1,12 +1,17 @@
 .whitepaper-link {
   @include padding(x $sp-md $sp-md);
-  background-color: $color-white;
+  background-color: $color-bg-light;
   background-image: none;
   border: 2px solid transparent;
+  border-radius: $br-sm;
   display: block;
 
   @include on-focus {
     border-color: $color-spot;
+
+    .whitepaper-title {
+      border-top-color: $color-spot;
+    }
   }
 
   @include mq($md) {
@@ -16,13 +21,16 @@
 
 .whitepaper-label {
   @include padding($sp-base x $sp-xl);
-  @include uppercase;
-  color: $color-base;
+  @include label;
   display: flex;
-  font-size: $fs-base;
   justify-content: space-between;
 
+  @include mq($xl) {
+    font-size: $fs-xs;
+  }
+
   svg {
+    @include size(18px);
     color: $color-spot;
     margin-left: auto;
   }
@@ -30,7 +38,7 @@
 
 .whitepaper-title {
   @include paragraph;
-  border-top: 1px solid $color-base;
+  border-top: $border;
   margin-bottom: 0;
   padding-top: $sp-base;
 }

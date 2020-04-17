@@ -1,25 +1,12 @@
 .footer {
-  font-size: $fs-xs;
+  @include small-text;
   position: relative;
   z-index: 1;
-
-  @include mq($lg) {
-    font-size: $fs-base;
-  }
 }
 
 .footer-content {
   @include padding($sp-xl x);
   @include site-padding;
-  max-width: $layout-max-width;
-
-  @include mq($lg) {
-    padding-top: $sp-xxl;
-  }
-
-  @include mq($xl) {
-    padding-top: $sp-xxl * 2;
-  }
 }
 
 .footer-content--block {
@@ -42,8 +29,27 @@
 }
 
 .footer-content--attribution {
+  align-items: flex-end;
+  width: 100%;
+
+  @include mq($md-lg) {
+    .footer-block:last-child {
+      text-align: right;
+    }
+  }
+
   p {
     margin-bottom: $sp-base;
+  }
+}
+
+.footer-block.footer-block {
+  margin-bottom: 0;
+
+  @include mq(0, $md-lg) {
+    &:last-child {
+      margin-bottom: $sp-lg;
+    }
   }
 }
 

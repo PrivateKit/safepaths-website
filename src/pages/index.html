@@ -3,22 +3,26 @@ title: COVID SafePaths
 ---
 
 {% extends "@templates/layouts/base.twig" %}
-
-{% block header %}
-  {% include '@templates/partials/header.twig' %}
-{% endblock %}
+{% set callouts = site.data['callouts.yaml'] %}
 
 {% block content %}
 <main>
   {% include '@templates/partials/topper.twig' %}
   <div class="home-body">
-    {% include '@templates/sections/section-download.twig' %}
+    {% for callout in callouts %}
+      {% include '@templates/sections/section-callouts.twig' with {'altLayout': callout.altLayout} %}
+    {% endfor %}
+    {% include '@templates/sections/section-how-it-works.twig' %}
+    {% include '@templates/sections/section-better-together.twig' %}
+    {% include '@templates/sections/section-why-safe-paths.twig' %}
+    {# {% include '@templates/sections/section-download.twig' %}
     {% include '@templates/sections/section-collaborator-projects.twig' %}
     {% include '@templates/sections/section-partners.twig' %}
     {% include '@templates/sections/section-whitepapers.twig' %}
     {% include '@templates/sections/section-team.twig' %}
     {% include '@templates/sections/section-basic.twig' %}
-    {% include '@templates/sections/section-news.twig' %}
+    {% include '@templates/sections/section-news.twig' %} #}
   </div>
+  {% include '@templates/sections/section-principles.twig' %}
 </main>
 {% endblock %}

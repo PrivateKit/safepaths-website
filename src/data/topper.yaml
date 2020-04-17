@@ -1,5 +1,13 @@
-title: Slow the spread without giving up privacy
-desc: Safe Paths is a community-led movement to develop free, open-source, privacy-by-design
-  tools for individuals, public health officials, and larger communities to flatten
-  the curve of COVID-19, reduce fear, and prevent a surveillance-state response to
-  the pandemic.
+title: The way back to normal starts here
+desc: We all want to get out of the house. To reopen the economy. To feel secure again. Safe Paths builds tools that help communities flatten the curve of COVID-19 &mdash; together. 
+benefits:
+  - title: For everyone
+    list:
+      - See if you’ve been exposed
+      - Privately log your location
+      - Completely control your data
+  - title: For health officials
+    list:
+      - Reliable contact tracing
+      - Map infections with accuracy
+      - Anonymously verify cases

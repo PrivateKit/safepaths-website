@@ -1,43 +1,21 @@
-{% set donate = false %}
-
-{% set signup = {
-  "label": "Signup for updates",
-  "link": "https://forms.gle/v5dTVptSAGa93Bh36"
-  } 
-%}
-
-{% set faq = {
-  "label": "FAQ",
-  "link": "https://docs.google.com/document/d/15NsBijM4xRGKAcKnepBtZeEO2mXM3aVN2a6IhZLeQqg/edit"
-  } 
-%}
-
 <header class="header">
-  <div class="header-content">
+  <div class="header-content js-site-header">
     <h1 class="visually-hidden">Safe Paths</h1>
     <div class="header-logo">
       <a class="header-logo--link" href="/">
         {% include '@templates/svgs/logo.svg' %}
       </a>
     </div>
-    
-    <div class="header-button-group">
-      {% if donate %}
-        <div class="header-button header-button--donate">
-          {% include 'link-button.twig' with {'label': donate.label, 'link': donate.link, 'newTab': true, 'primary': true} %}
-        </div>
-      {% endif %}
 
-      {% if signup %}
-      <div class="header-button">
-        {% include 'link-button.twig' with {'label': signup.label, 'link': signup.link, 'newTab': true} %}
-      </div>
-      {% endif %}
+    <div class="header-button-group">
+      <nav class="header--nav">
+        <div class="header--nav-item">
+          {% include '@templates/partials/inline-button.html' with {'link': '/about.html', 'label': 'About', 'isActive': nav == 'About' ? true : false} %}
+        </div>
+        <div class="header--nav-item">
+          {% include '@templates/partials/inline-button.html' with {'link': 'https://docs.google.com/document/d/15NsBijM4xRGKAcKnepBtZeEO2mXM3aVN2a6IhZLeQqg/edit', 'label': 'FAQ', 'newTab': true} %}
+        </div>
+      </nav>
     </div>
-    {% if faq %}
-      <div class="header-button">
-        {% include 'link-button.twig' with {'label': faq.label, 'link': faq.link, 'newTab': true, 'inline': true} %}
-      </div>
-    {% endif %}
   </div>
 </header>

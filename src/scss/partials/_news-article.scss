@@ -1,13 +1,25 @@
 .news-article-header {
   display: inline-block;
-  margin-bottom: $sp-md;
+  margin-bottom: $sp-base;
 }
 
 .news-article--meta {
+  @include small-text;
   color: $color-base;
-  font-size: $fs-base;
+
+  p {
+    margin-bottom: $sp-xs;
+  }
+}
+
+.news-article--meta-date {
+  @include label;
 }
 
 .news-article--headline {
   display: inline;
+}
+
+.meta-dot {
+  color: darken($color-bg, 15%);
 }

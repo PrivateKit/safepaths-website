@@ -1,18 +1,16 @@
 {% extends '@templates/layouts/base.twig' %}
 
 {% block header %} 
-  {% include '@templates/partials/header.twig' %}
+  {% include '@templates/partials/header.twig' with {'nav': nav} %}
 {% endblock %}
 
 {% block content %}
-<div class="basic-page--header">
-  <div class="basic-page--content">
-    {% block basicHeader %} {% endblock %}
+<div class="basic-page--content">
+  <div class="basic-page--header js-reveal">
+      {% block basicHeader %} {% endblock %}
   </div>
-</div>
 
-<div class="basic-page--body">
-  <div class="basic-page--content">
+  <div class="basic-page--body">
     {% block basicBody %} {% endblock %}
   </div>
 </div>

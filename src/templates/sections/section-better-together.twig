@@ -1,0 +1,49 @@
+{#
+title: Better together section
+#}
+
+{% embed "@templates/layouts/section.twig" %}
+
+{% block content %}
+<div class="bt-section">
+  <div class="bt-section-content">
+
+    <div class="bt-section-text">
+      <div class="bt-section--overline js-reveal">
+        <p>
+          Better together
+        </p>
+      </div>
+      <h2 class="bt-section--heading js-reveal">If we work together, we can stop the spread</h2>
+      <p class="bt-section--deck js-reveal">If you test positive for COVID-19, your doctor will ask where you’ve been. Retracing your path is critical to containment — it helps public health identify others who might have been exposed.</p>
+    </div>
+
+    <div class="pill js-reveal">
+      <div class="pill-bg js-pill-bg"></div>
+      <div class="pill-content js-pill">
+        <div class="pill-side">
+          <div class="pill-side-content">
+            <h3 class="pill-side--title">General public</h3>
+            <p class="pill-side--deck">
+              If we keep track of where we’ve been, we can warn others who have come in contact with us.
+            </p>
+          </div>
+        </div>
+
+        <div class="pill-icon"></div>
+        
+        <div class="pill-side">
+          <div class="pill-side-content">
+            <h3 class="pill-side--title">Health officials</h3>
+            <p class="pill-side--deck">
+              The only ones who can test & verify COVID cases. Request recent locations only if you test positive.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% endembed %}

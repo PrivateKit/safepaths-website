@@ -1,15 +1,25 @@
 .basic-page--header {
   @include padding($sp-xl x);
+
+  @include mq($lg) {
+    max-width: columns(6);
+  }
 }
 
 .basic-page--content {
   @include site-padding;
 }
 
-.basic-section-content {
-  @include padding($sp-xl x);
+.basic-page--overline {
+  @include paragraph;
+  color: $color-spot;
+  font-weight: $fw-bold;
 }
 
-.no-updates {
-  text-align: center;
+.basic-page--title {
+  margin-bottom: $sp-md;
+}
+
+.basic-page--deck {
+  @include page-deck;
 }

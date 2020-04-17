@@ -3,16 +3,14 @@
   align-items: center;
   background-color: $color-bg;
   background-image: none;
-  border: 1px solid $color-base;
   border-radius: $br;
-  display: flex;
+  display: inline-flex;
   font-size: $fs-base;
   font-weight: $fw-bold;
-  justify-content: space-between;
+  justify-content: center;
 
   @include on-focus {
     background-color: $color-spot;
-    border-color: $color-spot;
     color: $color-bg;
 
     svg {
@@ -25,6 +23,7 @@
   }
 
   svg {
+    @include size($fs-base);
     color: $color-spot;
     margin-left: $sp-md;
   }
@@ -55,16 +54,11 @@
 
 .link--button-icon {
   @include padding($sp-md $sp-lg);
-  @include paragraph;
   background-color: $color-base;
   color: $color-bg;
-  justify-content: flex-start;
-
-  @include mq($lg) {
-    @include padding(x $sp-xl);
-  }
 
   svg {
-    @include margin(0 $sp-md 0 0);
+    @include margin(0 $sp-base 0 0);
+    @include size($fs-sm);
   }
 }

@@ -4,6 +4,12 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+* {
+  &::selection {
+    background-color: rgba($color-highlight, 0.3);
+  }
+}
+
 // Headings
 h1,
 h2,
@@ -75,19 +81,5 @@ img {
 
   @include mq($sm, $md) {
     width: 100%;
-  }
-}
-
-// Grid
-.grid {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.grid-cell {
-  box-sizing: border-box;
-
-  @include mq($md) {
-    padding-right: $grid-gutter;
   }
 }

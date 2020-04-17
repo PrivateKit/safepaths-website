@@ -1,5 +1,3 @@
-$border: 1px solid $color-base;
-
 .news-content {
   @include mq($md) {
     display: flex;
@@ -36,8 +34,17 @@ $border: 1px solid $color-base;
 .content-block-inner {
   @include padding($grid-gutter x);
   border-bottom: $border;
+  width: 100%;
 
   @include mq($md) {
-    @include padding(($grid-gutter * 2) $grid-gutter ($grid-gutter * 2) x);
+    @include padding($grid-gutter-lg $grid-gutter $grid-gutter-lg x);
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .news-content-block:last-child & {
+    border-bottom: 0;
   }
 }

@@ -1,0 +1,52 @@
+// Grid
+.grid {
+  display: flex;
+
+  @include mq($sm, $md-lg) {
+    flex-flow: row wrap;
+  }
+}
+
+.grid-cell {
+  box-sizing: border-box;
+  margin-bottom: $grid-gutter;
+  width: 100%;
+
+  @include mq($md, $md-lg) {
+    padding-right: $grid-gutter;
+  }
+
+  @include mq($md-lg) {
+    &:not(:last-child) {
+      margin-right: $sp-lg;
+    }
+  }
+
+  @include mq($lg) {
+    &:not(:last-child) {
+      margin-right: $sp-lg + $sp-base;
+    }
+  }
+}
+
+.col-2 {
+  @include margin(x auto);
+  max-width: 320px;
+
+  @include mq($md) {
+    width: columns(1, 4);
+  }
+
+  @include mq($lg) {
+    display: flex;
+    max-width: none;
+  }
+}
+
+.col-3 {
+  width: 100%;
+
+  @include mq($br-col-3, $md-lg) {
+    width: 33.33%;
+  }
+}

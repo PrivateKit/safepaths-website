@@ -1,0 +1,40 @@
+.basic-page-section-content {
+  @include padding($sp-xl x);
+  display: flex;
+  flex-direction: column;
+  max-width: $layout-max-width;
+  position: relative;
+
+  @include mq($lg) {
+    align-items: flex-start;
+    border-top: $border-thick;
+    flex-direction: row;
+
+    .basic-page-section-body {
+      @include padding($sp-xl x);
+      width: columns(6);
+    }
+  }
+
+  &:first-child {
+    padding-top: 0;
+  }
+}
+
+.basic-page-section-header {
+  border-top: $border;
+  border-top-width: 2px;
+  padding-top: $sp-lg;
+
+  @include mq($sm, $lg) {
+    margin-bottom: $sp-lg;
+  }
+
+  @include mq($lg) {
+    border-top: 0;
+    margin-top: $sp-lg;
+    position: sticky;
+    top: $sp-lg;
+    width: columns(2);
+  }
+}

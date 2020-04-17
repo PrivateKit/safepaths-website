@@ -4,7 +4,7 @@ title: Basic section
 
 {% set features = site.data['features.yaml'] %}
 
-{% embed "@templates/layouts/section.twig"  %}
+{% embed "@templates/layouts/basic-section.twig"  %}
 
 {% block header %}
 <h3 class="section-title">{{features.title}}</h3>
@@ -16,7 +16,7 @@ title: Basic section
 </div>
 
 <figure class="section-art">
-  <img src="/static/img/app-screenshot.png" alt="Private Kit app screenshot" />
+  <img src="/static/img/why-safe-paths.png" alt="Private Kit app screenshot" />
   <figcaption>
     Screenshots are from a forthcoming release of the app.
   </figcaption>
