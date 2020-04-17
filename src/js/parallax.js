@@ -16,7 +16,7 @@ const Parallax = {
       return;
     }
     const scrollPosition = this.setPosition();
-    gsap.to(el, { y: scrollPosition / displace, ease: 'power2.out', duration: 0.6 });
+    gsap.to(el, { y: scrollPosition / displace, ease: 'power2.out', duration: 0.3 });
   },
 };
 

@@ -29,6 +29,7 @@
   z-index: 1;
 
   @include mq($lg) {
+    margin-top: $sp-xl;
     max-width: columns(6);
 
     h2 {
