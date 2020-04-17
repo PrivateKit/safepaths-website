@@ -41,6 +41,10 @@
     @include padding($sp-xl x x x);
   }
 
+  @include mq($xl) {
+    margin-top: $sp-xl + $sp-lg;
+  }
+
   h2 {
     @include giant;
     margin-bottom: $sp-lg;
