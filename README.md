@@ -62,25 +62,4 @@ Deployments to https://covidsafepaths.org/ are triggered automatically by commit
 
 ---
 
-## Running in a Docker container
-
-To be able to run the the Safe-Places Web tool in a container follow the following steps.
-
-Build Container :
-
-    docker build -t safeplaces-web:latest
-
-Run Conatiner :
-
-    docker run --rm --name safeplaces -it -p 8080:3000 safeplaces-web:latest
-
-Open you browser and load the url [http://localhost:8080](http://localhost:8080/ 'http://localhost:8080')
-
-Docker env variables:
-
-- PORT=3000
-- NODE_ENV=development
-
----
-
 A [Puppy](https://github.com/Upstatement/puppy) 🐶 powered project
