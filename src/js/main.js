@@ -52,6 +52,14 @@ function circ(x, y, rad, opacity) {
   ctx.closePath();
 }
 
+function centerCirc() {
+  ctx.beginPath();
+  ctx.fillStyle = `rgba(165, 175, 250, 1)`;
+  ctx.arc(w / 2, h / 2, 50, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.closePath();
+}
+
 function offset(source, offset) {
   return Math.floor(source / offset);
 }
@@ -69,6 +77,7 @@ function animate() {
     const opacity = 1 - ((i * (w / circleOffset) + frame) % w) / 2 / (w / 2);
     circ(w / 2, h / 2, radius, opacity);
   }
+  centerCirc();
 }
 animate();
 

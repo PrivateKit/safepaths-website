@@ -18,6 +18,12 @@
   @include mq($br-col-3) {
     width: columns(4);
   }
+
+  @include mq($xl) {
+    &:first-child {
+      width: columns(5);
+    }
+  }
 }
 
 .callout--content {
@@ -34,6 +40,7 @@
 .collout--content--text {
   @include padding($grid-gutter x);
   align-self: center;
+  max-width: 550px;
   text-align: center;
 
   @include mq($br-col-3) {
@@ -54,7 +61,7 @@
   }
 
   @include mq($xl) {
-    margin-left: $grid-gutter-lg;
+    margin-left: $grid-gutter;
 
     .page-section--alt-layout & {
       @include margin(x $grid-gutter-lg x 0);
@@ -65,9 +72,16 @@
 .callout--label {
   @include absolute($sp-lg x x 50%);
   @include small-text;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   transform: translateX(-50%);
   z-index: 1;
+
+  @include mq($xl) {
+    margin-top: $sp-lg;
+  }
 
   &-muted {
     opacity: 0.5;
@@ -75,7 +89,20 @@
 }
 
 .callout--label-overline {
+  @include padding($sp-xs $sp-md);
+  background-color: $color-white;
+  border-radius: $br;
   color: $color-spot;
+  font-weight: $fw-bold;
+  margin-bottom: $sp-xs;
+
+  @include mq($md) {
+    font-size: $fs-base;
+  }
+
+  @include mq($xl) {
+    font-size: $fs-h4;
+  }
 }
 
 .callout--art {
