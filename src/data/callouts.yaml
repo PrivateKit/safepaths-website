@@ -17,7 +17,7 @@
   altLayout: false
 - overline: Safe Places
   title: Map verified cases
-  deck: Patients who test positive can choose to anonymously donate location history to public health officials, who use secure tools to create a verified public record.
+  deck: Public health officials maintain a verified record of COVID cases. Location data is anonymously donated by people who have tested positive.
   label: Tool for health officials
   available: true
   art: '/static/img/safe-places.png'
