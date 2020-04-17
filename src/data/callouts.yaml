@@ -22,6 +22,8 @@
   available: true
   art: '/static/img/safe-places.png'
   artCaption: Safe Places
+  art2: '/static/img/safe-places-ui.png'
+  art2Caption: Safe Places UI
   dots: true
   buttons:
     - label: Contact us

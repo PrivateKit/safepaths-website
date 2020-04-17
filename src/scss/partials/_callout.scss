@@ -90,10 +90,11 @@
 
 .callout--art-image {
   @include absolute(x x -30% 50%);
-  @include size(70%, 100%);
+  @include size(70%, auto);
   align-items: center;
   display: flex;
   justify-content: center;
+  pointer-events: none;
   transform: translateX(-50%);
 
   img {
@@ -102,11 +103,21 @@
   }
 }
 
+.callout--art-image-ui {
+  border: 5px solid $color-white;
+  border-radius: $br-sm;
+  bottom: 0%;
+  overflow: hidden;
+  width: 80%;
+}
+
+.callout-img-ui {
+  position: absolute;
+}
+
 .callout--dots {
   @include margin(x auto);
-  @include size(97%, 89%);
   border-radius: $br-sm;
-  overflow: hidden;
   position: absolute;
 
   span {

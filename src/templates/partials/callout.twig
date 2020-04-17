@@ -6,15 +6,19 @@
         <div>{{callout.label}}</div>
       </div>
       <div class="callout--art">
-        <div class="callout--art-image">
-          <img class="js-callout-img" src="{{callout.art}}" alt="{{callout.artCaption}}" />
+        <div class="callout--art-image {{callout.dots ? 'callout--art-image-ui js-callout-img' : ''}}">
+          <img class="{{callout.dots ? 'js-callout-img-bg' : 'js-callout-img'}}" src="{{callout.art}}" alt="{{callout.artCaption}}" />
 
           {% if callout.dots %}
-            <div class="callout--dots js-callout-img js-reveal">
+            <div class="callout--dots js-callout-dots js-reveal">
               {% for i in 1..20 %}
                 <span class="js-dot js-reveal-stagger-scale"></span>
               {% endfor %}
             </div>
+          {% endif %}
+
+          {% if callout.art2 %}
+            <img class="callout-img-ui" src="{{callout.art2}}" alt="{{callout.art2Caption}}" />
           {% endif %}
         </div>
         {% include '@templates/svgs/callout-dome.svg' %}

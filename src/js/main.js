@@ -150,6 +150,8 @@ let revealStaggerScale;
 let pill;
 let pillHeight;
 let pillBg;
+let dotsWrapper;
+let imgUIBg;
 const THRESHOLD = 0.33;
 
 window.addEventListener(
@@ -158,13 +160,17 @@ window.addEventListener(
     revealElements = document.querySelectorAll('.js-reveal');
     revealStaggerItems = document.querySelectorAll('.js-reveal-stagger-item');
     revealStaggerScale = document.querySelectorAll('.js-reveal-stagger-scale');
+    dotsWrapper = document.querySelector('.js-callout-dots');
     pill = document.querySelector('.js-pill');
     pillBg = document.querySelector('.js-pill-bg');
     pillHeight = pill.getBoundingClientRect().height;
+    imgUIBg = document.querySelector('.js-callout-img-bg');
+    const imgUIBgSize = imgUIBg.getBoundingClientRect();
 
     gsap.set([pill, revealStaggerScale], { autoAlpha: 0 });
     gsap.set(pillBg, { width: pillHeight, height: pillHeight });
     gsap.set(revealStaggerScale, { scale: 0.5 });
+    gsap.set(dotsWrapper, { width: imgUIBgSize.width, height: imgUIBgSize.height });
 
     setInitialStyles(revealElements);
     setInitialStyles(revealStaggerItems);
