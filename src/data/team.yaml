@@ -17,6 +17,8 @@ departments:
         affiliation: Harvard Kennedy School
       - name: Andrea Nuzzo
         affiliation: GSK
+      - name: Antonio Luca Alfeo
+        affiliaion: Università di Pisa
       - name: Ashley Mehra
         affiliation: University of Cambridge, The Wilson Center 
       - name: Bill Fallon
@@ -29,6 +31,8 @@ departments:
         affiliation: Harvard University
       - name: Cason Carter
         affiliation: Citadel
+      - name: Charisse	Pasaje
+        affiliation: MIT
       - name: Chaundra Manorome
         affiliation: Bond University
       - name: Chris Kreis
@@ -53,7 +57,7 @@ departments:
         affiliation: Bayer
       - name: Fernando Morera
         affiliation: EY
-      - name: Francesco	Benedetti	
+      - name: Francesco M	Benedetti	
         affiliation: MIT
       - name: Gabriel Harp
         affiliation: The MIT Press
@@ -91,11 +95,15 @@ departments:
       - name: Kristen Vilcans
         affiliation: MIT SDM
       - name: Kyle Towle
+      - name: Lagnojita	Sinha
+        affiliation: MIT
       - name: Lee	Brody
         affiliation: SRS Medical
       - name: Liv	Blackmon
         affiliation: Mitre
       - name: Mahdi	Fahda
+      - name: Mariateresa	Faregna
+        affiliation: BPress
       - name: Mark	Miller
         affiliation: Good Harbor Partners
       - name: Nick	McLoota
@@ -104,6 +112,8 @@ departments:
         affiliation: City of Boston
       - name: Peter	Scanlon
         affiliation: Verdicity
+      - name: Praneeth	Vepakomma
+        affiliation: MIT
       - name: Qusai	Akoud
         affiliation: Upstatement
       - name: Rachel	Barbar
