@@ -117,13 +117,17 @@
 }
 
 .callout--art-image {
-  @include absolute(x x -30% 50%);
+  @include absolute(x x -40% 50%);
   @include size(70%, auto);
   align-items: center;
   display: flex;
   justify-content: center;
   pointer-events: none;
   transform: translateX(-50%);
+
+  @include mq($md-lg) {
+    bottom: -30%;
+  }
 
   img {
     @include size(100%, auto);
@@ -133,10 +137,15 @@
 
 .callout--art-image-ui {
   border: 5px solid $color-white;
-  border-radius: $br-sm;
-  bottom: 0%;
+  border-radius: $br-sm / 2;
+  bottom: -15%;
   overflow: hidden;
   width: 80%;
+
+  @include mq($md-lg) {
+    border-radius: $br-sm;
+    bottom: 0%;
+  }
 }
 
 .callout-img-ui {

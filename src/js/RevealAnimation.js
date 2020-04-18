@@ -1,5 +1,5 @@
 import { gsap } from 'gsap';
-import { setInitialStyles, removeInitialStyles, gsapEffect, debounce } from './utils';
+import { setInitialStyles, gsapEffect, debounce } from './utils';
 import DotsAnimation from './DotsAnimation';
 
 const RevealAnimation = {
@@ -20,12 +20,6 @@ const RevealAnimation = {
       debounce(() => {
         this.resizePill();
         this.handleResize();
-
-        if (this.isMobile) {
-          removeInitialStyles([...this.revealElements, ...this.revealStaggerItems]);
-          gsap.set([this.pill, this.revealStaggerScale], { autoAlpha: 1 });
-          gsap.set(this.revealStaggerScale, { scale: 1 });
-        }
       }, 300),
       false,
     );
@@ -60,7 +54,7 @@ const RevealAnimation = {
     this.revealElements.forEach(revealElement => observer.observe(revealElement));
   },
 
-  handleIntersect(entries) {
+  handleIntersect(entries, observer) {
     const tl = gsap.timeline();
 
     entries.forEach(entry => {
@@ -79,10 +73,13 @@ const RevealAnimation = {
           duration: 0.6,
           stagger: index => index * 0.1,
         });
+
         tl.to(entryPillBg, { width: '100%', ease: 'power3.out', duration: 0.6 }).to(entryPill, {
           autoAlpha: 1,
           duration: 0.3,
         });
+
+        observer.unobserve(entry.target);
       }
     });
   },

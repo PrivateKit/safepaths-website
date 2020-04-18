@@ -1,8 +1,10 @@
 import { gsap } from 'gsap';
 
 const Parallax = {
-  init(el, displace) {
-    this.animateItem(el, displace);
+  init() {
+    this.parallaxImages = document.querySelectorAll('.js-callout-img');
+    this.parallaxImages.forEach(parallaxImage => this.animateItem(parallaxImage, -25));
+    window.requestAnimationFrame(this.init.bind(this));
   },
   setPosition() {
     if (window.pageYOffset !== undefined) {
@@ -12,9 +14,6 @@ const Parallax = {
     }
   },
   animateItem(el, displace) {
-    if (typeof window.orientation !== 'undefined') {
-      return;
-    }
     const scrollPosition = this.setPosition();
     gsap.to(el, { y: scrollPosition / displace, ease: 'power2.out', duration: 0.3 });
   },
