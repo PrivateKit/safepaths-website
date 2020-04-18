@@ -47,6 +47,7 @@ const RevealAnimation = {
     this.resizePill();
     this.handleResize();
     DotsAnimation.init();
+    gsap.config({ nullTargetWarn: false });
   },
 
   createObserver() {
@@ -88,7 +89,7 @@ const RevealAnimation = {
 
   resizePill() {
     this.pillHeight = this.pill.getBoundingClientRect().height;
-    gsap.set(this.pillBg, { width: this.pillHeight, height: this.pillHeight });
+    gsap.set(this.pillBg, { width: this.pillHeight, height: '100%' });
   },
 
   handleResize() {
