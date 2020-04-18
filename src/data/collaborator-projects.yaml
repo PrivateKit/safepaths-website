@@ -12,3 +12,6 @@ projects:
   - name: Corona Trace
     desc: Helps you instantly & anonymously learn if you’ve come into contact with someone infected with COVID-19.
     link: https://www.coronatrace.org/
+  - name: Covid Credentials Initiative
+    desc: Enabling society’s return to ‘normal’ in a controlled, measurable, and privacy-preserving way.
+    link: https://www.covidcreds.com/
