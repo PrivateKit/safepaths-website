@@ -1,6 +1,6 @@
 import gsap from 'gsap';
 
-const gsapEffect = () => {
+export default function gsapEffect() {
   gsap.registerEffect({
     name: 'fadeIn',
     effect: (targets, config) =>
@@ -27,6 +27,4 @@ const gsapEffect = () => {
     defaults: { duration: 0.8 },
     extendTimeline: true,
   });
-};
-
-export default gsapEffect;
+}

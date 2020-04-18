@@ -20,4 +20,9 @@ const Parallax = {
   },
 };
 
+const parallaxImages = document.querySelectorAll('.js-callout-img');
+window.addEventListener('scroll', () => {
+  parallaxImages.forEach(parallaxImage => Parallax.init(parallaxImage, -25));
+});
+
 export default Parallax;

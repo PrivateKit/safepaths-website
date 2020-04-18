@@ -1,29 +1,52 @@
 import { gsap } from 'gsap';
-import { setInitialStyles, gsapEffect } from './utils';
+import { setInitialStyles, removeInitialStyles, gsapEffect, debounce } from './utils';
+import DotsAnimation from './DotsAnimation';
 
 const RevealAnimation = {
   init() {
     this.bindEvents();
     this.setup();
-    this.createObserver();
+    this.THRESHOLD = 0.33;
+    this.isMobile;
   },
 
   bindEvents() {
-    document.addEventListener('load', () => this.getElements());
-    window.addEventListener('resize', () => this.handleResize());
+    window.addEventListener('load', () => {
+      this.setup();
+      this.createObserver();
+    });
+    window.addEventListener(
+      'resize',
+      debounce(() => {
+        this.resizePill();
+        this.handleResize();
+
+        if (this.isMobile) {
+          removeInitialStyles([...this.revealElements, ...this.revealStaggerItems]);
+          gsap.set([this.pill, this.revealStaggerScale], { autoAlpha: 1 });
+          gsap.set(this.revealStaggerScale, { scale: 1 });
+        }
+      }, 300),
+      false,
+    );
+  },
+
+  setupElementsStyles() {
+    setInitialStyles([...this.revealElements, ...this.revealStaggerItems]);
+    gsap.set([this.pill, this.revealStaggerScale], { autoAlpha: 0 });
+    gsap.set(this.revealStaggerScale, { scale: 0.5 });
+
+    this.isMobile = true;
   },
 
   setup() {
-    this.THRESHOLD = 0.33;
-
-    // setInitialStyles(this.revealElements);
-    console.log(this.revealElements);
-    // setInitialStyles(this.revealStaggerItems);
-    gsap.set([this.pill, this.revealStaggerScale], { autoAlpha: 0 });
-    gsap.set(this.pillBg, { width: this.pillHeight, height: this.pillHeight });
-    gsap.set(this.revealStaggerScale, { scale: 0.5 });
+    this.getElements();
+    this.setupElementsStyles();
 
     gsapEffect();
+    this.resizePill();
+    this.handleResize();
+    DotsAnimation.init();
   },
 
   createObserver() {
@@ -32,7 +55,6 @@ const RevealAnimation = {
       rootMargin: '0px',
       threshold: this.THRESHOLD,
     };
-
     const observer = new IntersectionObserver(this.handleIntersect, options);
     this.revealElements.forEach(revealElement => observer.observe(revealElement));
   },
@@ -64,9 +86,19 @@ const RevealAnimation = {
     });
   },
 
-  handleResize() {
+  resizePill() {
     this.pillHeight = this.pill.getBoundingClientRect().height;
     gsap.set(this.pillBg, { width: this.pillHeight, height: this.pillHeight });
+  },
+
+  handleResize() {
+    if (window.innerWidth <= 960) {
+      this.THRESHOLD = 0;
+      this.isMobile = true;
+    } else {
+      this.THRESHOLD = 0.33;
+      this.isMobile = false;
+    }
   },
 
   getElements() {
