@@ -1,4 +1,5 @@
 .basic-page-section-content {
+  @include margin(x auto);
   @include padding($sp-xl x);
   display: flex;
   flex-direction: column;
