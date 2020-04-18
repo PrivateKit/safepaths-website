@@ -9,6 +9,7 @@ module.exports = {
   entry: {
     main: ['./src/js/main.js', './src/scss/main.scss'],
     reset: './src/scss/reset.scss',
+    locationScrubber: './src/js/locationScrubber.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist/assets'),
