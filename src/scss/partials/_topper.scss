@@ -4,8 +4,7 @@
 }
 
 .topper-art {
-  margin-left: columns(6);
-  position: relative;
+  @include fixed(x x -25% 50%);
   z-index: -1;
 }
 
@@ -15,11 +14,6 @@
 
   @include mq(0, $lg) {
     display: none;
-  }
-
-  @include mq($lg) {
-    @include fixed(x);
-    transform: translate(-25%, 25%);
   }
 }
 

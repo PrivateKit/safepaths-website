@@ -38,6 +38,7 @@
 }
 
 .collout--content--text {
+  @include margin(x auto);
   @include padding($grid-gutter x);
   align-self: center;
   max-width: 550px;
@@ -144,6 +145,7 @@
 
 .callout--dots {
   @include margin(x auto);
+  @include size(100%);
   border-radius: $br-sm;
   position: absolute;
 

@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="header-content js-site-header">
+  <div class="header-content">
     <h1 class="visually-hidden">Safe Paths</h1>
     <div class="header-logo">
       <a class="header-logo--link" href="/">
@@ -8,6 +8,8 @@
     </div>
 
     <div class="header-button-group">
+      <div class="mobile-nav-icon">
+      </div>
       <nav class="header--nav">
         <div class="header--nav-item">
           {% include '@templates/partials/inline-button.html' with {'link': '/about.html', 'label': 'About', 'isActive': nav == 'About' ? true : false} %}
