@@ -111,6 +111,4 @@ const RevealAnimation = {
   },
 };
 
-RevealAnimation.init();
-
 export default RevealAnimation;

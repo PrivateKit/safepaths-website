@@ -58,6 +58,5 @@ const CanvasAnimation = {
     return Math.floor(source / offset);
   },
 };
-CanvasAnimation.init();
 
 export default CanvasAnimation;
