@@ -17,6 +17,22 @@
   @include mq($md) {
     @include padding(x $sp-lg $sp-lg);
   }
+
+  .whitepaper--line-block & {
+    @include padding($sp-md 0);
+    align-items: baseline;
+    background-color: initial;
+    border: 0;
+    border-bottom: $border;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include mq($md) {
+      flex-direction: row-reverse;
+    }
+  }
 }
 
 .whitepaper-label {
@@ -34,6 +50,24 @@
     color: $color-spot;
     margin-left: auto;
   }
+
+  .whitepaper--line-block & {
+    @include padding(0);
+
+    @include mq(0, $md) {
+      margin-bottom: $sp-base;
+      width: 100%;
+    }
+
+    @include mq($md) {
+      flex: 0.5;
+      margin-left: $sp-lg;
+    }
+
+    @include mq($lg) {
+      flex: 0.8;
+    }
+  }
 }
 
 .whitepaper-title {
@@ -41,4 +75,13 @@
   border-top: $border;
   margin-bottom: 0;
   padding-top: $sp-base;
+
+  .whitepaper--line-block & {
+    border-top: 0;
+    padding-top: 0;
+
+    @include mq($md) {
+      flex: 1;
+    }
+  }
 }

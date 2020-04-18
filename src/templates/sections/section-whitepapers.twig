@@ -2,21 +2,21 @@
 title: Whitepapers section
 #}
 
-{% embed "@templates/layouts/basic-section.twig" %}
+{% embed "@templates/layouts/section.twig" %}
 
 {% set whitepapers = site.data['whitepapers.yaml'] %}
 
-{% block header %}
-<h3 class="section-title">{{whitepapers.title}}</h3>
-{% endblock %}
 
 {% block content %}
-<div class="whitepapers-content">
-  {% for whitepaper in whitepapers.whitepapers %}
-    <div class="whitepapers-content-block">
-     {% include '@templates/partials/whitepaper.twig' with { whitepaper } %}
-    </div>
-  {% endfor %}
+<div class="js-reveal">
+  <h3 class="principles-title">{{whitepapers.title}}</h3>
+  <div class="js-reveal">
+    {% for whitepaper in whitepapers.whitepapers %}
+      <div class="js-reveal-stagger-item">
+        {% include '@templates/partials/whitepaper.twig' with { line_block: true } %}
+      </div>
+    {% endfor %}
+  </div>
 </div>
 {% endblock %}
 
