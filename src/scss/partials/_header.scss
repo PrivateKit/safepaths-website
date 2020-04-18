@@ -57,7 +57,7 @@
 }
 
 .header-button-group {
-  @include mq($sm, $md) {
+  @include mq(0, $md) {
     @include fixed(x x 0 0);
     @include padding($sp-base $sp-md);
     background-color: $color-bg;
@@ -78,16 +78,14 @@
   }
 }
 
-.header-button--donate {
-  @include mq($sm, $lg) {
-    display: none;
-  }
-}
-
 // Nav
 .header--nav {
   align-items: baseline;
   display: flex;
+
+  @include mq(0, $md) {
+    justify-content: space-around;
+  }
 }
 
 .header--nav-item {
