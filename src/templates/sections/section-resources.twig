@@ -1,0 +1,23 @@
+{#
+title: Whitepapers section
+#}
+
+{% embed "@templates/layouts/section.twig" %}
+
+{% set whitepapers = site.data['whitepapers.yaml'] %}
+
+
+{% block content %}
+<div class="js-reveal">
+  <h3 class="principles-title">{{whitepapers.title}}</h3>
+  <div class="js-reveal">
+    {% for whitepaper in whitepapers.whitepapers %}
+      <div class="js-reveal-stagger-item">
+        {% include '@templates/partials/whitepaper.twig' with { line_block: true } %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+
+{% endembed %}
