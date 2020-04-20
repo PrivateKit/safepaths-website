@@ -1,7 +1,7 @@
 - title: Get notified if you cross paths with someone diagnosed with COVID-19.
   deck: Knowledge is power.
   illustration: '@templates/svgs/path-1.svg'
-- title: If you test positive, you can choose to donate your data anonymously.
+- title: If you test positive, you can choose to share your data anonymously.
   deck: Which helps keep your entire community safe.
   illustration: '@templates/svgs/path-2.svg'
 - title: You’re in complete control. Data is only saved on your phone.
