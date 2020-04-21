@@ -18,3 +18,6 @@ whitepapers:
   - label: PDF
     link: https://docs.google.com/document/d/1fKmDvc3ip9Br9veyL8XYBFCjn0HBWHsxDF9vQKw-Q5s/edit?usp=sharing
     title: 'Contact Tracing: Holistic Solution beyond Bluetooth'
+  - label: PDF
+    link: https://drive.google.com/file/d/1XDgDQdQ75lYQceEyll__AA2X69oRq6VD/
+    title: 'Bluetooth based Proximity, Multi-hop Analysis and Bi-directional Trust: Epidemics and More'
