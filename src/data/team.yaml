@@ -108,6 +108,8 @@ departments:
         affiliation: BPress
       - name: Mark	Miller
         affiliation: Good Harbor Partners
+      - name: Matthew Creel
+        affiliation: EY
       - name: Nick	McLoota
         affiliation: Mitre
       - name: Nigel	Jacob
@@ -125,6 +127,8 @@ departments:
         affiliation: Computation and Imaging
       - name: Ramesh Raskar
         affiliation: MIT  
+      - name: Rebecca Xiong
+        affiliation: MIT
       - name: Renaud	Falgas
         affiliation: IMD Business School
       - name: Rishank	Kanaparti
@@ -151,6 +155,8 @@ departments:
         affiliation: TripleBlind
       - name: Steve	Vittorioso
         affiliation: Earned Media Consultants
+      - name: Sultana Mahfuz
+        affiliation: EY
       - name: Suraj Kapa
         affiliation: Mayo Clinic
       - name: Susan Garfield 
@@ -163,6 +169,8 @@ departments:
         affiliation: Upstatement 
       - name: Uduak	Obong-Eren
         affiliation: Carnegie Mellon University Alum
+      - name: Vinay Gidwaney
+        affiliaion: MIT
       - name: Vinit Nijhawan
         affiliation: Massachusetts Tech Transfer Center, Boston University, VentureCafe Foundation
       - name: Vitor	Pamplona
