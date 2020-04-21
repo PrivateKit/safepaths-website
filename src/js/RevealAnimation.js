@@ -6,14 +6,10 @@ const RevealAnimation = {
   init() {
     this.animElements;
     this.getElements();
-    this.on = false;
-    if (this.animElements) {
-      this.animElements.forEach(el => {
-        if (el !== null && this.on) {
-          this.bindEvents();
-          this.setup();
-        }
-      });
+
+    if (this.pill) {
+      this.bindEvents();
+      this.setup();
     }
     this.THRESHOLD = 0.33;
     this.isMobile;
@@ -111,21 +107,14 @@ const RevealAnimation = {
   },
 
   getElements() {
-    this.animElements = [
-      (this.revealElements = document.querySelectorAll('.js-reveal')),
-      (this.revealStaggerItems = document.querySelectorAll('.js-reveal-stagger-item')),
-      (this.revealStaggerScale = document.querySelectorAll('.js-reveal-stagger-scale')),
-      (this.pill = document.querySelector('.js-pill')),
-      (this.pillBg = document.querySelector('.js-pill-bg')),
-    ];
-    if (this.animElements) {
-      this.animElements.forEach(el => {
-        if (el !== null) {
-          el.forEach(tag => {
-            this.pillHeight = tag.getBoundingClientRect().height;
-          });
-        }
-      });
+    this.revealElements = document.querySelectorAll('.js-reveal');
+    this.revealStaggerItems = document.querySelectorAll('.js-reveal-stagger-item');
+    this.revealStaggerScale = document.querySelectorAll('.js-reveal-stagger-scale');
+    this.pill = document.querySelector('.js-pill');
+    this.pillBg = document.querySelector('.js-pill-bg');
+
+    if (this.pill) {
+      this.pillHeight = this.pill.getBoundingClientRect().height;
     }
   },
 };

@@ -10,8 +10,6 @@ const Toggle = {
   },
 
   toggleElement() {
-    // const shadow = this.el.classList.contains('js-text-truncated');
-    // const shadow = this.el.style.getPropertyValue('--shadow-opacity');
     const tl = gsap.timeline();
 
     if (this.el.style.height === 'auto') {

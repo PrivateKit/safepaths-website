@@ -8,5 +8,3 @@ CanvasAnimation.init();
 Parallax.init();
 RevealAnimation.init();
 Toggle.init();
-// console.log(Toggle.init());
-// console.log(Toggle);
