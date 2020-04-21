@@ -17,7 +17,7 @@
   altLayout: false
 - overline: Safe Places
   title: Map verified cases
-  deck: Public health officials maintain a verified record of COVID cases. Location data is anonymously donated by people who have tested positive.
+  deck: Safe Places allows public health officials to build and maintain a digital record of locations where COVID-19 may have been passed to others, expediting and improving contact tracing efforts.
   label: Tool for health officials
   available: true
   art: '/static/img/safe-places.png'
