@@ -2,13 +2,12 @@ import { gsap } from 'gsap';
 
 const DotsAnimation = {
   init() {
-    this.setup();
+    this.dots = document.querySelectorAll('.js-dot');
+    this.dots && this.setup();
   },
 
   setup() {
-    const dots = document.querySelectorAll('.js-dot');
-
-    dots.forEach(dot => {
+    this.dots.forEach(dot => {
       const dotSize = Math.floor(Math.random() * 60);
       const dotPositionX = Math.floor(Math.random() * 100);
       const dotPositionY = Math.floor(Math.random() * 100);

@@ -1,0 +1,27 @@
+.text-truncated {
+  font-size: $fs-base;
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    @include absolute(x x 0 0);
+    @include size(100%);
+    background-image: linear-gradient(to top, $color-bg, transparentize($color-bg, 1));
+    content: '';
+    opacity: var(--shadow-opacity);
+    pointer-events: none;
+  }
+}
+
+.text-truncated-content {
+  @include mq($md-lg) {
+    column-gap: $grid-gutter;
+    columns: 2;
+  }
+}
+
+.read-more-button {
+  @include padding($sp-base x);
+  margin-top: $sp-md;
+}

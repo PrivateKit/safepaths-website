@@ -5,8 +5,8 @@ title: COVID SafePaths - About
 {% embed "@templates/layouts/basic-page.twig" with {'nav': 'About'} %}
 
 {% block basicHeader %}
-<h2 class="basic-page--title js-reveal">A global community-led movement</h2>
-<div class="basic-page--deck js-reveal">
+<h2 class="basic-page--title">A global community-led movement</h2>
+<div class="basic-page--deck">
   <p>Safe Paths develops free, open-source, privacy-by-design tools for residents, public health officials, and larger
   communities to flatten the curve of COVID-19, reduce fear, and prevent a surveillance-state response to the pandemic.</p>
   <p>Join our Webinar every Saturday at 1pm <a href="https://zoom.us/j/95143407504">Here</a></p>
@@ -15,6 +15,7 @@ title: COVID SafePaths - About
 
 {% block basicBody %}
 <main>
+  {% include '@templates/sections/section-text.twig' %}
   {% include '@templates/sections/section-team.twig' %}
   {% include '@templates/sections/section-partners.twig' %}
   {% include '@templates/sections/section-collaborator-projects.twig' %}

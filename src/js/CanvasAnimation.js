@@ -1,7 +1,9 @@
 const CanvasAnimation = {
   init() {
-    this.setup();
-    this.animate();
+    if (document.getElementById('canvas')) {
+      this.setup();
+      this.animate();
+    }
   },
 
   setup() {

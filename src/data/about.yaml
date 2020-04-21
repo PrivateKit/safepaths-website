@@ -1,0 +1,17 @@
+title: About us
+intro: Safe Paths is a global movement to develop free, open-source, privacy-by-design tools for residents, public health officials, and larger communities to flatten the curve of COVID-19, reduce fear, and prevent a surveillance-state response to the pandemic.
+body: >
+  <p>MIT Safe Paths was created by Ramesh Raskar, with Sandy Pentland, Kent Larson, and Kevin Esvelt. Ramesh is an Associate Professor at MIT Media Lab and inventor of a camera to see around corners for which he received the 2016 Lemelson–MIT Prize. He holds 90+ US patents, has s co-authored books include Spatial Augmented Reality, Computational Photography, and 3D Imaging; appeared in NYTimes, CNN, BBC, NewScientist, TechnologyReview, and several technology news websites; and has worked on special research projects at Google [X], Facebook, Apple. He is co-founder of EyeNetra and several other companies.</p>
+  <p>MIT Safe Paths began as a multi-faculty, <a href="http://safepaths.mit.edu" target="_blank" rel="noopener">cross-MIT effort</a>, with input and expertise from institutes including Harvard University, Stanford University, and SUNY Buffalo; clinical input from Mayo Clinic and Massachusetts General Hospital; and mentors from the World Health Organization, the US Department of Health and Human Services, and the Graduate Institute of International and Development Studies. </p>
+  <ul>
+    <li>Mentors: Amandeep Gill (I-DAIR), Bernardo Mariano Jr (WHO), Brian McClendon, Don Rucker (HHS), and Subbu Subramanian, Suraj Kapa (Mayo Clinic)</li>
+    <li>Faculty Mentors: Ronald L. Rivest, Yael T. Kalai, Daniel J. Weitzner, Hal Abelson, Jonathan Gruber, Nickolai Zeldovich, and Adi Shamir.</li>
+    <li>Research Mentors: Yoshua Bengio (MILA), Richard Janda (McGill), John Halamka (Mayo Clinic)</li>
+  </ul>
+  <p>MIT Safe Paths operates the Private Kit:Safe Paths app and provides global thought leadership through research and development.</p>
+  <p>Steve Penrod from TripleBlind served as the founding CTO of Safe Paths.  Core members of the initial technical team include: Abhishek Singh, Vitor Pamplona, and Ken Pugsley.</p>
+  <p>The Safe Paths program has been spun out from MIT Media Lab into a newly created non-profit called Path Checks, Inc (PCI). PCI was established with the initial purpose of supporting the global rollout of the COVID Safe Paths app and Safe Places browser tool for contact tracers. COVID Safe Paths will help to enable societal reemergence, including the reopening of schools and the restarting of the economy, on the other side of what Tomas Pueyo referred to as “<a href="https://medium.com/@tomaspueyo/coronavirus-the-hammer-and-the-dance-be9337092b56" target="_blank" rel="noopener">The Hammer and the Dance.</a>” Through our global partnership with <a href="https://www.ey.com/en_us" target="_blank" rel="noopener">EY</a>, we are prepared to support public health officials everywhere with two 100% free, open-source technologies:</p>
+  <ul>
+    <li>Safe Places</li>
+    <li>COVID Safe Paths</li>
+  </ul>
