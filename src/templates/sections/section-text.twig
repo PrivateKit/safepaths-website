@@ -1,0 +1,32 @@
+{#
+title: Basic section
+#}
+
+{% embed "@templates/layouts/basic-section.twig" %}
+
+{% set about = site.data['about.yaml'] %}
+
+{% block header %}
+<h3 class="section-title">{{about.title}}</h3>
+{% endblock %}
+
+{% block content %}
+{% if about.intro %}
+<div class="intro-content">
+  <p class="intro-paragraph">
+    {{about.intro}}
+  </p>
+</div>
+{% endif %}
+
+<div class="text-truncated js-toggle-element" style="--shadow-opacity: 1; --text-height: 260px;">
+  <div class="text-truncated-content">
+    {{about.body}}
+  </div>
+  <div></div>
+</div>
+
+<button class="inline-button button read-more-button js-toggle-button">Read more</button>
+{% endblock %}
+
+{% endembed %}

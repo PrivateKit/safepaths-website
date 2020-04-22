@@ -4,8 +4,13 @@ import DotsAnimation from './DotsAnimation';
 
 const RevealAnimation = {
   init() {
-    this.bindEvents();
-    this.setup();
+    this.animElements;
+    this.getElements();
+
+    if (this.pill) {
+      this.bindEvents();
+      this.setup();
+    }
     this.THRESHOLD = 0.33;
     this.isMobile;
   },
@@ -42,6 +47,8 @@ const RevealAnimation = {
     this.handleResize();
     DotsAnimation.init();
     gsap.config({ nullTargetWarn: false });
+
+    this.on = true;
   },
 
   createObserver() {
@@ -105,7 +112,10 @@ const RevealAnimation = {
     this.revealStaggerScale = document.querySelectorAll('.js-reveal-stagger-scale');
     this.pill = document.querySelector('.js-pill');
     this.pillBg = document.querySelector('.js-pill-bg');
-    this.pillHeight = this.pill.getBoundingClientRect().height;
+
+    if (this.pill) {
+      this.pillHeight = this.pill.getBoundingClientRect().height;
+    }
   },
 };
 

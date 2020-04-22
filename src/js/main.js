@@ -1,8 +1,10 @@
-import Parallax from './parallax';
-import CanvasAnimation from './CanvasAnimation';
-import RevealAnimation from './RevealAnimation';
 import 'modernizr';
+import CanvasAnimation from './CanvasAnimation';
+import Parallax from './parallax';
+import RevealAnimation from './RevealAnimation';
+import Toggle from './Toggle';
 
 CanvasAnimation.init();
-RevealAnimation.init();
 Parallax.init();
+RevealAnimation.init();
+Toggle.init();
