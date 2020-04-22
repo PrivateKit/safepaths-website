@@ -1,12 +1,12 @@
 .text-truncated {
   font-size: $fs-base;
-  height: 60px;
+  height: var(--text-height);
   overflow: hidden;
   position: relative;
 
   &::after {
     @include absolute(x x 0 0);
-    @include size(100%);
+    @include size(100%, 60px);
     background-image: linear-gradient(to top, $color-bg, transparentize($color-bg, 1));
     content: '';
     opacity: var(--shadow-opacity);

@@ -11,15 +11,18 @@ const Toggle = {
 
   toggleElement() {
     const tl = gsap.timeline();
+    const text_h = this.el.style.getPropertyValue('--text-height');
 
     if (this.el.style.height === 'auto') {
+      gsap.set(this.el, { pointerEvents: `none` });
       tl.to(this.el, {
-        height: `60px`,
+        height: text_h,
         '--shadow-opacity': 1,
         ease: 'power3.out',
         duration: 0.4,
       }).to(this.button, { innerText: `Read more` });
     } else {
+      gsap.set(this.el, { pointerEvents: `initial` });
       tl.to(this.el, {
         height: `auto`,
         '--shadow-opacity': 0,

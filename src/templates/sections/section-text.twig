@@ -11,13 +11,15 @@ title: Basic section
 {% endblock %}
 
 {% block content %}
+{% if about.intro %}
 <div class="intro-content">
   <p class="intro-paragraph">
     {{about.intro}}
   </p>
 </div>
+{% endif %}
 
-<div class="text-truncated js-toggle-element" style="--shadow-opacity: 1">
+<div class="text-truncated js-toggle-element" style="--shadow-opacity: 1; --text-height: 260px;">
   <div class="text-truncated-content">
     {{about.body}}
   </div>
